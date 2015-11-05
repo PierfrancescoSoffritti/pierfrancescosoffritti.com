@@ -3,4 +3,4 @@ my website
 
 
 temporarily hosted on GitHub :D
-https://cdn.rawgit.com/PierfrancescoSoffritti/pierfrancescosoffritti.com/704f6bc/index.html
+https://cdn.rawgit.com/PierfrancescoSoffritti/pierfrancescosoffritti.com/db94b1a/index.html
