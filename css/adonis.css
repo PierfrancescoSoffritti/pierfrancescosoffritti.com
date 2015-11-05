@@ -182,6 +182,9 @@
  	padding: 0 15px;
  	border: none;
  	border-radius: 3px;
+
+ 	max-height:100%;
+    overflow-y: auto;
  }
  .portfolio-box {
  	display: block;
