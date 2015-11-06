@@ -121,6 +121,7 @@
  	height: 100%;
  }
  header .header-background {
+ 	background: rgba(255, 0, 0, 0);
  	background-size: cover;
  	background-position: center;
  	z-index: 0;
