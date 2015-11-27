@@ -241,12 +241,11 @@
                         <h2>Shuffly</h2>
                         <p>Shuffly is meant to help discover new content on YouTube and to watch videos without having to worry about what to choose.
                         <br/><br/>With Shuffly I had the chance to apply all I learned in term of code engineering and UI/UX design since OneCalculator.
-                        <br/><br/>It has been a pretty challenging app to develop, because i had to overcome some "limitation" (for my purposes) of the YouTube Data API without at the same time sacrifice the user experience.
-                        <br/>I've learned a lot of new cool stuff such as SQLite, the OAuth2 authentication process, event buses (❤) and Guava, thread pools and many more.
-                        <br/>The app uses a SQLite database in order to reduce at minimum the number of interactions with the YouTube server. The database is regularly kept consistent by some worker threads.
-                        <br/>Having a lot of asynchronous operations, events are a big deal in this app. The use of event buses has made my life a lot easier, allowing for a really awesome level of decoupling.</p>
+                        <br/><br/>It has been a pretty challenging app to develop, because i had to overcome some "limitation" (for my purposes) of the YouTube Data API, without at the same time sacrifice the user experience.
+                        <br/>The app uses a SQLite DB to minimize network interactions with the YouTube servers and, through an extensive use of lazy loading, to reduce the memory footprint of each object in memory (eg: each Channel has potentially a lot of Playlists with potentially a lot of Pages and each one has Thumbnails and other related data).
+                        <br/>Having a lot of asynchronous operations, events are a big deal in this app. The use of event buses has made my life a lot easier, allowing for a really awesome level of decoupling.
+                        <br/>At the moment the asynchronous logic is implemented mainly with AsyncTasks and the executor framework, but I plan to improve it using functional-reactive programming.</p>
 
-                        <br/><br/>
                         Shuffly is currently released as alpha on the PlayStore.
                         <br/><br/>
 
@@ -271,11 +270,11 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="modal-body">
                         <h2>One Calculator</h2>
-                        <p>The development of this app has started during my first Java course at the university. I wanted to improve my coding skills and learn to code on Android, which has always fascinated me, since the first time I had an Android phone.
+                        <p>The development of this app has started during my first Java course at the university. I wanted to improve my coding skills and learn to code on Android, which has always fascinated me.
                         <br/>At first I never intended to release it. The code is all but well written, at the time i wasn't familiar with a lot of basic programming practices.
                         <br/>Developing this app has been super fun and instructive. Also I used my own calculator for all the engineering exams is had to do :)
 
-                        <br/><br/>At the moment OneCalculator has almost 100.000 downloads from the store, with a pretty good rating of 4.5/5 and I also earned some money from it.</p>
+                        <br/><br/>At the moment OneCalculator has more than 100.000 downloads from the store, with a pretty good rating of 4.5/5 and I also earned some money from it.</p>
 
                         <br/>
 
