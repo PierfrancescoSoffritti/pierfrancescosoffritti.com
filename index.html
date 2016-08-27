@@ -239,14 +239,9 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="modal-body">
                         <h2>Shuffly</h2>
-                        <p>Shuffly is meant to help discover new content on YouTube and to watch videos without having to worry about what to choose.
-                        <br/><br/>With Shuffly I had the chance to apply all I learned in term of code engineering and UI/UX design since OneCalculator.
-                        <br/><br/>It has been a pretty challenging app to develop, because i had to overcome some "limitation" (for my purposes) of the YouTube Data API, without at the same time sacrifice the user experience.
-                        <br/>The app uses a SQLite DB to minimize network interactions with the YouTube servers and, through an extensive use of lazy loading, to reduce the memory footprint of each object in memory (eg: each Channel has potentially a lot of Playlists with potentially a lot of Pages and each one has Thumbnails and other related data).
-                        <br/>Having a lot of asynchronous operations, events are a big deal in this app. The use of event buses has made my life a lot easier, allowing for a really awesome level of decoupling.
-                        <br/>At the moment the asynchronous logic is implemented mainly with AsyncTasks and the executor framework, but I plan to improve it using functional-reactive programming.</p>
-
-                        Shuffly is currently released as alpha on the PlayStore.
+                        Thanks to its pseudo-random algorithms, Shuffly is <b>the best place</b> to <b>discover new content on YouTube</b> or just to <b>chill and spend some time</b>.<br/>
+                        <b>Shuffly is not a replacement for the YouTube app</b>, they serve different purposes.<br/>
+                        Sometimes YouTube can be a little overwhelming, Shuffly's minimal and straightforward design is thought to solve this problem.
                         <br/><br/>
 
 						<ul class="list-inline item-details">
@@ -256,7 +251,7 @@
                             </li>
                         </ul>
 
-						<a href="https://play.google.com/apps/testing/com.pierfrancescosoffritti.shuffly" target="_blank">
+						<a href="https://play.google.com/store/apps/details?id=com.pierfrancescosoffritti.shuffly" target="_blank">
 						  <img alt="Get it on Google Play" src="https://developer.android.com/images/brand/en_generic_rgb_wo_45.png" />
 						</a>
 
