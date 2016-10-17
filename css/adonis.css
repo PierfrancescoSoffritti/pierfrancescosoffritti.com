@@ -218,6 +218,9 @@
  .portfolio-box.portfolio-6 {
  	background-image: url('../img/portfolio/blender.jpg');	
  }
+ .portfolio-box.portfolio-7 {
+ 	background-image: url('../img/portfolio/player.png');	
+ }
 
  .portfolio-box-caption {
  	color: white;
@@ -269,6 +272,9 @@
  }
  .portfolioModal6 .modal-head {
  	background-image: url("../img/portfolio/blender.jpg");
+ }
+ .portfolioModal7 .modal-head {
+ 	background-image: url("../img/portfolio/player.png");
  }
  
  /* Social */
