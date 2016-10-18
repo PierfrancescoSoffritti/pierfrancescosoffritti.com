@@ -221,6 +221,9 @@
  .portfolio-box.portfolio-7 {
  	background-image: url('../img/portfolio/player.png');	
  }
+ .portfolio-box.portfolio-8 {
+ 	background-image: url('../img/portfolio/gyroscope.gif');	
+ }
 
  .portfolio-box-caption {
  	color: white;
@@ -275,6 +278,9 @@
  }
  .portfolioModal7 .modal-head {
  	background-image: url("../img/portfolio/player.png");
+ }
+ .portfolioModal8 .modal-head {
+ 	background-image: url('../img/portfolio/gyroscope.gif');	
  }
  
  /* Social */
