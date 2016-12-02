@@ -224,6 +224,12 @@
  .portfolio-box.portfolio-8 {
  	background-image: url('../img/portfolio/gyroscope.gif');	
  }
+ .portfolio-box.portfolio-9 {
+ 	background-image: url('../img/portfolio/neoncrystal.png');	
+ }
+ .portfolio-box.portfolio-10 {
+ 	background-image: url('../img/portfolio/sounds.jpg');	
+ }
 
  .portfolio-box-caption {
  	color: white;
@@ -281,6 +287,12 @@
  }
  .portfolioModal8 .modal-head {
  	background-image: url('../img/portfolio/gyroscope.gif');	
+ }
+ .portfolioModal9 .modal-head {
+ 	background-image: url('../img/portfolio/neoncrystal.png');	
+ }
+ .portfolioModal10 .modal-head {
+ 	background-image: url('../img/portfolio/sounds.jpg');	
  }
  
  /* Social */
