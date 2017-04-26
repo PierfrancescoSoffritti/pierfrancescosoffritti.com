@@ -206,9 +206,6 @@
  .portfolio-box.portfolio-2 {
  	background-image: url('../img/portfolio/onecalculator.png');	
  }
- .portfolio-box.portfolio-3 {
- 	background-image: url('../img/portfolio/securconfortwebsite.png');	
- }
  .portfolio-box.portfolio-4 {
  	background-image: url('../img/portfolio/heightmapgenerator.png');	
  }
@@ -229,6 +226,12 @@
  }
  .portfolio-box.portfolio-10 {
  	background-image: url('../img/portfolio/sounds.jpg');	
+ }
+ .portfolio-box.portfolio-11 {
+ 	background-image: url('../img/portfolio/brokenmantra.gif');	
+ }
+ .portfolio-box.portfolio-12 {
+ 	background-image: url('../img/portfolio/collatz.jpg');	
  }
 
  .portfolio-box-caption {
@@ -270,9 +273,6 @@
  .portfolioModal2 .modal-head {
  	background-image: url("../img/portfolio/onecalculator.png");
  }
- .portfolioModal3 .modal-head {
- 	background-image: url("../img/portfolio/securconfortwebsite.png");
- }
  .portfolioModal4 .modal-head {
  	background-image: url("../img/portfolio/heightmapgenerator.png");
  }
@@ -293,6 +293,12 @@
  }
  .portfolioModal10 .modal-head {
  	background-image: url('../img/portfolio/sounds.jpg');	
+ }
+ .portfolioModal11 .modal-head {
+ 	background-image: url('../img/portfolio/brokenmantra.gif');	
+ }
+ .portfolioModal12 .modal-head {
+ 	background-image: url('../img/portfolio/collatz.jpg');	
  }
  
  /* Social */
