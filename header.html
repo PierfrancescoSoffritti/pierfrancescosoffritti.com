@@ -22,22 +22,22 @@
 			window.addEventListener('resize', onWindowResize, false);
 
 			var scene = new THREE.Scene();
-			var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
+			var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 1, 10 );
 
 			var renderer = new THREE.WebGLRenderer({ alpha: false });
-			renderer.setClearColor( 0x000000, 1);
+			renderer.setClearColor( "#000", 1);
 
 			renderer.setSize( window.innerWidth, window.innerHeight );
 			document.body.appendChild( renderer.domElement );
 
-			var geometry   = new THREE.SphereGeometry(1, 10, 8)
-			var material  = new THREE.MeshPhongMaterial()
+			var geometry = new THREE.SphereGeometry(1, 10, 8)
+			var material = new THREE.MeshPhongMaterial()
 			var baseMesh = new THREE.Mesh(geometry, material)
 			scene.add(baseMesh)
 
-			var geometryWireframe = new THREE.SphereGeometry(2, 10, 8)
 			var materialWireframe = new THREE.MeshBasicMaterial( { color: 0x818181, wireframe: true} )
-			var meshWireframe = new THREE.Mesh(geometryWireframe, materialWireframe)
+			var meshWireframe = new THREE.Mesh(geometry, materialWireframe)
+			meshWireframe.scale.set(2,2,2)
 			scene.add(meshWireframe)
 
 			camera.position.z = 5;
@@ -54,60 +54,20 @@
 			directionalLight3.position.set( -3, 1, 4 );
 			scene.add( directionalLight3 );
 
-			var scaleFactor = 0;
-			var scale = 0.005;
-			var grow = true;
-
-			var render = function () {
+			var render = function (time) {
 				requestAnimationFrame( render );
 
-				baseMesh.rotation.x += 0.01;
-				baseMesh.rotation.y += 0.005;
-				baseMesh.rotation.z += 0.001;
+				baseMesh.rotation.x += 0.004;
+				baseMesh.rotation.y += 0.0009;
+				baseMesh.rotation.z += 0.0004;
 
 				meshWireframe.rotation.x += 0.0001;
 				meshWireframe.rotation.y += 0.00005;
 				meshWireframe.rotation.z += 0.00001;
 
-				if(grow) {
+				const scale = (Math.sin(time*0.0006)+7) /5
 
-					var tempScale = scale - scaleFactor/200
-
-					baseMesh.scale.x += tempScale;
-					baseMesh.scale.y += tempScale;
-					baseMesh.scale.z += tempScale;
-
-					scaleFactor += tempScale;
-
-					if(scaleFactor >= 0.5) {
-						grow = false;
-						scaleFactor = 0.5;
-
-						baseMesh.scale.x = 1 + scaleFactor;
-						baseMesh.scale.y = 1 + scaleFactor;
-						baseMesh.scale.z = 1 + scaleFactor;
-					}
-
-				} else {
-
-					var tempScale = scale - scaleFactor/200
-
-					baseMesh.scale.x -= tempScale;
-					baseMesh.scale.y -= tempScale;
-					baseMesh.scale.z -= tempScale;
-
-					scaleFactor -= tempScale;
-
-					if(scaleFactor <= 0) {
-						grow = true;
-						scaleFactor = 0;
-
-						baseMesh.scale.x = 1;
-						baseMesh.scale.y = 1;
-						baseMesh.scale.z = 1;
-					}
-				}
-
+				baseMesh.scale.set(scale, scale, scale);
 
 				renderer.render(scene, camera);
 			};
