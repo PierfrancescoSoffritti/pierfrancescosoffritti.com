@@ -233,6 +233,9 @@
  .portfolio-box.portfolio-12 {
  	background-image: url('../img/portfolio/collatz.jpg');	
  }
+ .portfolio-box.portfolio-13 {
+ 	background-image: url('../img/portfolio/nowherelands.png');	
+ }
 
  .portfolio-box-caption {
  	color: white;
@@ -299,6 +302,9 @@
  }
  .portfolioModal12 .modal-head {
  	background-image: url('../img/portfolio/collatz.jpg');	
+ }
+  .portfolioModal13 .modal-head {
+ 	background-image: url('../img/portfolio/nowherelands.png');	
  }
  
  /* Social */
