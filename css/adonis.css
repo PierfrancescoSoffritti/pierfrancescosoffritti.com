@@ -236,6 +236,9 @@
  .portfolio-box.portfolio-13 {
  	background-image: url('../img/portfolio/nowherelands.png');	
  }
+ .portfolio-box.portfolio-14 {
+ 	background-image: url('../img/portfolio/micromega.jpg');	
+ }
 
  .portfolio-box-caption {
  	color: white;
@@ -305,6 +308,9 @@
  }
   .portfolioModal13 .modal-head {
  	background-image: url('../img/portfolio/nowherelands.png');	
+ }
+ .portfolioModal14 .modal-head {
+ 	background-image: url('../img/portfolio/micromega.jpg');	
  }
  
  /* Social */
