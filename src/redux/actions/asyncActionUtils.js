@@ -1,6 +1,6 @@
 import { status } from "./_constants"
 
-const getAsyncAction = (actionTypePrefix, asyncFunc) => {
+const getAsyncAction = ({actionTypePrefix, asyncFunc}) => {
 
     const actionTypeStart = actionTypePrefix + status.START;
     const actionTypeSuccess = actionTypePrefix + status.SUCCESS;

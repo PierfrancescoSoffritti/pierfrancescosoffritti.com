@@ -1,9 +1,15 @@
 import { combineReducers } from "redux";
+
+import initialState from "./initialState";
 import { prefixes } from "../actions/_constants"
 
-import asyncActionReducer from "./asyncActionReducer";
+import getAsyncActionReducers from "./asyncActionReducer";
 
-const projectsReducers = asyncActionReducer(prefixes.PROJECTS);
+const projectsReducers = getAsyncActionReducers({ 
+    actionTypePrefix: prefixes.PROJECTS,
+    objectsInitialState: initialState.projects,
+    isFetchingInitialState: initialState.isFetchingProjects
+});
 
 export default combineReducers({
     projects: projectsReducers.projectsReducer,
