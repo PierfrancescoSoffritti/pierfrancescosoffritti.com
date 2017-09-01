@@ -1,4 +1,6 @@
+import { List } from "immutable"
+
 export default {
-    projects: [],
+    projects: new List(),
     isFetchingProjects: false
 }
