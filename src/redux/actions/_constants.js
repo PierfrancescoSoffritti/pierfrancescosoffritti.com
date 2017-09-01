@@ -1,2 +1,13 @@
-export const FETCH_PROJECTS_SUCCESS = "PROJECTS/FETCH:SUCCESS"
-export const FETCH_PROJECTS_FAILURE = "PROJECTS/FETCH:FAILURE"
+export const prefixes = {
+    PROJECTS: "PROJECTS/"
+}
+
+export const actionTypes = {
+    FETCH: "FETCH:"
+}
+
+export const status = {
+    START: "START",
+    SUCCESS: "SUCCESS",
+    FAILURE: "FAILURE"
+}

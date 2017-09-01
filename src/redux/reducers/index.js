@@ -1,6 +1,11 @@
-import projects from "./projects";
 import { combineReducers } from "redux";
+import { prefixes } from "../actions/_constants"
+
+import asyncActionReducer from "./asyncActionReducer";
+
+const projectsReducers = asyncActionReducer(prefixes.PROJECTS);
 
 export default combineReducers({
-    projects
+    projects: projectsReducers.projectsReducer,
+    isFetchingProjects: projectsReducers.isFetchingProjectsReducer
 });
