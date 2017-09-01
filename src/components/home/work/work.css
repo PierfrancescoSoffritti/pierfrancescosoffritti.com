@@ -1,0 +1,10 @@
+.content-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 400px;
+    padding-right: 400px;
+
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+}

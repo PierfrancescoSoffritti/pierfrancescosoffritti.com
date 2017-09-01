@@ -1,7 +1,14 @@
 html, body, #root {
     height: 100%;
     width: 100%;
-    
+
+    overflow-x: hidden;
+
     margin: 0;
     padding: 0;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #333;
 }
