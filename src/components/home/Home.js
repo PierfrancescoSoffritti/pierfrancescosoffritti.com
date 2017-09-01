@@ -6,24 +6,23 @@ import { fetchProjects } from "../../redux/actions/projects";
 
 class Home extends Component {
 
-    componentDidMount() {
+    componentWillMount() {
         this.props.fetchProjects()
     }
 
     render () {
-        console.log(this.props.projects)
         return (
             <div>Home</div>
         );
     }
 }
 
-const mapStateToProps = store => ( {
+const mapStateToProps = store => ({
     projects: store.projects
-} )
+})
 
-const mapDispatchToProps = dispatch => ( {
+const mapDispatchToProps = dispatch => ({
     fetchProjects: () => dispatch(fetchProjects)
-} )
+})
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);

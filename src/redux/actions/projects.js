@@ -1,7 +1,8 @@
 import { prefixes, actionTypes } from "./_constants"
-import asyncActionUtils from "./asyncActionUtils"
+import getAsyncAction from "./asyncActionUtils"
 import apis from "../../api/projects"
 
-const asyncActionGenerator = asyncActionUtils(prefixes.PROJECTS + actionTypes.FETCH)
+const actionTypePrefix_fetch = prefixes.PROJECTS+actionTypes.FETCH;
+const asyncAction_fetch = apis.fetchProjects;
 
-export const fetchProjects = asyncActionGenerator(apis.fetchProjects);
+export const fetchProjects = getAsyncAction(actionTypePrefix_fetch, asyncAction_fetch);

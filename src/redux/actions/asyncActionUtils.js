@@ -1,42 +1,39 @@
 import { status } from "./_constants"
 
-const asyncActionUtils = prefix => {
+const getAsyncAction = (actionTypePrefix, asyncFunc) => {
 
-    const typeStart = prefix + status.START;
-    const typeSuccess = prefix + status.SUCCESS;
-    const typeFailure = prefix + status.FAILURE;
+    const actionTypeStart = actionTypePrefix + status.START;
+    const actionTypeSuccess = actionTypePrefix + status.SUCCESS;
+    const actionTypeFailure = actionTypePrefix + status.FAILURE;
 
     const startAction = () => {
         return {
-            type: typeStart
+            type: actionTypeStart
         }
     }
 
     const successAction = projects => {
         return {
-            type: typeSuccess,
+            type: actionTypeSuccess,
             payload: projects
         }
     }
 
     const failureAction = error => {
         return {
-            type: typeFailure,
+            type: actionTypeFailure,
             payload: error
         }
     }
 
-    const asyncAction = asyncFunc => {
-        return dispatch => {
-            dispatch( startAction() );
-            return asyncFunc()
-                .then( projects => dispatch( successAction(projects) ) )
-                .catch( error => dispatch( failureAction(error) ) )
-        };
-
+    const asyncAction = dispatch => {
+        dispatch( startAction() );
+        return asyncFunc()
+            .then( projects => dispatch( successAction(projects) ) )
+            .catch( error => dispatch( failureAction(error) ) )
     }
 
     return asyncAction;
 }
 
-export default asyncActionUtils;
+export default getAsyncAction;
