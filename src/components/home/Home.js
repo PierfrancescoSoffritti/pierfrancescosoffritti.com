@@ -13,15 +13,33 @@ import Blog from "./blog/Blog";
 import GetInTouch from "./getInTouch/GetInTouch";
 
 class Home extends Component {
+    constructor(props) {
+        super(props);
 
-    componentWillMount() {
+        this.state = { currentScroll: 0 };
+    }
+
+    componentWillMount = () => {
         this.props.fetchProjects()
     }
 
-    render () {
+    componentDidMount = () => {        
+        this.root.addEventListener("scroll", this.handleScroll);
+    }
+    
+    componentWillUnmount = () => {
+        this.root.removeEventListener('scroll', this.handleScroll);
+    }
+
+    handleScroll = event => {
+        let scrollTop = event.srcElement.scrollTop;
+        this.setState({ currentScroll: scrollTop });
+    }
+
+    render = () => {
         return (
-            <div className="root" >
-                <Navbar className="navbar" />
+            <div className="root" ref={ element => this.root = element } >
+                <Navbar className="navbar" currentScroll={this.state.currentScroll} />
                 <Header />
                 <About />
                 <Work />
