@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 
 import LabelsContainer from "./LabelsContainer"
 import SortOrderSelect from "./SortOrderSelect"
+import ProjectsContainer from "./ProjectsContainer"
 
 import FillSpace from "../../_common/FillSpace"
 
@@ -24,10 +25,12 @@ class Work extends Component {
         projects.forEach( project => project.labels.forEach( label => labels.add(label) ) );
 
         return (
-            <div className="content-container">           
-                <LabelsContainer labels={ labels } />
+            <div className="work-container">          
+
+                <div className="item" ><LabelsContainer labels={ labels } /></div>
                 <FillSpace />
-                <SortOrderSelect values={SORT_ORDERS} />
+                <div className="item"><SortOrderSelect values={SORT_ORDERS} /></div>
+                <div className="item"><ProjectsContainer projects={projects} /></div>
             </div>
         );
     }

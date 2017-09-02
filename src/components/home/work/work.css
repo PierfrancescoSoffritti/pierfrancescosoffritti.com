@@ -1,10 +1,24 @@
-.content-container {
+.work-container {
     padding-top: 60px;
     padding-bottom: 60px;
     padding-left: 400px;
     padding-right: 400px;
 
     display: flex;
-    justify-content: center; /* align horizontal */
     align-items: center; /* align vertical */
+    justify-content: center;
+
+    flex-flow: row wrap;
+}
+
+.work-container::before, .work-container::after {
+    content: '';
+    width: 100%;
+    order: 1;
+}
+.item:nth-child(n + 4) {
+    order: 1;
+}
+.item:nth-child(n + 7) {
+    order: 2;
 }

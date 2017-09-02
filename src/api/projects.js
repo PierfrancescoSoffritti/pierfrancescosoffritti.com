@@ -1,9 +1,13 @@
 export default {
     fetchProjects: () => new Promise( (resolve, reject) => resolve( [
         {
-            labels: [ "android", "vr" ]
+            name: "One Calc",
+            labels: [ "android", "vr" ],
+            img: "https://www.google.it/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
         },
         {
-            labels: [ "android", "web experiment", "web dev" ]
+            name: "Shuffly",
+            labels: [ "android", "web experiment", "web dev" ],
+            img: "https://www.google.it/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
         } ] ) )
 }

@@ -1,0 +1,32 @@
+.project-card {
+    margin: 16px;
+    position: relative;
+    border-radius: 4px;
+background-color: black;
+    overflow: hidden;
+
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  }
+  
+  .project-card:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+
+  .info-bar {
+      width: 100%;
+      height: 20%;
+      z-index: 1;
+      background-color: rgba(0, 0, 0, 0.40);
+
+      color: white;
+
+      position: absolute;
+      left: 0px;
+      bottom: 0px;
+  }
+
+  .project-image {
+      display: block;
+      background-color: red;
+  }

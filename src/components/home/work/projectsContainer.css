@@ -1,0 +1,5 @@
+.projects-container {    
+    display: flex;
+    align-items: center; /* align vertical */
+    flex-flow: row wrap;
+}
