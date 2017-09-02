@@ -3,14 +3,14 @@ import { connect } from 'react-redux';
 
 import { fetchProjects } from "../../redux/actions/projects";
 
-import "./home.css"
-
 import Navbar from "./Navbar";
 import Header from "./header/Header";
 import About from "./about/About";
 import Work from "./work/Work";
 import Blog from "./blog/Blog";
 import GetInTouch from "./getInTouch/GetInTouch";
+
+import "./home.css"
 
 class Home extends Component {
     constructor(props) {

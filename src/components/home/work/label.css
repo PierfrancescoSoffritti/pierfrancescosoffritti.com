@@ -1,0 +1,23 @@
+.label {
+    padding: 8px;
+    margin: 4px;
+
+    text-transform: uppercase;
+    text-align: center;
+    
+    background-color: transparent;
+
+    border: 1px solid #4CAF50; /* Green */
+    border-radius: 6px;
+
+    -webkit-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+.label:hover, .label-selected {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    outline:0;
+}

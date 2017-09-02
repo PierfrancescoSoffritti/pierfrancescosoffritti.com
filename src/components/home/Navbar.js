@@ -6,9 +6,7 @@ export default class Navbar extends Component {
 
     render () {
 
-        let className = "navbar";
-        if(this.props.currentScroll > 0)
-            className += " elevated";
+        const className = this.props.currentScroll === 0 ? "navbar" : "navbar elevated";
 
         return (
             <div className={className} >
