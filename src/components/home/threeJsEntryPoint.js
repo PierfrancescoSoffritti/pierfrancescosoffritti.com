@@ -1,14 +1,14 @@
 import SceneManager from "./sceneManager"
 
 export default container => {
-    container.onresize = resizeCanvas;
+    window.onresize = resizeCanvas;
 
-    var canvas = document.createElement('canvas');     
+    const canvas = document.createElement('canvas');     
     container.appendChild(canvas);
 
-    resizeCanvas();
+    const sceneManager = new SceneManager(canvas, container);
 
-    var sceneManager = new SceneManager(canvas);
+    resizeCanvas();
 
     render();
 
@@ -18,10 +18,15 @@ export default container => {
     }
 
     function resizeCanvas() {
-        canvas.style.width = container.innerWidth + "px";
-        canvas.style.height = container.innerHeight + "px";
 
-        if(sceneManager)
-            sceneManager.onWindowResize();
+        // Make it visually fill the positioned parent
+        canvas.style.width ='100%';
+        canvas.style.height='100%';
+        
+        // ...then set the internal size to match
+        canvas.width  = canvas.offsetWidth;
+        canvas.height = canvas.offsetHeight;
+
+        sceneManager.onWindowResize()
     }
 }

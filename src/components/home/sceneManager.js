@@ -1,30 +1,27 @@
 import * as THREE from 'three'
 import TestSubject from "./TestSubject"
 
-export default canvas => {
-	canvas.width = document.body.clientWidth;
-    canvas.height = document.body.clientHeight/2;
+export default ( canvas, container ) => {
+    let width = canvas.width;
+    let height = canvas.height;
 
-    var width = canvas.width;
-    var height = canvas.height;
-
-    var clock = new THREE.Clock();
+    const clock = new THREE.Clock();
   
     // scene setup
-    var scene = new THREE.Scene();
-    scene.background = new THREE.Color("#fff");
+    const scene = new THREE.Scene();
+    scene.background = new THREE.Color("#eee");
     scene.fog = new THREE.Fog( "#990099", 1, 4000 )
 
-    var renderer = buildRender(width, height);
-    var camera = buildCamera(width, height);
-    var light = buildLights(scene);
+    const renderer = buildRender(width, height);
+    const camera = buildCamera(width, height);
+    const light = buildLights(scene);
     
     var sceneSubjects = [];
     sceneSubjects.push(new TestSubject(scene));
 
     function buildRender(width, height) {
-        var renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: true, alpha: true }); 
-        var DPR = (window.devicePixelRatio) ? window.devicePixelRatio : 1;
+        const renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: true, alpha: true }); 
+        const DPR = (window.devicePixelRatio) ? window.devicePixelRatio : 1;
         renderer.setPixelRatio(DPR);
         renderer.setSize(width, height);
 
@@ -35,11 +32,11 @@ export default canvas => {
     }
 
     function buildCamera(width, height) {
-        var aspectRatio = width / height;
-        var fieldOfView = 60;
-        var nearPlane = 5;
-        var farPlane = 1000; 
-        var camera = new THREE.PerspectiveCamera(fieldOfView, aspectRatio, nearPlane, farPlane);
+        const aspectRatio = width / height;
+        const fieldOfView = 60;
+        const nearPlane = 5;
+        const farPlane = 1000; 
+        const camera = new THREE.PerspectiveCamera(fieldOfView, aspectRatio, nearPlane, farPlane);
 
         camera.position.z = 40;
 
@@ -47,7 +44,7 @@ export default canvas => {
     }
 
     function buildLights(scene) {
-        var light = new THREE.SpotLight("#2222ff", 1);
+        const light = new THREE.SpotLight("#2222ff", 1);
         light.position.y = 70;
         light.position.z = 0;
         light.position.x = -140;
@@ -61,17 +58,15 @@ export default canvas => {
 
     function update() {
 
-        for(var i=0; i<sceneSubjects.length; i++)
+        for(let i=0; i<sceneSubjects.length; i++)
         	sceneSubjects[i].update(clock.getElapsedTime());
 
         renderer.render(scene, camera);
     }
 
     function onWindowResize() {
-        width = document.body.clientWidth;
-        height = document.body.clientHeight;
-        canvas.width = width;
-        canvas.height = height;
+        width = canvas.width;
+        height = canvas.height;
 
         camera.aspect = width / height;
         camera.updateProjectionMatrix();
