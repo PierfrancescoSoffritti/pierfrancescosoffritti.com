@@ -1,13 +1,4 @@
 .work-container {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    padding-left: 400px;
-    padding-right: 400px;
-
-    display: flex;
-    align-items: center; /* align vertical */
-    justify-content: center;
-
     flex-flow: row wrap;
 }
 
@@ -21,4 +12,8 @@
 }
 .item:nth-child(n + 7) {
     order: 2;
+}
+
+.project-container-work {
+    width: 100%;
 }

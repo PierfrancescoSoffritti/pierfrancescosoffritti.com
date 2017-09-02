@@ -38,8 +38,8 @@ class Home extends Component {
 
     render = () => {
         return (
-            <div className="root" ref={ element => this.root = element } >
-                <Navbar className="navbar" currentScroll={this.state.currentScroll} />
+            <div className="root-home" ref={ element => this.root = element } >
+                <Navbar currentScroll={this.state.currentScroll} />
                 <Header />
                 <About />
                 <Work />

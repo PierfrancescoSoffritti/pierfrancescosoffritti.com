@@ -7,6 +7,7 @@ import ProjectsContainer from "./ProjectsContainer"
 
 import FillSpace from "../../_common/FillSpace"
 
+import "../../_common/common.css"
 import "./work.css"
 
 const SORT_ORDERS = [ { key: "MOST_POPULAR", value: "MOST POPULAR"}, { key: "DATE", value: "DATE"} ]
@@ -25,12 +26,12 @@ class Work extends Component {
         projects.forEach( project => project.labels.forEach( label => labels.add(label) ) );
 
         return (
-            <div className="work-container">          
+            <div className="home-section work-container">          
 
                 <div className="item" ><LabelsContainer labels={ labels } /></div>
                 <FillSpace />
                 <div className="item"><SortOrderSelect values={SORT_ORDERS} /></div>
-                <div className="item"><ProjectsContainer projects={projects} /></div>
+                <div className="item project-container-work"><ProjectsContainer projects={projects} /></div>
             </div>
         );
     }

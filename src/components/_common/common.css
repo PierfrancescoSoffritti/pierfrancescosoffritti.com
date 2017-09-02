@@ -1,0 +1,10 @@
+.home-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 20%;
+    padding-right: 20%;
+
+    display: flex;
+    align-items: center; /* align vertical */
+    justify-content: center;
+}

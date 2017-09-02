@@ -1,8 +1,10 @@
 .project-card {
-    margin: 16px;
+    width: 30%;
+    height: 340px;
+
     position: relative;
+
     border-radius: 4px;
-background-color: black;
     overflow: hidden;
 
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
@@ -27,6 +29,15 @@ background-color: black;
   }
 
   .project-image {
+      width: 100%;
+      height: 100%;
+      max-width: 100%;
+      max-height: 100%;
+      min-width: 100%;
+      min-height: 100%;
+
       display: block;
+      object-fit: cover;
+
       background-color: red;
   }

@@ -11,7 +11,7 @@ export default class Header extends Component {
 
     render () {
         return (
-            <div className="header" ref={element => this.root = element}></div>
+            <div className="header-header" ref={element => this.root = element}></div>
         );
     }
 }
