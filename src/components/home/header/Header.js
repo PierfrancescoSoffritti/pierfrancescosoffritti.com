@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import threeJsEntryPoint from "./threeJsEntryPoint"
+import threeJsEntryPoint from "./threejs/threeJsEntryPoint"
 import "./header.css"
 
 export default class Header extends Component {

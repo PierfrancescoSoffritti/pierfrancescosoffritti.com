@@ -6,7 +6,7 @@ import { fetchProjects } from "../../redux/actions/projects";
 import "./home.css"
 
 import Navbar from "./Navbar";
-import Header from "./Header";
+import Header from "./header/Header";
 import About from "./about/About";
 import Work from "./work/Work";
 import Blog from "./blog/Blog";

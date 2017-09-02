@@ -9,19 +9,18 @@ export default ( canvas, container ) => {
   
     // scene setup
     const scene = new THREE.Scene();
-    scene.background = new THREE.Color("#eee");
-    scene.fog = new THREE.Fog( "#990099", 1, 4000 )
+    // scene.background = new THREE.Color("#eee");
 
     const renderer = buildRender(width, height);
     const camera = buildCamera(width, height);
     const light = buildLights(scene);
     
-    var sceneSubjects = [];
+    const sceneSubjects = [];
     sceneSubjects.push(new TestSubject(scene));
 
     function buildRender(width, height) {
         const renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: true, alpha: true }); 
-        const DPR = (window.devicePixelRatio) ? window.devicePixelRatio : 1;
+        const DPR = window.devicePixelRatio ? window.devicePixelRatio : 1;
         renderer.setPixelRatio(DPR);
         renderer.setSize(width, height);
 
@@ -34,8 +33,8 @@ export default ( canvas, container ) => {
     function buildCamera(width, height) {
         const aspectRatio = width / height;
         const fieldOfView = 60;
-        const nearPlane = 5;
-        const farPlane = 1000; 
+        const nearPlane = 4;
+        const farPlane = 100; 
         const camera = new THREE.PerspectiveCamera(fieldOfView, aspectRatio, nearPlane, farPlane);
 
         camera.position.z = 40;
@@ -44,20 +43,17 @@ export default ( canvas, container ) => {
     }
 
     function buildLights(scene) {
-        const light = new THREE.SpotLight("#2222ff", 1);
-        light.position.y = 70;
+        const light = new THREE.SpotLight("#2222ff", 100);
+        light.position.y = 40;
         light.position.z = 0;
-        light.position.x = -140;
+        light.position.x = -40;
 
-        light.decacy = 2;
-        light.penumbra = 1;
         scene.add(light);
 
         return light;
     }
 
     function update() {
-
         for(let i=0; i<sceneSubjects.length; i++)
         	sceneSubjects[i].update(clock.getElapsedTime());
 
