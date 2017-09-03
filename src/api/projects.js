@@ -40,7 +40,7 @@ export default {
         },
         {
             name: "test5",
-            labels: [ "test1", "test2", "test3" ],
+            labels: [ "android" ],
             img: img,
             highlight: true
         } ] ) )

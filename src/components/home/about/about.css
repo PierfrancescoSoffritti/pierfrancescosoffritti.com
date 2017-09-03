@@ -15,5 +15,81 @@
     margin-right: 60px;
 
     border-radius: 360px;
-    border: 4px solid rgba(0, 0, 0, 0.30);
+    border: 4px solid rgba(76, 175, 80, 0.6);
 }
+
+.about-text {
+    font-size: 11px;
+    line-height: 2em;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.about-text-hello {
+    font-size: 32px;
+    line-height: 1.5em;
+}
+
+.about-name {
+    color: #4CAF50;
+}
+
+.about-description {
+    font-size: 20px;
+}
+
+.about-cv {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+
+    -webkit-animation: color-change 10000ms infinite;
+    -moz-animation: color-change 10000ms infinite;
+    -o-animation: color-change 10000ms infinite;
+    -ms-animation: color-change 10000ms infinite;
+    animation: color-change 10000ms infinite;
+}
+
+@-webkit-keyframes color-change {
+    0% { color: #2196F3; }
+    25% { color: #4CAF50; }
+    50% { color: #FFC107; }
+    75% { color: #FF5722; }
+    100% { color: #2196F3; }
+}
+
+@-moz-keyframes color-change {
+    0% { color: #2196F3; }
+    25% { color: #4CAF50; }
+    50% { color: #FFC107; }
+    75% { color: #FF5722; }
+    100% { color: #2196F3; }
+}
+
+@-ms-keyframes color-change {
+    0% { color: #2196F3; }
+    25% { color: #4CAF50; }
+    50% { color: #FFC107; }
+    75% { color: #FF5722; }
+    100% { color: #2196F3; }
+}
+
+@-o-keyframes color-change {
+    0% { color: #2196F3; }
+    25% { color: #4CAF50; }
+    50% { color: #FFC107; }
+    75% { color: #FF5722; }
+    100% { color: #2196F3; }
+}
+
+@keyframes color-change {
+    0% { color: #2196F3; }
+    25% { color: #4CAF50; }
+    50% { color: #FFC107; }
+    75% { color: #FF5722; }
+    100% { color: #2196F3; }
+}
+
