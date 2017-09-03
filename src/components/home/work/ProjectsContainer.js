@@ -26,3 +26,5 @@ const ProjectsContainer = ( { projects, activeLabels } ) => {
         </div>
     );
 }
+
+export default ProjectsContainer;

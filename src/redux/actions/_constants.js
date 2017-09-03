@@ -1,5 +1,7 @@
 export const prefixes = {
-    PROJECTS: "PROJECTS/"
+    PROJECTS: "PROJECTS/",
+    BLOG_POSTS: "BLOG_POSTS/",
+    SOCIALS: "SOCIALS/"
 }
 
 export const actionTypes = {

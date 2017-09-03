@@ -1,0 +1,17 @@
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 16px;
+
+    font-size: 11px;
+    line-height: 2em;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.contact-social-group {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-flow: wrap;
+}

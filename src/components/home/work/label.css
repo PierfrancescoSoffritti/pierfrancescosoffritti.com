@@ -33,17 +33,29 @@
     border: 1px solid #4CAF50;
 }
 
-.special-label {
-    border: 1px solid rgba(32, 149, 243, 1);
-}
-
-.common-label:hover, .common-label-selected {
-    background-color: #4CAF50;
+.common-label:hover {
+    background-color: rgba(76, 175, 79, 0.5);
     color: white;
     outline: 0;
 }
 
-.special-label:hover, .special-label-selected {
+.common-label-selected, .common-label-selected:hover {
+    background-color: #4CAF4F;
+    color: white;
+    outline: 0;
+}
+
+.special-label {
+    border: 1px solid rgba(32, 149, 243, 1);
+}
+
+.special-label:hover {
+    background-color: rgba(32, 149, 243, 0.5);
+    color: white;
+    outline: 0;
+}
+
+.special-label-selected, .special-label-selected:hover {
     background-color: rgba(32, 149, 243, 1);
     color: white;
     outline: 0;

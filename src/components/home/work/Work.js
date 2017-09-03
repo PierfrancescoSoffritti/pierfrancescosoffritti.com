@@ -4,7 +4,6 @@ import { connect } from 'react-redux';
 import LabelsContainer from "./LabelsContainer"
 import ProjectsContainer from "./ProjectsContainer"
 
-
 import "../../_common/common.css"
 import "./work.css"
 

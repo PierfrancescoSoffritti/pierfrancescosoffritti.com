@@ -11,7 +11,24 @@ const projectsReducers = getAsyncActionReducers({
     isFetchingInitialState: initialState.isFetchingProjects
 });
 
+const blogPostsReducers = getAsyncActionReducers({ 
+    actionTypePrefix: prefixes.BLOG_POSTS,
+    objectsInitialState: initialState.blogPosts,
+    isFetchingInitialState: initialState.isFetchingBlogPosts
+});
+
+const socialsReducers = getAsyncActionReducers({ 
+    actionTypePrefix: prefixes.SOCIALS,
+    objectsInitialState: initialState.socials,
+    isFetchingInitialState: initialState.isFetchingSocials
+});
+
 export default combineReducers({
-    projects: projectsReducers.projectsReducer,
-    isFetchingProjects: projectsReducers.isFetchingProjectsReducer
+    projects: projectsReducers.objectsReducer,
+    blogPosts: blogPostsReducers.objectsReducer,
+    socials: socialsReducers.objectsReducer,
+    
+    isFetchingProjects: projectsReducers.isFetchingReducer,
+    isFetchingBlogPosts: blogPostsReducers.isFetchingReducer,
+    isFetchingSocials: socialsReducers.isFetchingReducer,
 });

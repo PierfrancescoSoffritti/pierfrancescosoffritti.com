@@ -8,7 +8,7 @@ import Header from "./header/Header";
 import About from "./about/About";
 import Work from "./work/Work";
 import Blog from "./blog/Blog";
-import GetInTouch from "./getInTouch/GetInTouch";
+import Contact from "./contact/Contact";
 
 import "./home.css"
 
@@ -43,8 +43,8 @@ class Home extends Component {
                 <Header />
                 <About />
                 <Work />
-                <Blog />
-                <GetInTouch />
+                {/* <Blog /> */}
+                <Contact />
             </div>
         );
     }

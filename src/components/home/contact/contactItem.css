@@ -1,0 +1,30 @@
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-flow: wrap;
+}
+
+.contact-item-icon {
+    font-size: 24px;
+    
+    margin-bottom: 16px;
+    margin-right: 16px;
+
+    width: 56px;
+    height: 56px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(0, 0, 0, 0.06);
+
+    box-shadow: 0 3px 6px rgba(0,0,0,0.20);
+
+    border-radius: 360px;
+}
+
+.contact-item-text {
+    
+}

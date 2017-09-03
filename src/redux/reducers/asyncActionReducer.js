@@ -6,7 +6,7 @@ const FETCH_START = actionTypes.FETCH + status.START;
 
 export default ({ actionTypePrefix, objectsInitialState, isFetchingInitialState }) => ({
 
-    projectsReducer: (state = objectsInitialState, action) => {
+    objectsReducer: (state = objectsInitialState, action) => {
         switch(action.type) {
             case actionTypePrefix + FETCH_SUCCESS:
                 return state.concat(action.payload);
@@ -15,7 +15,7 @@ export default ({ actionTypePrefix, objectsInitialState, isFetchingInitialState 
         }
     },
 
-    isFetchingProjectsReducer: (state = isFetchingInitialState, action) => {
+    isFetchingReducer: (state = isFetchingInitialState, action) => {
         switch(action.type) {
             case actionTypePrefix + FETCH_SUCCESS || actionTypePrefix + FETCH_FAILURE:
                 return false;
