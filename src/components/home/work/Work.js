@@ -15,16 +15,38 @@ class Work extends Component {
         this.state = { activeLabels: [] }
     }
 
+    onLabelClick = label => {
+        const { activeLabels } = this.state;
+
+        const index = activeLabels.indexOf(label);
+        if( index > -1 ) {
+            activeLabels.splice(index, 1);
+        } else {
+            activeLabels.push(label);
+        }
+
+        this.setState( { activeLabels } );
+    }
+
+    clearSelectedLabels  = () => {
+        this.setState( { activeLabels: [] } );
+    }
+
     render () {
         const { projects } = this.props;
+        const { activeLabels } = this.state;
 
         const labels = new Set();
         projects.forEach( project => project.labels.forEach( label => labels.add(label) ) );
 
         return (
             <div className="home-section work-container">
-                <div className="labels-work" ><LabelsContainer labels={ labels } /></div>
-                <div className="project-container-work"><ProjectsContainer projects={projects} /></div>
+                <div className="labels-work" >
+                    <LabelsContainer labels={labels} activeLabels={activeLabels} onLabelClick={this.onLabelClick} clearSelectedLabels={this.clearSelectedLabels}/>
+                </div>
+                <div className="project-container-work">
+                    <ProjectsContainer projects={projects} activeLabels={activeLabels} />
+                </div>
             </div>
         );
     }

@@ -1,15 +1,26 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import "./label.css"
 
-export default class Label extends Component {
-    render () {
+const Label = ( {label, selected, minimalStyle, commonAction, onClick} ) => {
 
-        const {label, minimalStyle, commonAction} = this.props;
-        const className = minimalStyle ? "label-minimal" : commonAction ? "label common-label " : "label special-label ";
-
-        return (
-            <label className={className} >{label}</label >    
-        );
+    let className;
+    
+    if(minimalStyle)
+        className = "label-minimal";
+    else if(commonAction) {
+        className = "label common-label "
+        if(selected)
+            className += "common-label-selected";
+    } else {
+        className = "label special-label "
+        if(selected)
+            className += "special-label-selected";
     }
+
+    return (
+        <label className={className} onClick={ ev => onClick(label) }>{label}</label >    
+    );
 }
+
+export default Label;

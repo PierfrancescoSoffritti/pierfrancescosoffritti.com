@@ -4,17 +4,25 @@ import Project from "./Project"
 
 import "./projectsContainer.css"
 
-export default class ProjectsContainer extends Component {
-    render () {
+const ProjectsContainer = ( { projects, activeLabels } ) => { 
+    projects = projects.sort( (a, b) => a.highlight < b.highlight );
 
-        let { projects } = this.props;
+    const filter = project => {
+        if(activeLabels.length === 0)
+            return true;
 
-        projects = projects.sort( (a, b) => a.highlight < b.highlight );
+        for(let i=0; i<project.labels.length; i++) {
+            const label = project.labels[i];
+            if( activeLabels.indexOf(label) > -1 )
+                return true;
+        }
 
-        return (
-            <div className="projects-container">
-                { projects.map( project => <Project key={project.name} project={project} /> ) }
-            </div>
-        );
+        return false;
     }
+
+    return (
+        <div className="projects-container">
+            { projects.filter( filter ).map( project => <Project key={project.name} project={project} /> ) }
+        </div>
+    );
 }
