@@ -12,3 +12,53 @@ html, body, #root {
     letter-spacing: 2px;
     color: #333;
 }
+
+a {
+    text-decoration: none;
+
+    -webkit-animation: color-change 10000ms infinite;
+    -moz-animation: color-change 10000ms infinite;
+    -o-animation: color-change 10000ms infinite;
+    -ms-animation: color-change 10000ms infinite;
+    animation: color-change 10000ms infinite;
+}
+
+@-webkit-keyframes color-change {
+    0% { color: #2196F3; }
+    25% { color: #4CAF50; }
+    50% { color: #FFC107; }
+    75% { color: #FF5722; }
+    100% { color: #2196F3; }
+}
+
+@-moz-keyframes color-change {
+    0% { color: #2196F3; }
+    25% { color: #4CAF50; }
+    50% { color: #FFC107; }
+    75% { color: #FF5722; }
+    100% { color: #2196F3; }
+}
+
+@-ms-keyframes color-change {
+    0% { color: #2196F3; }
+    25% { color: #4CAF50; }
+    50% { color: #FFC107; }
+    75% { color: #FF5722; }
+    100% { color: #2196F3; }
+}
+
+@-o-keyframes color-change {
+    0% { color: #2196F3; }
+    25% { color: #4CAF50; }
+    50% { color: #FFC107; }
+    75% { color: #FF5722; }
+    100% { color: #2196F3; }
+}
+
+@keyframes color-change {
+    0% { color: #2196F3; }
+    25% { color: #4CAF50; }
+    50% { color: #FFC107; }
+    75% { color: #FF5722; }
+    100% { color: #2196F3; }
+}
