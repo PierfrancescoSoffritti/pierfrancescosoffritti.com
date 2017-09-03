@@ -3,42 +3,50 @@ export default {
         {   
             name: "email",
             text: "soffritti.pierfrancesco@gmail.com",
-            icon: "envelope"
+            icon: "envelope",
+            url: "mailto:soffritti.pierfrancesco@gmail.com"
         },
         {
             name: "instagram",
             text: "",
-            icon: "instagram"
+            icon: "instagram",
+            url: ""
         },
         {
             name: "facebook",
             text: "",
-            icon: "facebook"
+            icon: "facebook",
+            url: ""
         },
         {
             name: "google-plus",
             text: "",
-            icon: "google-plus"
+            icon: "google-plus",
+            url: ""
         },
         {
             name: "github",
             text: "",
-            icon: "github"
+            icon: "github",
+            url: ""
         },
         {
             name: "medium",
             text: "",
-            icon: "medium"
+            icon: "medium",
+            url: ""
         }, 
         {
             name: "linkedin",
             text: "",
-            icon: "linkedin"
+            icon: "linkedin",
+            url: ""
         },    
         {
             name: "stack-overflow",
             text: "",
-            icon: "stack-overflow"
+            icon: "stack-overflow",
+            url: ""
         },       
     ] ) )
 }

@@ -15,6 +15,7 @@ html, body, #root {
 
 a {
     text-decoration: none;
+    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
 
     -webkit-animation: color-change 10000ms infinite;
     -moz-animation: color-change 10000ms infinite;

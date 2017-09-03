@@ -39,7 +39,7 @@
 }
 
 /* desktop-xlarge */
-@media all and (min-width: 1601px) and (max-width: 1920px) {
+@media all and (min-width: 1601px) {
     .home-section {
         padding-top: 64px;
         padding-bottom: 64px;

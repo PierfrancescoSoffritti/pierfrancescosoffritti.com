@@ -21,7 +21,7 @@
     border-radius: 4px;
     overflow: hidden;
 
-    box-shadow: 0 2px 6px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.24);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.32), 0 3px 4px rgba(0,0,0,0.34);
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
   

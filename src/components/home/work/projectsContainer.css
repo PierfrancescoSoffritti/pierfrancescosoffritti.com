@@ -39,10 +39,19 @@
 }
 
 /* desktop-xlarge */
-@media all and (min-width: 1601px) and (max-width: 1920px) { 
+@media all and (min-width: 1601px) and (max-width: 3840px) { 
 	.projects-container {    
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
+		grid-column-gap: 24px;
+		grid-row-gap: 24px;
+	}
+}
+
+@media all and (min-width: 3841px) { 
+	.projects-container {    
+		display: grid;
+		grid-template-columns: repeat(8, 1fr);
 		grid-column-gap: 24px;
 		grid-row-gap: 24px;
 	}
