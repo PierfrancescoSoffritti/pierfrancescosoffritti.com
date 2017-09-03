@@ -5,8 +5,10 @@ export default class Project extends Component {
     render () {
         const { project } = this.props;
 
+        const className = project.highlight ? "highlight-card" : "normal-card"
+
         return (
-            <div className="project-card">
+            <div className={"project-card " +className}>
                 <img className="project-image" alt={project.name} src={project.img} />
                 <div className="info-bar">
                     {project.name}

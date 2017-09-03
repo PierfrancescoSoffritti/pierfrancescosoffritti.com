@@ -5,36 +5,43 @@ export default {
         {
             name: "One Calc",
             labels: [ "android", "vr" ],
-            img: img
+            img: img,
+            highlight: true
         },
         {
             name: "Shuffly",
             labels: [ "android", "web experiment", "web dev" ],
-            img: img
+            img: img,
+            highlight: false
         },
         {
             name: "test1",
             labels: [ "android", "AR" ],
-            img: img
+            img: img,
+            highlight: false
         },
         {
             name: "test2",
             labels: [ "android" ],
-            img: img
+            img: img,
+            highlight: true
         },
         {
             name: "test3",
             labels: [ "android" ],
-            img: img
+            img: img,
+            highlight: false
         },
         {
             name: "test4",
             labels: [ "android" ],
-            img: img
+            img: img,
+            highlight: false
         },
         {
             name: "test5",
             labels: [ "test1", "test2", "test3" ],
-            img: img
+            img: img,
+            highlight: true
         } ] ) )
 }

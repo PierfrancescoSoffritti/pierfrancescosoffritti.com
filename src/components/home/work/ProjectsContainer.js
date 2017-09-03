@@ -7,7 +7,9 @@ import "./projectsContainer.css"
 export default class ProjectsContainer extends Component {
     render () {
 
-        const { projects } = this.props;
+        let { projects } = this.props;
+
+        projects = projects.sort( (a, b) => a.highlight < b.highlight );
 
         return (
             <div className="projects-container">

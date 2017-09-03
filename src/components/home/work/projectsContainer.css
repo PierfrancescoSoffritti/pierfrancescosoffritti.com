@@ -3,8 +3,8 @@
 	.projects-container {    
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
-		grid-column-gap: 15px;
-		grid-row-gap: 15px;
+		grid-column-gap: 16px;
+		grid-row-gap: 16px;
 	}
 }
 
@@ -13,8 +13,8 @@
 	.projects-container {    
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		grid-column-gap: 15px;
-		grid-row-gap: 15px;
+		grid-column-gap: 8px;
+		grid-row-gap: 8px;
 	}  
 }
 
@@ -23,8 +23,8 @@
 	.projects-container {    
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
-		grid-column-gap: 15px;
-		grid-row-gap: 15px;
+		grid-column-gap: 16px;
+		grid-row-gap: 16px;
 	}
 }
 
@@ -33,8 +33,8 @@
 	.projects-container {    
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
-		grid-column-gap: 15px;
-		grid-row-gap: 15px;
+		grid-column-gap: 24px;
+		grid-row-gap: 24px;
 	}  
 }
 
@@ -43,7 +43,7 @@
 	.projects-container {    
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
-		grid-column-gap: 15px;
-		grid-row-gap: 15px;
+		grid-column-gap: 24px;
+		grid-row-gap: 24px;
 	}
 }

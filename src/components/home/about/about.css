@@ -1,4 +1,7 @@
 .container-about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .profile-picture-about {

@@ -1,19 +1,13 @@
 .work-container {
-    flex-flow: row wrap;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 32px;
 }
 
-.work-container::before, .work-container::after {
-    content: '';
-    width: 100%;
-    order: 1;
-}
-.item:nth-child(n + 4) {
-    order: 1;
-}
-.item:nth-child(n + 7) {
-    order: 2;
+.labels-work {
+    justify-self: start;
 }
 
 .project-container-work {
-    width: 100%;
 }

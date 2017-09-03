@@ -5,10 +5,6 @@
         padding-bottom: 64px;
         padding-left: 16px;
         padding-right: 16px;
-    
-        display: flex;
-        align-items: center; /* align vertical */
-        justify-content: center;
     }
 }
 
@@ -19,10 +15,6 @@
         padding-bottom: 64px;
         padding-left: 24px;
         padding-right: 24px;
-    
-        display: flex;
-        align-items: center; /* align vertical */
-        justify-content: center;
     }    
 }
 
@@ -33,10 +25,6 @@
         padding-bottom: 64px;
         padding-left: 64px;
         padding-right: 64px;
-    
-        display: flex;
-        align-items: center; /* align vertical */
-        justify-content: center;
     }    
 }
 
@@ -47,10 +35,6 @@
         padding-bottom: 64px;
         padding-left: 192px;
         padding-right: 192px;
-    
-        display: flex;
-        align-items: center; /* align vertical */
-        justify-content: center;
     }    
 }
 
@@ -61,9 +45,5 @@
         padding-bottom: 64px;
         padding-left: 320px;
         padding-right: 320px;
-    
-        display: flex;
-        align-items: center; /* align vertical */
-        justify-content: center;
     }    
 }
