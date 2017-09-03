@@ -5,17 +5,35 @@
 }
 
 .profile-picture-about {
-    height: 300px;
-    width: 300px;
-    max-height: 300px;
-    max-width: 300px;
-    min-height: 300px;
-    min-width: 300px;
-
-    margin-right: 60px;
+    display: none;
+    height: 100px;
+    width: 100px;
+    max-height: 100px;
+    max-width: 100px;
+    min-height: 100px;
+    min-width: 100px;
 
     border-radius: 360px;
-    border: 4px solid rgba(76, 175, 80, 0.6);
+    border: 2px solid rgba(76, 175, 80, 0.6);
+}
+
+/* desktop-medium */
+@media all and (min-width: 841px) {    
+    .profile-picture-about {
+        display: block;
+        
+        height: 300px;
+        width: 300px;
+        max-height: 300px;
+        max-width: 300px;
+        min-height: 300px;
+        min-width: 300px;
+    
+        margin-right: 60px;
+    
+        border-radius: 360px;
+        border: 4px solid rgba(76, 175, 80, 0.6);
+    }
 }
 
 .about-text {
