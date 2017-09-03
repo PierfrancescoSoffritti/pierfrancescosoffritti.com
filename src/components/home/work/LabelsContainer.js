@@ -14,7 +14,7 @@ export default class LabelsContainer extends Component {
         return (
             <div className="labels-container">
                 <Label label="show all" />
-                { labelsArray.map(label => <Label key={label} label={label} />) }
+                { labelsArray.map(label => <Label commonAction="true" key={label} label={label} />) }
             </div>
         );
     }

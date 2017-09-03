@@ -7,7 +7,6 @@
     
     background-color: transparent;
 
-    border: 1px solid #4CAF50; /* Green */
     border-radius: 6px;
 
     -webkit-transition: all 300ms ease-in-out;
@@ -16,8 +15,36 @@
     transition: all 300ms ease-in-out;
 }
 
-.label:hover, .label-selected {
-    background-color: #4CAF50; /* Green */
+.label-minimal {    
+    padding: 5px;
+    margin: 2px;
+
+    text-align: center;
+    
+    background-color: transparent;
+
+    color: rgba(255, 255, 255, 0.90);
+
+    border-radius: 6px;
+    border: 1px solid rgba(32, 149, 243, 0.60);
+}
+
+.common-label {
+    border: 1px solid #4CAF50;
+}
+
+.special-label {
+    border: 1px solid rgba(32, 149, 243, 1);
+}
+
+.common-label:hover, .common-label-selected {
+    background-color: #4CAF50;
     color: white;
-    outline:0;
+    outline: 0;
+}
+
+.special-label:hover, .special-label-selected {
+    background-color: rgba(32, 149, 243, 1);
+    color: white;
+    outline: 0;
 }

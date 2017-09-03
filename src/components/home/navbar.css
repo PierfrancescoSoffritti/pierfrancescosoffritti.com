@@ -1,8 +1,29 @@
+/* desktop-x-small */
+@media all and (min-width: 0) and (max-width: 480px) { 
+    .navbar-dimensions {
+        height: 56px;
+        width: 100%;
+    }
+}
+
+/* desktop-small */
+@media all and (min-width: 481px) and (max-width: 840px) {
+    .navbar-dimensions {
+        height: 56px;
+        width: 100%;
+    }
+}
+
+/* desktop-medium */
+@media all and (min-width: 841px) {
+    .navbar-dimensions {
+        height: 88px;
+        width: 100%;
+    }
+}
+
 .navbar {
     position: fixed;
-    
-    height: 100px;
-    width: 100%;
 
     z-index: 100;
 

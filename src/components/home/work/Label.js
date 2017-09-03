@@ -4,10 +4,12 @@ import "./label.css"
 
 export default class Label extends Component {
     render () {
-        const {label} = this.props;
+
+        const {label, minimalStyle, commonAction} = this.props;
+        const className = minimalStyle ? "label-minimal" : commonAction ? "label common-label " : "label special-label ";
 
         return (
-            <label className="label" >{label}</label >    
+            <label className={className} >{label}</label >    
         );
     }
 }

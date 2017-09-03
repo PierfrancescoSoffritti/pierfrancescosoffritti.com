@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 
+import Label from "./Label"
+
 import "./project.css"
+
 export default class Project extends Component {
     render () {
         const { project } = this.props;
@@ -11,7 +14,10 @@ export default class Project extends Component {
             <div className={"project-card " +className}>
                 <img className="project-image" alt={project.name} src={project.img} />
                 <div className="info-bar">
-                    {project.name}
+                    <div>{project.name}</div>
+                    <div>
+                        { project.labels.map( label => <Label minimalStyle="true" key={label} label={label} /> ) }
+                    </div>
                 </div>
             </div>
         );

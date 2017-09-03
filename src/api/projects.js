@@ -10,13 +10,13 @@ export default {
         },
         {
             name: "Shuffly",
-            labels: [ "android", "web experiment", "web dev" ],
+            labels: [ "web exp", "web dev" ],
             img: img,
             highlight: false
         },
         {
             name: "test1",
-            labels: [ "android", "AR" ],
+            labels: [ "android", "ar" ],
             img: img,
             highlight: false
         },
