@@ -1,10 +1,69 @@
-.home-section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    padding-left: 20%;
-    padding-right: 20%;
+/* desktop-x-small */
+@media all and (min-width: 0) and (max-width: 480px) { 
+    .home-section {
+        padding-top: 64px;
+        padding-bottom: 64px;
+        padding-left: 16px;
+        padding-right: 16px;
+    
+        display: flex;
+        align-items: center; /* align vertical */
+        justify-content: center;
+    }
+}
 
-    display: flex;
-    align-items: center; /* align vertical */
-    justify-content: center;
+/* desktop-small */
+@media all and (min-width: 481px) and (max-width: 840px) {
+    .home-section {
+        padding-top: 64px;
+        padding-bottom: 64px;
+        padding-left: 24px;
+        padding-right: 24px;
+    
+        display: flex;
+        align-items: center; /* align vertical */
+        justify-content: center;
+    }    
+}
+
+/* desktop-medium */
+@media all and (min-width: 841px) and (max-width: 1280px) {
+    .home-section {
+        padding-top: 64px;
+        padding-bottom: 64px;
+        padding-left: 64px;
+        padding-right: 64px;
+    
+        display: flex;
+        align-items: center; /* align vertical */
+        justify-content: center;
+    }    
+}
+
+/* desktop-large */
+@media all and (min-width: 1281px) and (max-width: 1600px) { 
+    .home-section {
+        padding-top: 64px;
+        padding-bottom: 64px;
+        padding-left: 192px;
+        padding-right: 192px;
+    
+        display: flex;
+        align-items: center; /* align vertical */
+        justify-content: center;
+    }    
+}
+
+/* desktop-xlarge */
+@media all and (min-width: 1601px) and (max-width: 1920px) {
+    .home-section {
+        padding-top: 64px;
+        padding-bottom: 64px;
+        padding-left: 320px;
+        padding-right: 320px;
+    
+        display: flex;
+        align-items: center; /* align vertical */
+        justify-content: center;
+    }    
 }

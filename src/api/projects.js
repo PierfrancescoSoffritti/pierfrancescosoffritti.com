@@ -31,5 +31,10 @@ export default {
             name: "test4",
             labels: [ "android" ],
             img: img
+        },
+        {
+            name: "test5",
+            labels: [ "test1", "test2", "test3" ],
+            img: img
         } ] ) )
 }
