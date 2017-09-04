@@ -1,8 +1,20 @@
 /* desktop-x-small */
-@media all and (min-width: 0) and (max-width: 480px) { 
+@media all and (min-width: 0) and (max-width: 480px) {
     .navbar-dimensions {
         height: 56px;
         width: 100%;
+    }
+
+    .navbar-item-dimensions {
+        margin: 4px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .navbar-logo {
+        display: none;
     }
 }
 
@@ -12,6 +24,24 @@
         height: 56px;
         width: 100%;
     }
+
+    .navbar-item-dimensions {
+        margin: 8px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .navbar-logo {
+        margin: 20px;
+        padding: 16px;
+    
+        font-size: 18px;
+    
+        color: #333;
+        border: 2px dashed #f69c55;
+    }
 }
 
 /* desktop-medium */
@@ -19,6 +49,21 @@
     .navbar-dimensions {
         height: 88px;
         width: 100%;
+    }
+
+    .navbar-item-dimensions {
+        margin: 8px;
+        padding: 16px;
+    }
+
+    .navbar-logo {
+        margin: 20px;
+        padding: 16px;
+    
+        font-size: 18px;
+    
+        color: #333;
+        border: 2px dashed #f69c55;
     }
 }
 
@@ -34,10 +79,8 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 11px;
     text-transform: uppercase;
-    text-decoration: none;
     letter-spacing: 3px;
     font-weight: 700;
-    font-style: normal;
     line-height: 1em;
     color: #333;
 
@@ -53,9 +96,6 @@
 }
 
 .navbar-item {
-    margin: 8px;
-    padding: 18px;
-
     border-radius: 4px;
 
     -webkit-transition: all 200ms ease-in-out;
@@ -71,14 +111,4 @@
     transition: all 200ms ease-in;
 
     background-color: rgba(0, 0, 0, 0.05);
-}
-
-.navbar-logo {
-    margin: 20px;
-    padding: 16px;
-
-    font-size: 18px;
-
-    color: #333;
-    border: 2px dashed #f69c55;
 }

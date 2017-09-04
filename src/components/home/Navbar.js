@@ -11,11 +11,11 @@ export default class Navbar extends Component {
         return (
             <div>
                 <div className={"navbar navbar-dimensions " +className} >
-                    <span className="navbar-item">about</span>
-                    <span className="navbar-item">work</span>
+                    <span className="navbar-item navbar-item-dimensions">about</span>
+                    <span className="navbar-item navbar-item-dimensions">work</span>
                     <span className="navbar-logo">logo</span>
-                    <span className="navbar-item">blog</span>
-                    <span className="navbar-item">contact</span>
+                    <span className="navbar-item navbar-item-dimensions">blog</span>
+                    <span className="navbar-item navbar-item-dimensions">contact</span>
                 </div>
                 <div className="navbar-dimensions"/>
             </div>
