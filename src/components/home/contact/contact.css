@@ -3,6 +3,8 @@
     grid-template-columns: auto;
     grid-row-gap: 16px;
 
+    margin-bottom: 24px;
+
     font-size: 11px;
     line-height: 2em;
     text-transform: uppercase;

@@ -30,7 +30,6 @@
 /* desktop-x-small */
 @media all and (min-width: 0) and (max-width: 480px) { 
     .contact-item-icon-margin {
-        margin-top: 8px;
         margin-bottom: 8px;
         margin-right: 8px;
     }
@@ -43,7 +42,6 @@
 /* desktop-small */
 @media all and (min-width: 481px) {
     .contact-item-icon-margin {
-        margin-top: 8px;
         margin-bottom: 8px;
         margin-right: 16px;
     }
