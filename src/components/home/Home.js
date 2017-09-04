@@ -81,10 +81,12 @@ class Home extends Component {
         return (
             <div className="root-home" ref={ element => this.root = element } >
                 <div ref={ element => this.toolbar = element }><Navbar elements={SECTIONS} currentSection={currentSection} currentScroll={currentScroll} /></div>
-                <Header />
-                { SECTIONS
-                    .filter( section => section.component )
-                    .map( section => <div key={section.name} ref={section.name}><section.component name={section.name} onEnter={this.onSectionEnter} /></div> ) }
+                <div className="home-grid">
+                    <Header />
+                    { SECTIONS
+                        .filter( section => section.component )
+                        .map( section => <div key={section.name} ref={section.name}><section.component name={section.name} onEnter={this.onSectionEnter} /></div> ) }
+                </div>
             </div>
         );
     }

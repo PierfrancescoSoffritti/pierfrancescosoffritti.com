@@ -8,3 +8,30 @@
     margin: 0;
     padding: 0;
 }
+
+/* desktop-x-small */
+@media all and (min-width: 0) and (max-width: 480px) { 
+    .home-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 48px;
+    }
+}
+
+/* desktop-small */
+@media all and (min-width: 481px) and (max-width: 840px) {
+    .home-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 64px;
+    }
+}
+
+/* desktop-medium */
+@media all and (min-width: 841px) {
+    .home-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 64px;
+    }
+}

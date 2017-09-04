@@ -1,22 +1,17 @@
-html, #root {
+body, html, #root {
     width: 100%;
-
-    overflow-x: hidden;
-
+    
     margin: 0;
     padding: 0;
+}
+
+html, #root {
+    overflow-x: hidden;
 
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     letter-spacing: 2px;
     color: #333;
-}
-
-body {
-    width: 100%;
-    
-    margin: 0;
-    padding: 0;
 }
 
 a {

@@ -25,7 +25,7 @@
 /* desktop-large */
 @media all and (min-width: 1281px) and (max-width: 1600px) { 
     .header-header {
-        height: 75vh;
+        height: 70vh;
         width: 100%;
     }
 }
