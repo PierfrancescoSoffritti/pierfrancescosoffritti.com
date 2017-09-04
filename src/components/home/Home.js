@@ -12,11 +12,31 @@ import Contact from "./contact/Contact";
 
 import "./home.css"
 
+
+const SECTIONS = [
+    {
+        name: "about",
+        component: About
+    },
+    {
+        name: "work",
+        component: Work
+    },
+    {
+        name: "blog",
+        component: null
+    },
+    {
+        name: "contact",
+        component: Contact
+    }
+]   
+
 class Home extends Component {
     constructor(props) {
         super(props);
 
-        this.state = { currentScroll: 0 };
+        this.state = { currentScroll: 0, currentSection: "" };
     }
 
     componentWillMount = () => {
@@ -36,15 +56,18 @@ class Home extends Component {
         this.setState({ currentScroll: scrollTop });
     }
 
+    onSectionEnter = sectionName => {
+        this.setState( { currentSection: sectionName } )
+    }
+
     render = () => {
+        const {currentSection, currentScroll } = this.state;
+        
         return (
             <div className="root-home" ref={ element => this.root = element } >
-                <Navbar currentScroll={this.state.currentScroll} />
+                <Navbar elements={SECTIONS} currentSection={currentSection} currentScroll={currentScroll} />
                 <Header />
-                <About />
-                <Work />
-                {/* <Blog /> */}
-                <Contact />
+                { SECTIONS.filter( section => section.component ).map( section => <section.component key={section.name} name={section.name} onEnter={this.onSectionEnter} /> ) }
             </div>
         );
     }

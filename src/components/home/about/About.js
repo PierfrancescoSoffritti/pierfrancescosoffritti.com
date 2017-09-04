@@ -6,9 +6,12 @@ import "../../_common/common.css"
 import "./about.css"
 
 export default class About extends Component {
+
     render () {
+        const { name, onEnter } = this.props;
+
         return (
-            <div className="home-section container-about">                
+            <div className="home-section container-about">        
                 <img className="profile-picture-about" alt="profilepic" src={profilePic} />
                 <div className="about-text">
                     <span className="about-text-hello">Hello! I'm <span className="about-name">Pier</span></span>

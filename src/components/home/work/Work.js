@@ -31,8 +31,8 @@ class Work extends Component {
         this.setState( { activeLabels: [] } );
     }
 
-    render () {
-        const { projects } = this.props;
+    render () {      
+        const { projects, name, onEnter } = this.props;
         const { activeLabels } = this.state;
 
         const labels = new Set();

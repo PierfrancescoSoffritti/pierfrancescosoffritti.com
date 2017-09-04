@@ -18,7 +18,7 @@
     /* background-color: rgba(0, 0, 0, 0.04);
 
     box-shadow: 0 4px 6px rgba(0,0,0,0.3); */
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 
     border-radius: 360px;
 }

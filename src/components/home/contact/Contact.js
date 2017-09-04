@@ -14,11 +14,14 @@ class Contact extends Component {
         this.props.fetchSocials()
     }
 
+    _handleWaypointEnter = () => {
+        console.log("enter contact")
+    }
+
     render () {
-        let { socials } = this.props;
+        let { socials, name, onEnter } = this.props;
 
         const email = socials.find( social => social.name === "email");
-        console.log(email)
         
         const index = socials.indexOf(email);
         socials = socials.splice(index, 1);
