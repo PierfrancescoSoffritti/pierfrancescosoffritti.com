@@ -45,16 +45,15 @@ class Home extends Component {
     }
 
     componentDidMount = () => {        
-        this.root.addEventListener("scroll", this.handleScroll);        
+        window.addEventListener("scroll", this.handleScroll);
     }
     
     componentWillUnmount = () => {
-        this.root.removeEventListener('scroll', this.handleScroll);
+        window.removeEventListener('scroll', this.handleScroll);
     }
 
     handleScroll = event => {
-        console.log(this.root)
-        let scrollTop = event.srcElement.scrollTop;
+        const scrollTop = this.toolbar.getBoundingClientRect().top *-1
         this.setState({ currentScroll: scrollTop });
         
         let inSection = false;
@@ -81,11 +80,11 @@ class Home extends Component {
         
         return (
             <div className="root-home" ref={ element => this.root = element } >
-                <Navbar elements={SECTIONS} currentSection={currentSection} currentScroll={currentScroll} />
+                <div ref={ element => this.toolbar = element }><Navbar elements={SECTIONS} currentSection={currentSection} currentScroll={currentScroll} /></div>
                 <Header />
                 { SECTIONS
                     .filter( section => section.component )
-                    .map( section => <div ref={section.name}><section.component key={section.name} name={section.name} onEnter={this.onSectionEnter} /></div> ) }
+                    .map( section => <div key={section.name} ref={section.name}><section.component name={section.name} onEnter={this.onSectionEnter} /></div> ) }
             </div>
         );
     }

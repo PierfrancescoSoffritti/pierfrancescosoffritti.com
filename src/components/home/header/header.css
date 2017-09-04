@@ -1,6 +1,43 @@
-.header-header {
-    height: 75%;
-    width: 100%;
+/* desktop-x-small */
+@media all and (min-width: 0) and (max-width: 480px) { 
+    .header-header {
+        height: 65vh;
+        width: 100%;
+    }
+}
 
-    /* background-color: rgba(0, 0, 0, 0.04); */
+/* desktop-small */
+@media all and (min-width: 481px) and (max-width: 840px) {
+    .header-header {
+        height: 65vh;
+        width: 100%;
+    }
+}
+
+/* desktop-medium */
+@media all and (min-width: 841px) and (max-width: 1280px) {
+    .header-header {
+        height: 75vh;
+        width: 100%;
+    }
+}
+
+/* desktop-large */
+@media all and (min-width: 1281px) and (max-width: 1600px) { 
+    .header-header {
+        height: 75vh;
+        width: 100%;
+    }
+}
+
+/* desktop-xlarge */
+@media all and (min-width: 1601px) {
+    .header-header {
+        height: 75vh;
+        width: 100%;
+    }   
+}
+
+.header-header {
+    background-color: black;
 }

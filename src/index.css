@@ -1,5 +1,4 @@
-html, body, #root {
-    height: 100%;
+html, #root {
     width: 100%;
 
     overflow-x: hidden;
@@ -11,6 +10,13 @@ html, body, #root {
     font-size: 12px;
     letter-spacing: 2px;
     color: #333;
+}
+
+body {
+    width: 100%;
+    
+    margin: 0;
+    padding: 0;
 }
 
 a {
