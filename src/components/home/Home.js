@@ -37,6 +37,7 @@ class Home extends Component {
         super(props);
 
         this.state = { currentScroll: 0, currentSection: "" };
+        this.elements = SECTIONS.filter( section => section.component ).map( section => section.component );
     }
 
     componentWillMount = () => {
@@ -44,7 +45,7 @@ class Home extends Component {
     }
 
     componentDidMount = () => {        
-        this.root.addEventListener("scroll", this.handleScroll);
+        this.root.addEventListener("scroll", this.handleScroll);        
     }
     
     componentWillUnmount = () => {
@@ -52,8 +53,23 @@ class Home extends Component {
     }
 
     handleScroll = event => {
+        console.log(this.root)
         let scrollTop = event.srcElement.scrollTop;
         this.setState({ currentScroll: scrollTop });
+        
+        let inSection = false;
+        for(let key in this.refs) {
+            const element = this.refs[key];
+            const boundingRect = element.getBoundingClientRect();
+            
+            if(boundingRect.top-100 < 0) {
+                this.onSectionEnter(key);
+                inSection = true;
+            }
+        }
+
+        if(!inSection)
+            this.onSectionEnter("");
     }
 
     onSectionEnter = sectionName => {
@@ -67,7 +83,9 @@ class Home extends Component {
             <div className="root-home" ref={ element => this.root = element } >
                 <Navbar elements={SECTIONS} currentSection={currentSection} currentScroll={currentScroll} />
                 <Header />
-                { SECTIONS.filter( section => section.component ).map( section => <section.component key={section.name} name={section.name} onEnter={this.onSectionEnter} /> ) }
+                { SECTIONS
+                    .filter( section => section.component )
+                    .map( section => <div ref={section.name}><section.component key={section.name} name={section.name} onEnter={this.onSectionEnter} /></div> ) }
             </div>
         );
     }
