@@ -37,7 +37,6 @@ class Home extends Component {
         super(props);
 
         this.state = { currentScroll: 0, currentSection: "" };
-        this.elements = SECTIONS.filter( section => section.component ).map( section => section.component );
     }
 
     componentWillMount = () => {
@@ -53,39 +52,53 @@ class Home extends Component {
     }
 
     handleScroll = event => {
-        const scrollTop = this.toolbar.getBoundingClientRect().top *-1
-        this.setState({ currentScroll: scrollTop });
-        
+        this._updateCurrentScroll();
+        this._updateCurrentSection();
+    }
+
+    _updateCurrentScroll = () => this.setState( { currentScroll: this._getCurrentScroll() } ) 
+    _getCurrentScroll = () => this.navbar.getBoundingClientRect().top *-1
+
+    _updateCurrentSection = () => {
+        const { refs } = this;
+
         let inSection = false;
-        for(let key in this.refs) {
-            const element = this.refs[key];
-            const boundingRect = element.getBoundingClientRect();
+        for(let key in refs) {
+            const boundingRect = refs[key].getBoundingClientRect();
             
-            if(boundingRect.top-100 < 0) {
-                this.onSectionEnter(key);
+            // this is a temporary hack. The home grids adds margin between its rows
+            const offset = 1.8;
+
+            if( boundingRect.top - this._getNavBarHeight() *offset <= 0 ) {
+                this._onEnterSection(key);
                 inSection = true;
             }
         }
 
         if(!inSection)
-            this.onSectionEnter("");
+            this._onEnterSection("");
     }
 
-    onSectionEnter = sectionName => {
-        this.setState( { currentSection: sectionName } )
-    }
+    _onEnterSection = sectionName => this.setState( { currentSection: sectionName } )
+    _getNavBarHeight = () => this.navbar.getBoundingClientRect().height
 
     render = () => {
-        const {currentSection, currentScroll } = this.state;
+        const { currentSection, currentScroll } = this.state;
         
         return (
-            <div className="root-home" ref={ element => this.root = element } >
-                <div ref={ element => this.toolbar = element }><Navbar elements={SECTIONS} currentSection={currentSection} currentScroll={currentScroll} /></div>
+            <div className="root-home" >
+                <div ref={ element => this.navbar = element }>
+                    <Navbar elements={SECTIONS} currentSection={currentSection} currentScroll={currentScroll} />
+                </div>
                 <div className="home-grid">
                     <Header />
                     { SECTIONS
                         .filter( section => section.component )
-                        .map( section => <div key={section.name} ref={section.name}><section.component name={section.name} onEnter={this.onSectionEnter} /></div> ) }
+                        .map( section =>
+                            <div key={section.name} ref={section.name}>
+                                <section.component name={section.name} />
+                            </div> 
+                        ) }
                 </div>
             </div>
         );

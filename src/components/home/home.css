@@ -15,6 +15,8 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-row-gap: 48px;
+
+        margin-bottom: 24px;
     }
 }
 
@@ -24,6 +26,8 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-row-gap: 64px;
+
+        margin-bottom: 24px;
     }
 }
 
@@ -33,5 +37,7 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-row-gap: 64px;
+
+        margin-bottom: 24px;
     }
 }

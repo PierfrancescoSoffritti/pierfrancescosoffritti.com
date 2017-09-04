@@ -32,7 +32,7 @@ class Work extends Component {
     }
 
     render () {      
-        const { projects, name, onEnter } = this.props;
+        const { projects } = this.props;
         const { activeLabels } = this.state;
 
         const labels = new Set();

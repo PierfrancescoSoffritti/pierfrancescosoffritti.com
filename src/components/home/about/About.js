@@ -8,8 +8,6 @@ import "./about.css"
 export default class About extends Component {
 
     render () {
-        const { name, onEnter } = this.props;
-
         return (
             <div className="home-section container-about">        
                 <img className="profile-picture-about" alt="profilepic" src={profilePic} />

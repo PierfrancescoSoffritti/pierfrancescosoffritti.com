@@ -19,7 +19,7 @@ class Contact extends Component {
     }
 
     render () {
-        let { socials, name, onEnter } = this.props;
+        let { socials } = this.props;
 
         const email = socials.find( social => social.name === "email");
         
