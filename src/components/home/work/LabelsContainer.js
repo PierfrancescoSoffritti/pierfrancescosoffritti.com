@@ -9,7 +9,7 @@ const LabelsContainer = ( {labels, activeLabels, onLabelClick, clearSelectedLabe
     for (let item of labels) labelsArray.push(item);
 
     return (
-        <div className="labels-container">
+        <div className="labels-container text-unselectable">
             <Label label="show all" selected={activeLabels.length === 0} onClick={clearSelectedLabels} />
             { labelsArray.map(label => <Label commonAction="true" key={label} label={label} selected={activeLabels.includes(label) } onClick={onLabelClick} />) }
         </div>

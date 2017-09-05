@@ -8,12 +8,12 @@ const Navbar = ({items, currentSection, currentScroll, onItemClick}) => {
 
         return (
             <div>
-                <div className={"navbar navbar-dimensions " +className} >
+                <div className={"navbar navbar-dimensions text-unselectable " +className} >
                     { items.map( item => {
                             return <span 
                                 key={item.name} 
                                 onClick={ev => onItemClick(item.name)}
-                                className={"navbar-item navbar-item-dimensions " + ( item.name === currentSection ? "navbar-item-selected" : "" )}>{item.name}</span>
+                                className={"navbar-item navbar-item-dimensions clickable " + ( item.name === currentSection ? "navbar-item-selected" : "" )}>{item.name}</span>
                         }
                     )}
                     

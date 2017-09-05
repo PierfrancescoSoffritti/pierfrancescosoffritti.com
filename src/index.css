@@ -64,3 +64,14 @@ a {
     75% { color: #FF5722; }
     100% { color: #2196F3; }
 }
+
+.text-unselectable {
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
+}
+
+.clickable {
+    cursor: pointer;
+}

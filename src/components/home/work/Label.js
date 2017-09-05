@@ -2,7 +2,7 @@ import React from 'react';
 
 import "./label.css"
 
-const Label = ( {label, selected, minimalStyle, commonAction, onClick} ) => {
+const Label = ( {label, selected, minimalStyle, commonAction, onClick = event => event } ) => {
 
     let className;
     
@@ -19,7 +19,7 @@ const Label = ( {label, selected, minimalStyle, commonAction, onClick} ) => {
     }
 
     return (
-        <label className={className} onClick={ ev => onClick(label) }>{label}</label >    
+        <label className={className +" clickable"} onClick={ ev => onClick(label) }>{label}</label >    
     );
 }
 
