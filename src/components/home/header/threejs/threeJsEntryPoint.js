@@ -1,4 +1,4 @@
-import SceneManager from "./sceneManager"
+import SceneManager from "./SceneManager"
 
 export default container => {
     window.onresize = resizeCanvas;

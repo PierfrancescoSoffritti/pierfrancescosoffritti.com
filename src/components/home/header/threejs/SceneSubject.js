@@ -45,7 +45,7 @@ export default scene => {
 
         material.alphaMap.offset.y = 0.55 + time * textureOffsetSpeed;
 
-        wireframe.material.color.setHSL( Math.sin(angle), 0.5, 0.5 );
+        wireframe.material.color.setHSL( Math.sin(angle*2), 0.5, 0.5 );
         
         const scale = (Math.sin(angle*8)+6.4)/5;
         wireframe.scale.set(scale, scale, scale)
