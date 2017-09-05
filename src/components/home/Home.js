@@ -9,7 +9,7 @@ import Navbar from "./Navbar";
 import Header from "./header/Header";
 import About from "./about/About";
 import Work from "./work/Work";
-import Blog from "./blog/Blog";
+// import Blog from "./blog/Blog";
 import Contact from "./contact/Contact";
 
 import "./home.css"
@@ -60,6 +60,12 @@ class Home extends Component {
 
     scrollToSection = sectionName => {
         const element = this.refs[sectionName]
+
+        // temporary hack, will implement a section in the page, dont have time at the momenet
+        if(sectionName === "blog") {
+            var win = window.open("https://medium.com/@soffritti.pierfrancesco/latest", '_blank');
+            win.focus();
+        }            
 
         if(!element) return;
 

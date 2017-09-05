@@ -6,6 +6,11 @@ export default ( canvas, container ) => {
     let height = canvas.height;
 
     const clock = new THREE.Clock();
+    const mousePosition = {
+        x: 0,
+        y: 0
+    }
+    const origin = new THREE.Vector3(0,0,0);
   
     // scene setup
     const scene = new THREE.Scene();
@@ -13,7 +18,7 @@ export default ( canvas, container ) => {
 
     const renderer = buildRender(width, height);
     const camera = buildCamera(width, height);
-    const light = buildLights(scene);
+    const ligth = buildLights(scene);
     
     const sceneSubjects = [];
     sceneSubjects.push(new TestSubject(scene));
@@ -43,21 +48,35 @@ export default ( canvas, container ) => {
     }
 
     function buildLights(scene) {
-        const light = new THREE.SpotLight("#2222ff", 100);
-        light.position.y = 40;
-        light.position.z = 0;
-        light.position.x = -40;
+        const lightIn = new THREE.PointLight("#4CAF50", 30);
+        const lightOut = new THREE.PointLight("#2196F3", 10);
+        lightOut.position.set(40,20,40);
 
-        scene.add(light);
+        scene.add(lightIn);
+        scene.add(lightOut);
 
-        return light;
+        return lightOut;
     }
 
     function update() {
+        const time = clock.getElapsedTime();
+
+        updateCameraPositionRelativeToMouse();
+
         for(let i=0; i<sceneSubjects.length; i++)
-        	sceneSubjects[i].update(clock.getElapsedTime());
+            sceneSubjects[i].update(time);
+        
+        const rad = 80;
+        const x = rad * Math.sin(time*0.2)
+        ligth.position.x = x;
 
         renderer.render(scene, camera);
+    }
+
+    function updateCameraPositionRelativeToMouse() {
+        camera.position.x += (  (mousePosition.x * 0.01) - camera.position.x ) * 0.01;
+        camera.position.y += ( -(mousePosition.y * 0.01) - camera.position.y ) * 0.01;
+        camera.lookAt(origin);
     }
 
     function onWindowResize() {
@@ -70,8 +89,14 @@ export default ( canvas, container ) => {
         renderer.setSize(width, height);
     }
 
+    function onMouseMove(x, y) {
+        mousePosition.x = x;
+        mousePosition.y = y;
+    }
+
     return {
         update,
-        onWindowResize
+        onWindowResize,
+        onMouseMove
     }
 }

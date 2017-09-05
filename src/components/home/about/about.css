@@ -34,52 +34,52 @@
         border-radius: 360px;
         border: 4px solid rgba(76, 175, 80, 0.6);
 
-        -webkit-animation: border-change 10000ms infinite;
-        -moz-animation: border-change 10000ms infinite;
-        -o-animation: border-change 10000ms infinite;
-        -ms-animation: border-change 10000ms infinite;
-        animation: border-change 10000ms infinite;
+        -webkit-animation: about-image-border-change 10000ms infinite;
+        -moz-animation: about-image-border-change 10000ms infinite;
+        -o-animation: about-image-border-change 10000ms infinite;
+        -ms-animation: about-image-border-change 10000ms infinite;
+        animation: about-image-border-change 10000ms infinite;
     }
 }
 
-@-webkit-keyframes border-change {
-    0% { border: 4px solid rgba(33, 150, 243, 0.6); }
-    25% { border: 4px solid rgba(76, 175, 80, 0.6); }
-    50% { border: 4px solid rgba(255, 193, 7, 0.6); } 
-    75% { border: 4px solid rgba(255, 87, 34, 0.6); } 
-    100% { border: 4px solid rgba(33, 150, 243, 0.6); } 
+@-webkit-keyframes about-image-border-change {
+    0% { border: 4px solid rgba(33, 150, 243, 0.4); }
+    25% { border: 4px solid rgba(76, 175, 80, 0.4); }
+    50% { border: 4px solid rgba(255, 193, 7, 0.4); } 
+    75% { border: 4px solid rgba(255, 87, 34, 0.4); } 
+    100% { border: 4px solid rgba(33, 150, 243, 0.4); } 
 }
 
-@-moz-keyframes border-change {
-    0% { border: 4px solid rgba(33, 150, 243, 0.6); }
-    25% { border: 4px solid rgba(76, 175, 80, 0.6); }
-    50% { border: 4px solid rgba(255, 193, 7, 0.6); } 
-    75% { border: 4px solid rgba(255, 87, 34, 0.6); } 
-    100% { border: 4px solid rgba(33, 150, 243, 0.6); } 
+@-moz-keyframes about-image-border-change {
+    0% { border: 4px solid rgba(33, 150, 243, 0.4); }
+    25% { border: 4px solid rgba(76, 175, 80, 0.4); }
+    50% { border: 4px solid rgba(255, 193, 7, 0.4); } 
+    75% { border: 4px solid rgba(255, 87, 34, 0.4); } 
+    100% { border: 4px solid rgba(33, 150, 243, 0.4); } 
 }
 
-@-ms-keyframes border-change {
-    0% { border: 4px solid rgba(33, 150, 243, 0.6); }
-    25% { border: 4px solid rgba(76, 175, 80, 0.6); }
-    50% { border: 4px solid rgba(255, 193, 7, 0.6); } 
-    75% { border: 4px solid rgba(255, 87, 34, 0.6); } 
-    100% { border: 4px solid rgba(33, 150, 243, 0.6); } 
+@-ms-keyframes about-image-border-change {
+    0% { border: 4px solid rgba(33, 150, 243, 0.4); }
+    25% { border: 4px solid rgba(76, 175, 80, 0.4); }
+    50% { border: 4px solid rgba(255, 193, 7, 0.4); } 
+    75% { border: 4px solid rgba(255, 87, 34, 0.4); } 
+    100% { border: 4px solid rgba(33, 150, 243, 0.4); } 
 }
 
-@-o-keyframes border-change {
-    0% { border: 4px solid rgba(33, 150, 243, 0.6); }
-    25% { border: 4px solid rgba(76, 175, 80, 0.6); }
-    50% { border: 4px solid rgba(255, 193, 7, 0.6); } 
-    75% { border: 4px solid rgba(255, 87, 34, 0.6); } 
-    100% { border: 4px solid rgba(33, 150, 243, 0.6); } 
+@-o-keyframes about-image-border-change {
+    0% { border: 4px solid rgba(33, 150, 243, 0.4); }
+    25% { border: 4px solid rgba(76, 175, 80, 0.4); }
+    50% { border: 4px solid rgba(255, 193, 7, 0.4); } 
+    75% { border: 4px solid rgba(255, 87, 34, 0.4); } 
+    100% { border: 4px solid rgba(33, 150, 243, 0.4); } 
 }
 
-@keyframes border-change {
-    0% { border: 4px solid rgba(33, 150, 243, 0.6); }
-    25% { border: 4px solid rgba(76, 175, 80, 0.6); }
-    50% { border: 4px solid rgba(255, 193, 7, 0.6); } 
-    75% { border: 4px solid rgba(255, 87, 34, 0.6); } 
-    100% { border: 4px solid rgba(33, 150, 243, 0.6); } 
+@keyframes about-image-border-change {
+    0% { border: 4px solid rgba(33, 150, 243, 0.4); }
+    25% { border: 4px solid rgba(76, 175, 80, 0.4); }
+    50% { border: 4px solid rgba(255, 193, 7, 0.4); } 
+    75% { border: 4px solid rgba(255, 87, 34, 0.4); } 
+    100% { border: 4px solid rgba(33, 150, 243, 0.4); } 
 }
 
 .about-text {

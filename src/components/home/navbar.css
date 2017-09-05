@@ -124,41 +124,41 @@
 }
 
 @-webkit-keyframes navbar-item-background-change {
-    0% { background-color: rgba(33, 150, 243, 0.4); }
-    25% { background-color: rgba(76, 175, 80, 0.4); }
-    50% { background-color: rgba(255, 193, 7, 0.4); }
-    75% { background-color: rgba(255, 87, 34, 0.4); }
-    100% { background-color: rgba(33, 150, 243, 0.4); }
+    0% { background-color: rgba(33, 150, 243, 0.2); }
+    25% { background-color: rgba(76, 175, 80, 0.2); }
+    50% { background-color: rgba(255, 193, 7, 0.2); }
+    75% { background-color: rgba(255, 87, 34, 0.2); }
+    100% { background-color: rgba(33, 150, 243, 0.2); }
 }
 
 @-moz-keyframes navbar-item-background-change {
-    0% { background-color: rgba(33, 150, 243, 0.4); }
-    25% { background-color: rgba(76, 175, 80, 0.4); }
-    50% { background-color: rgba(255, 193, 7, 0.4); }
-    75% { background-color: rgba(255, 87, 34, 0.4); }
-    100% { background-color: rgba(33, 150, 243, 0.4); }
+    0% { background-color: rgba(33, 150, 243, 0.2); }
+    25% { background-color: rgba(76, 175, 80, 0.2); }
+    50% { background-color: rgba(255, 193, 7, 0.2); }
+    75% { background-color: rgba(255, 87, 34, 0.2); }
+    100% { background-color: rgba(33, 150, 243, 0.2); }
 }
 
 @-ms-keyframes navbar-item-background-change {
-    0% { background-color: rgba(33, 150, 243, 0.4); }
-    25% { background-color: rgba(76, 175, 80, 0.4); }
-    50% { background-color: rgba(255, 193, 7, 0.4); }
-    75% { background-color: rgba(255, 87, 34, 0.4); }
-    100% { background-color: rgba(33, 150, 243, 0.4); }
+    0% { background-color: rgba(33, 150, 243, 0.2); }
+    25% { background-color: rgba(76, 175, 80, 0.2); }
+    50% { background-color: rgba(255, 193, 7, 0.2); }
+    75% { background-color: rgba(255, 87, 34, 0.2); }
+    100% { background-color: rgba(33, 150, 243, 0.2); }
 }
 
 @-o-keyframes navbar-item-background-change {
-    0% { background-color: rgba(33, 150, 243, 0.4); }
-    25% { background-color: rgba(76, 175, 80, 0.4); }
-    50% { background-color: rgba(255, 193, 7, 0.4); }
-    75% { background-color: rgba(255, 87, 34, 0.4); }
-    100% { background-color: rgba(33, 150, 243, 0.4); }
+    0% { background-color: rgba(33, 150, 243, 0.2); }
+    25% { background-color: rgba(76, 175, 80, 0.2); }
+    50% { background-color: rgba(255, 193, 7, 0.2); }
+    75% { background-color: rgba(255, 87, 34, 0.2); }
+    100% { background-color: rgba(33, 150, 243, 0.2); }
 }
 
 @keyframes navbar-item-background-change {
-    0% { background-color: rgba(33, 150, 243, 0.4); }
-    25% { background-color: rgba(76, 175, 80, 0.4); }
-    50% { background-color: rgba(255, 193, 7, 0.4); }
-    75% { background-color: rgba(255, 87, 34, 0.4); }
-    100% { background-color: rgba(33, 150, 243, 0.4); }
+    0% { background-color: rgba(33, 150, 243, 0.2); }
+    25% { background-color: rgba(76, 175, 80, 0.2); }
+    50% { background-color: rgba(255, 193, 7, 0.2); }
+    75% { background-color: rgba(255, 87, 34, 0.2); }
+    100% { background-color: rgba(33, 150, 243, 0.2); }
 }

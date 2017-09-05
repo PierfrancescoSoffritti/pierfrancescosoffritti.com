@@ -2,9 +2,13 @@ import SceneManager from "./sceneManager"
 
 export default container => {
     window.onresize = resizeCanvas;
+    window.onmousemove = mouseMove;
 
     const canvas = createCanvas(document, container);
     const sceneManager = new SceneManager(canvas, container);
+
+    let canvasHalfWidth;
+    let canvasHalfHeight;
 
     resizeCanvas();
     render();
@@ -22,7 +26,14 @@ export default container => {
         canvas.width  = canvas.offsetWidth;
         canvas.height = canvas.offsetHeight;
 
+        canvasHalfWidth = Math.round(canvas.offsetWidth/2);
+        canvasHalfHeight = Math.round(canvas.offsetHeight/2);
+
         sceneManager.onWindowResize()
+    }
+
+    function mouseMove({screenX, screenY}) {
+        sceneManager.onMouseMove(screenX-canvasHalfWidth, screenY-canvasHalfHeight);
     }
 
     function render(time) {
