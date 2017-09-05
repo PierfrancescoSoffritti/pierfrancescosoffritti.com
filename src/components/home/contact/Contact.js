@@ -14,22 +14,23 @@ class Contact extends Component {
         this.props.fetchSocials()
     }
 
-    _handleWaypointEnter = () => {
-        console.log("enter contact")
-    }
-
-    render () {
-        let { socials } = this.props;
-
+    _extractEmail = socials => {
         const email = socials.find( social => social.name === "email");
         
         const index = socials.indexOf(email);
-        socials = socials.splice(index, 1);
+        const filteredSocials = socials.splice(index, 1);
+
+        return { filteredSocials, email}
+    }    
+
+    render () {
+        const { socials } = this.props;
+        const { email, filteredSocials } = this._extractEmail(socials);
 
         return (
             <div className="home-section contact-container">
                 <div>
-                    Send me an email you want to talk about tech
+                    Send me an email if you want to talk about tech
                     <br/>or if you want to dicuss the Ultimate Question of Life, the Universe and Everything ( <a href="https://en.wikipedia.org/wiki/Phrases_from_The_Hitchhiker%27s_Guide_to_the_Galaxy#Answer_to_the_Ultimate_Question_of_Life.2C_the_Universe.2C_and_Everything_.2842.29" target="blank">6 &#215; 9</a> )
                 </div>
 
@@ -38,7 +39,7 @@ class Contact extends Component {
                 </div>
 
                 <div className="contact-social-group">
-                    { socials.map( social => <ContactItem key={social.name} icon={social.icon} text={social.text} url={social.url} />) }
+                    { filteredSocials.map( social => <ContactItem key={social.name} icon={social.icon} text={social.text} url={social.url} />) }
                 </div>
             </div>
         );

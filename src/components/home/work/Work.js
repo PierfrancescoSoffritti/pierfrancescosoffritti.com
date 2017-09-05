@@ -15,15 +15,7 @@ class Work extends Component {
     }
 
     onLabelClick = label => {
-        const { activeLabels } = this.state;
-
-        const index = activeLabels.indexOf(label);
-        if( index > -1 ) {
-            activeLabels.splice(index, 1);
-        } else {
-            activeLabels.push(label);
-        }
-
+        const activeLabels = this._addRemoveLabel( label, this.state.activeLabels );
         this.setState( { activeLabels } );
     }
 
@@ -31,12 +23,27 @@ class Work extends Component {
         this.setState( { activeLabels: [] } );
     }
 
+    _addRemoveLabel = (label, activeLabels) => {
+        const index = activeLabels.indexOf(label);
+        if( index > -1 )
+            activeLabels.splice(index, 1);
+        else
+            activeLabels.push(label);
+
+        return activeLabels;
+    }
+
+    _getAllLabelsFromProjects = projects => {
+        const labels = new Set();
+        projects.forEach( project => project.labels.forEach( label => labels.add(label) ) );
+        return labels;
+    }
+
     render () {      
         const { projects } = this.props;
         const { activeLabels } = this.state;
 
-        const labels = new Set();
-        projects.forEach( project => project.labels.forEach( label => labels.add(label) ) );
+        const labels = this._getAllLabelsFromProjects(projects);
 
         return (
             <div className="home-section work-container">

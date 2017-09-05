@@ -2,13 +2,13 @@ import React from 'react';
 
 import "./label.css"
 
-const Label = ( {label, selected, minimalStyle, commonAction, onClick = event => event } ) => {
+const Label = ( {label, selected, minimalStyle, isCommon, onClick = event => event } ) => {
 
     let className;
     
     if(minimalStyle)
         className = "label-minimal";
-    else if(commonAction) {
+    else if(isCommon) {
         className = "label common-label "
         if(selected)
             className += "common-label-selected";

@@ -61,11 +61,12 @@ class Home extends Component {
     scrollToSection = sectionName => {
         const element = this.refs[sectionName]
 
-        // temporary hack, will implement a section in the page, dont have time at the momenet
+        // temporary hack, will implement a section in the page, dont have time to do it right now
         if(sectionName === "blog") {
             var win = window.open("https://medium.com/@soffritti.pierfrancesco/latest", '_blank');
             win.focus();
         }            
+        // ----
 
         if(!element) return;
 

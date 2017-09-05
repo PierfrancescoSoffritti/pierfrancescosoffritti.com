@@ -22,6 +22,7 @@ const Navbar = ({items, currentSection, currentScroll, onItemClick}) => {
                     <span className="navbar-logo">logo</span>
                     <span className="navbar-item navbar-item-dimensions">blog</span>
                     <span className="navbar-item navbar-item-dimensions">contact</span> */}
+                    
                 </div>
                 <div className="navbar-dimensions"/>
             </div>
