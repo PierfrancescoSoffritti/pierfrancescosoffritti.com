@@ -112,3 +112,53 @@
 
     background-color: rgba(0, 0, 0, 0.05);
 }
+
+.navbar-item-selected {
+    border-radius: 4px;
+
+    -webkit-animation: navbar-item-background-change 10000ms infinite;
+    -moz-animation: navbar-item-background-change 10000ms infinite;
+    -o-animation: navbar-item-background-change 10000ms infinite;
+    -ms-animation: navbar-item-background-change 10000ms infinite;
+    animation: navbar-item-background-change 10000ms infinite;
+}
+
+@-webkit-keyframes navbar-item-background-change {
+    0% { background-color: rgba(33, 150, 243, 0.4); }
+    25% { background-color: rgba(76, 175, 80, 0.4); }
+    50% { background-color: rgba(255, 193, 7, 0.4); }
+    75% { background-color: rgba(255, 87, 34, 0.4); }
+    100% { background-color: rgba(33, 150, 243, 0.4); }
+}
+
+@-moz-keyframes navbar-item-background-change {
+    0% { background-color: rgba(33, 150, 243, 0.4); }
+    25% { background-color: rgba(76, 175, 80, 0.4); }
+    50% { background-color: rgba(255, 193, 7, 0.4); }
+    75% { background-color: rgba(255, 87, 34, 0.4); }
+    100% { background-color: rgba(33, 150, 243, 0.4); }
+}
+
+@-ms-keyframes navbar-item-background-change {
+    0% { background-color: rgba(33, 150, 243, 0.4); }
+    25% { background-color: rgba(76, 175, 80, 0.4); }
+    50% { background-color: rgba(255, 193, 7, 0.4); }
+    75% { background-color: rgba(255, 87, 34, 0.4); }
+    100% { background-color: rgba(33, 150, 243, 0.4); }
+}
+
+@-o-keyframes navbar-item-background-change {
+    0% { background-color: rgba(33, 150, 243, 0.4); }
+    25% { background-color: rgba(76, 175, 80, 0.4); }
+    50% { background-color: rgba(255, 193, 7, 0.4); }
+    75% { background-color: rgba(255, 87, 34, 0.4); }
+    100% { background-color: rgba(33, 150, 243, 0.4); }
+}
+
+@keyframes navbar-item-background-change {
+    0% { background-color: rgba(33, 150, 243, 0.4); }
+    25% { background-color: rgba(76, 175, 80, 0.4); }
+    50% { background-color: rgba(255, 193, 7, 0.4); }
+    75% { background-color: rgba(255, 87, 34, 0.4); }
+    100% { background-color: rgba(33, 150, 243, 0.4); }
+}

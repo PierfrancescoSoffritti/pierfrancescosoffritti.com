@@ -10,10 +10,10 @@ const Navbar = ({items, currentSection, currentScroll, onItemClick}) => {
             <div>
                 <div className={"navbar navbar-dimensions " +className} >
                     { items.map( item => {
-                            if(item.name === currentSection)
-                                return <a key={item.name} onClick={ev => onItemClick(item.name)} className="navbar-item navbar-item-dimensions">{item.name}</a>
-                            else    
-                                return <span key={item.name} onClick={ev => onItemClick(item.name)} className="navbar-item navbar-item-dimensions">{item.name}</span>
+                            return <span 
+                                key={item.name} 
+                                onClick={ev => onItemClick(item.name)}
+                                className={"navbar-item navbar-item-dimensions " + ( item.name === currentSection ? "navbar-item-selected" : "" )}>{item.name}</span>
                         }
                     )}
                     

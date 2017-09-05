@@ -86,10 +86,16 @@ class Home extends Component {
             }
         }
 
+        if(this._isScrollBottom()) {
+            this._onEnterSection("contact");
+            inSection = true;
+        }
+
         if(!inSection)
             this._onEnterSection("");
     }
 
+    _isScrollBottom = () => document.body.scrollHeight === document.body.scrollTop + window.innerHeight;
     _onEnterSection = sectionName => this.setState( { currentSection: sectionName } )
     _getNavBarHeight = () => this.navbar.getBoundingClientRect().height
 
