@@ -11,7 +11,7 @@ export default class Project extends Component {
         const className = project.highlight ? "highlight-card" : "normal-card"
 
         return (
-            <div className={"project-card clickable " +className}>
+            <div className={"project-card clickable text-unselectable " +className}>
                 <img className="project-image" alt={project.name} src={project.img} />
                 <div className="info-bar">
                     <div>{project.name}</div>

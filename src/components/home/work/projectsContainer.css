@@ -56,3 +56,21 @@
 		grid-row-gap: 24px;
 	}
 }
+
+.react-animation-enter {
+	opacity: 0.01;
+}
+
+.react-animation-enter.react-animation-enter-active {
+	opacity: 1;
+	transition: all 300ms ease-in-out;
+}
+
+.react-animation-leave {
+	opacity: 1;
+}
+
+.react-animation-leave.react-animation-leave-active {
+	opacity: 0.01;
+	transition: all 300ms ease-in-out;
+}

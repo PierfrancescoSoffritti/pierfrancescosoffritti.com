@@ -1,5 +1,5 @@
 import * as THREE from 'three'
-import TestSubject from "./TestSubject"
+import SceneSubject from "./SceneSubject"
 
 export default ( canvas, container ) => {
     let width = canvas.width;
@@ -21,7 +21,7 @@ export default ( canvas, container ) => {
     const ligth = buildLights(scene);
     
     const sceneSubjects = [];
-    sceneSubjects.push(new TestSubject(scene));
+    sceneSubjects.push(new SceneSubject(scene));
 
     function buildRender(width, height) {
         const renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: true, alpha: true }); 
@@ -62,13 +62,10 @@ export default ( canvas, container ) => {
         const time = clock.getElapsedTime();
 
         updateCameraPositionRelativeToMouse();
+        moveLight(time);
 
         for(let i=0; i<sceneSubjects.length; i++)
             sceneSubjects[i].update(time);
-        
-        const rad = 80;
-        const x = rad * Math.sin(time*0.2)
-        ligth.position.x = x;
 
         renderer.render(scene, camera);
     }
@@ -77,6 +74,12 @@ export default ( canvas, container ) => {
         camera.position.x += (  (mousePosition.x * 0.01) - camera.position.x ) * 0.01;
         camera.position.y += ( -(mousePosition.y * 0.01) - camera.position.y ) * 0.01;
         camera.lookAt(origin);
+    }
+
+    function moveLight(time) {
+        const rad = 80;
+        const x = rad * Math.sin(time*0.2)
+        ligth.position.x = x;
     }
 
     function onWindowResize() {

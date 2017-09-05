@@ -1,5 +1,3 @@
-import img from "../assets/images/nowherelands.png";
-
 export default {
     fetchProjects: () => new Promise( (resolve, reject) => resolve( [
         {
@@ -35,7 +33,7 @@ export default {
         {
             name: "test4",
             labels: [ "android" ],
-            img: img,
+            img: "https://github.com/PierfrancescoSoffritti/pierfrancescosoffritti.com/blob/gh-pages/img/portfolio/collatz.jpg?raw=true",
             highlight: false
         },
         {
