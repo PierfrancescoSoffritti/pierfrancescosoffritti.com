@@ -13,6 +13,7 @@
     "react-scripts": "1.0.12",
     "redux": "^3.7.2",
     "redux-thunk": "^2.2.0",
+    "scroll-to-element": "^2.0.0",
     "three": "^0.87.1"
   },
   "scripts": {

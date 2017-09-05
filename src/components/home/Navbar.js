@@ -2,18 +2,18 @@ import React from 'react';
 
 import "./navbar.css"
 
-const Navbar = ({elements, currentSection, currentScroll}) => {
+const Navbar = ({items, currentSection, currentScroll, onItemClick}) => {
 
         const className = currentScroll === 0 ? "" : "elevated";
 
         return (
             <div>
                 <div className={"navbar navbar-dimensions " +className} >
-                    { elements.map( element => {
-                            if(element.name === currentSection)
-                                return <a key={element.name} className="navbar-item navbar-item-dimensions">{element.name}</a>
+                    { items.map( item => {
+                            if(item.name === currentSection)
+                                return <a key={item.name} onClick={ev => onItemClick(item.name)} className="navbar-item navbar-item-dimensions">{item.name}</a>
                             else    
-                                return <span key={element.name} className="navbar-item navbar-item-dimensions">{element.name}</span>
+                                return <span key={item.name} onClick={ev => onItemClick(item.name)} className="navbar-item navbar-item-dimensions">{item.name}</span>
                         }
                     )}
                     

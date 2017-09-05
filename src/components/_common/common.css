@@ -1,6 +1,8 @@
 /* desktop-x-small */
 @media all and (min-width: 0) and (max-width: 480px) { 
     .home-section {
+        padding-top: 24px;
+        padding-bottom: 24px;
         padding-left: 16px;
         padding-right: 16px;
     }
@@ -9,6 +11,8 @@
 /* desktop-small */
 @media all and (min-width: 481px) and (max-width: 840px) {
     .home-section {
+        padding-top: 32px;
+        padding-bottom: 32px;
         padding-left: 24px;
         padding-right: 24px;
     }    
@@ -17,6 +21,8 @@
 /* desktop-medium */
 @media all and (min-width: 841px) and (max-width: 1280px) {
     .home-section {
+        padding-top: 32px;
+        padding-bottom: 32px;
         padding-left: 64px;
         padding-right: 64px;
     }    
@@ -25,6 +31,8 @@
 /* desktop-large */
 @media all and (min-width: 1281px) and (max-width: 1600px) { 
     .home-section {
+        padding-top: 32px;
+        padding-bottom: 32px;
         padding-left: 192px;
         padding-right: 192px;
     }    
@@ -33,6 +41,8 @@
 /* desktop-xlarge */
 @media all and (min-width: 1601px) {
     .home-section {
+        padding-top: 32px;
+        padding-bottom: 32px;
         padding-left: 320px;
         padding-right: 320px;
     }    

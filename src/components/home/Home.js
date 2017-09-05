@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
+import scrollToElement from 'scroll-to-element';
+
 import { fetchProjects } from "../../redux/actions/projects";
 
 import Navbar from "./Navbar";
@@ -56,6 +58,18 @@ class Home extends Component {
         this._updateCurrentSection();
     }
 
+    scrollToSection = sectionName => {
+        const element = this.refs[sectionName]
+
+        if(!element) return;
+
+        scrollToElement(element, {
+            offset: (this._getNavBarHeight()-1)*-1,
+            ease: 'inOutQuad',
+            duration: 600
+        });
+    }
+
     _updateCurrentScroll = () => this.setState( { currentScroll: this._getCurrentScroll() } ) 
     _getCurrentScroll = () => this.navbar.getBoundingClientRect().top *-1
 
@@ -65,11 +79,8 @@ class Home extends Component {
         let inSection = false;
         for(let key in refs) {
             const boundingRect = refs[key].getBoundingClientRect();
-            
-            // this is a temporary hack. The home grids adds margin between its rows
-            const offset = 1.8;
 
-            if( boundingRect.top - this._getNavBarHeight() *offset <= 0 ) {
+            if( boundingRect.top - this._getNavBarHeight() <= 0 ) {
                 this._onEnterSection(key);
                 inSection = true;
             }
@@ -88,18 +99,16 @@ class Home extends Component {
         return (
             <div className="root-home" >
                 <div ref={ element => this.navbar = element }>
-                    <Navbar elements={SECTIONS} currentSection={currentSection} currentScroll={currentScroll} />
+                    <Navbar items={SECTIONS} onItemClick={this.scrollToSection} currentSection={currentSection} currentScroll={currentScroll} />
                 </div>
-                <div className="home-grid">
-                    <Header />
-                    { SECTIONS
-                        .filter( section => section.component )
-                        .map( section =>
-                            <div key={section.name} ref={section.name}>
-                                <section.component name={section.name} />
-                            </div> 
-                        ) }
-                </div>
+                <Header />
+                { SECTIONS
+                    .filter( section => section.component )
+                    .map( section =>
+                        <div key={section.name} ref={section.name}>
+                            <section.component name={section.name} />
+                        </div> 
+                    ) }
             </div>
         );
     }

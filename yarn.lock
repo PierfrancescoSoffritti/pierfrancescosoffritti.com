@@ -1540,6 +1540,37 @@ commondir@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/commondir/-/commondir-1.0.1.tgz#ddd800da0c66127393cca5950ea968a3aaf1253b"
 
+component-clone@0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/component-clone/-/component-clone-0.2.2.tgz#c7f5979822880fad8cfb0962ba29186d061ee04f"
+  dependencies:
+    component-type "*"
+
+component-emitter@1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/component-emitter/-/component-emitter-1.2.0.tgz#ccd113a86388d06482d03de3fc7df98526ba8efe"
+
+component-raf@1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/component-raf/-/component-raf-1.2.0.tgz#b2bc72d43f1b014fde7a4b3c447c764bc73ccbaa"
+
+component-tween@1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/component-tween/-/component-tween-1.2.0.tgz#cc39ce5dbab05b52825f41d1947638a0b01b2b8a"
+  dependencies:
+    component-clone "0.2.2"
+    component-emitter "1.2.0"
+    component-type "1.1.0"
+    ease-component "1.0.0"
+
+component-type@*:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/component-type/-/component-type-1.2.1.tgz#8a47901700238e4fc32269771230226f24b415a9"
+
+component-type@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/component-type/-/component-type-1.1.0.tgz#95b666aad53e5c8d1f2be135c45b5d499197c0c5"
+
 compressible@~2.0.10:
   version "2.0.11"
   resolved "https://registry.yarnpkg.com/compressible/-/compressible-2.0.11.tgz#16718a75de283ed8e604041625a2064586797d8a"
@@ -2143,6 +2174,10 @@ duplexify@^3.1.2, duplexify@^3.4.2:
     inherits "^2.0.1"
     readable-stream "^2.0.0"
     stream-shift "^1.0.0"
+
+ease-component@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/ease-component/-/ease-component-1.0.0.tgz#b375726db0b5b04595b77440396fec7daa5d77c9"
 
 ecc-jsbn@~0.1.1:
   version "0.1.1"
@@ -5602,7 +5637,7 @@ promzard@^0.3.0:
   dependencies:
     read "1"
 
-prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.8:
+prop-types@^15.5.10, prop-types@^15.5.4:
   version "15.5.10"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.5.10.tgz#2797dfc3126182e3a95e3dfbb2e893ddd7456154"
   dependencies:
@@ -5848,13 +5883,6 @@ react-scripts@1.0.12:
     whatwg-fetch "2.0.3"
   optionalDependencies:
     fsevents "1.1.2"
-
-react-scroll@^1.5.4:
-  version "1.5.4"
-  resolved "https://registry.yarnpkg.com/react-scroll/-/react-scroll-1.5.4.tgz#8c5c4ced659553be1fa39959776c85055fceb137"
-  dependencies:
-    object-assign "^4.1.1"
-    prop-types "^15.5.8"
 
 "react@^15 || ^16", react@^15.6.1:
   version "15.6.1"
@@ -6291,6 +6319,19 @@ schema-utils@^0.3.0:
   resolved "https://registry.yarnpkg.com/schema-utils/-/schema-utils-0.3.0.tgz#f5877222ce3e931edae039f17eb3716e7137f8cf"
   dependencies:
     ajv "^5.0.0"
+
+scroll-to-element@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/scroll-to-element/-/scroll-to-element-2.0.0.tgz#3467330e3384743b7295ac64b30279990c5ac164"
+  dependencies:
+    scroll-to "0.0.2"
+
+scroll-to@0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/scroll-to/-/scroll-to-0.0.2.tgz#936d398a9133660a2492145c2c0081dfcb0728f3"
+  dependencies:
+    component-raf "1.2.0"
+    component-tween "1.2.0"
 
 select-hose@^2.0.0:
   version "2.0.0"
