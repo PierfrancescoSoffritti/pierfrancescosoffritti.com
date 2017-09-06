@@ -18,7 +18,7 @@ class ProjectDetails extends Component {
                 <div className="project-details-navigate-back-button padding clickable text-unselectable" onClick={this.close}> 
                     <i className="fa fa-arrow-left project-details-icon" aria-hidden="true" /><span>show all projects</span>
                 </div>
-                { project ? <ProjectDetailsCard project={project} /> : <div className="project-not-found">project not found</div> }
+                { project ? <ProjectDetailsCard project={project} /> : <div className="project-not-found">Ouch, the project you are looking for doesn't exist .. yet!</div> }
             </div>
         );
     }
