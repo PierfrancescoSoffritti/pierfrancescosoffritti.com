@@ -33,7 +33,7 @@ export default {
         {
             id: "RemoteVR",
             name: "Remote VR",
-            description: "The RemoteVR project is a simple attempt to obtain platform/hardware independent multiplayer Virtual Reality in a way that should be affordable to almost anybody.<br/><br/>The gist of the idea is to run the VR application on a server and then connect many clients to it, allowing them to interact with the VR application in streaming.<br/><br/>Using this approach is easy to have more than one person in the same virtual environment. Also, those people can use different devices and OS to access the same VR experience.",
+            description: "RemoteVR is a simple attempt to obtain platform/hardware independent multiplayer Virtual Reality in a way that should be affordable to almost anybody.<br/><br/>The gist of the idea is to run the VR application on a server and then connect many clients to it, allowing them to interact with the VR application in streaming.<br/><br/>Using this approach is easy to have more than one person in the same virtual environment. Also, those people can use different devices and OS to access the same VR experience.",
             links: [ {url: "https://github.com/PierfrancescoSoffritti/RemoteVR_UnityServer", name: "Go to the Unity Server", icon: "github"}, {url: "https://github.com/PierfrancescoSoffritti/RemoteVR_AndroidClient", name:"Go to the Android Client", icon: "github"} ],
             secondaryLinks: [ ],
             labels: [ "VR", "android", "unity3D" ],
