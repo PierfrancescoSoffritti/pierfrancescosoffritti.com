@@ -30,20 +30,28 @@ const ProjectDetailsCard = ({ project, onClick }) => {
             <img className="project-details-image size" alt={project.name} src={project.img} />
             <div className="project-details-text padding">
                 <div className="project-details-title">{project.name}</div>
-                <div className="project-details-description">{project.description}</div>
+                <div className="project-details-description"><MultilineText text={project.description} /></div>
                 <div className="project-details-main-links">{project.links.map( link => ( 
                     <a className="project-details-link" key={link.url} href={link.url} target="blank">
-                        <i className={"fa fa-" +link.icon +" fa-2x project-details-icon"} aria-hidden="true" />{link.name}
+                        <i className={"fa fa-" +link.icon +" project-details-icon"} aria-hidden="true" />{link.name}
                     </a> ))}
                 </div>
                 <div className="project-details-secondary-links">{project.secondaryLinks.map( link => ( 
                     <a className="project-details-link" key={link.url} href={link.url} target="blank">
-                        <i className={"fa fa-" +link.icon +" fa-2x project-details-icon"} aria-hidden="true" />{link.name}
+                        <i className={"fa fa-" +link.icon +" project-details-icon"} aria-hidden="true" />{link.name}
                     </a> ))}
                 </div>
             </div>
         </div>
     )
+}
+
+const MultilineText = ({text}) => {
+    return (
+        <div>
+            { text.split("<br/>").map(textLine => <span>{textLine}<br/></span> ) }
+        </div>
+    );
 }
 
 const mapStateToProps = store => ({
