@@ -5,6 +5,20 @@ import { connect } from 'react-redux';
 import "./projectDetails.css"
 
 class ProjectDetails extends Component {
+
+    componentDidMount() {
+        document.addEventListener("keydown", this.handleKeyDown);
+    }
+
+    componentWillUnmount() {
+        document.removeEventListener("keydown", this.handleKeyDown);
+    }
+
+    handleKeyDown = event => {
+        if(event.keyCode === 27)
+            this.close();
+    }
+
     close = () => {
         this.props.history.push("");
     }
@@ -49,7 +63,7 @@ const ProjectDetailsCard = ({ project, onClick }) => {
 const MultilineText = ({text}) => {
     return (
         <div>
-            { text.split("<br/>").map(textLine => <span>{textLine}<br/></span> ) }
+            { text.split("<br/>").map( (textLine, index) => <span key={index} >{textLine}<br/></span> ) }
         </div>
     );
 }
