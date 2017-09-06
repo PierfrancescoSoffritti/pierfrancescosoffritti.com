@@ -14,9 +14,11 @@ class ProjectDetails extends Component {
         const project = this.props.projects.find( project => project.id === projectId);
 
         return (
-            <div className="project-details-dialog-container home-section">
-                { project && <ProjectDetailsCard project={project} onClick={this.close} /> }
-                { !project && <div>project not found</div> }
+            <div className="project-details-dialog-container margin home-section">
+                <div className="project-details-navigate-back-button padding clickable text-unselectable" onClick={this.close}> 
+                    <i className="fa fa-arrow-left project-details-icon" aria-hidden="true" /><span>show all projects</span>
+                </div>
+                { project ? <ProjectDetailsCard project={project} /> : <div className="project-not-found">project not found</div> }
             </div>
         );
     }
@@ -24,13 +26,21 @@ class ProjectDetails extends Component {
 
 const ProjectDetailsCard = ({ project, onClick }) => {
     return (
-        <div className="project-details-card margin" onClick={onClick} >
-            <img className="project-details-image" alt={project.name} src={project.img} />
-            <div>
-                <div>Title</div>
-                <div>Description</div>
-                <div>MainLinks</div>
-                <div>OtherLinks</div>
+        <div className="project-details-card" onClick={onClick} >
+            <img className="project-details-image size" alt={project.name} src={project.img} />
+            <div className="project-details-text padding">
+                <div className="project-details-title">{project.name}</div>
+                <div className="project-details-description">{project.description}</div>
+                <div className="project-details-main-links">{project.links.map( link => ( 
+                    <a className="project-details-link" key={link.url} href={link.url} target="blank">
+                        <i className={"fa fa-" +link.icon +" fa-2x project-details-icon"} aria-hidden="true" />{link.name}
+                    </a> ))}
+                </div>
+                <div className="project-details-secondary-links">{project.secondaryLinks.map( link => ( 
+                    <a className="project-details-link" key={link.url} href={link.url} target="blank">
+                        <i className={"fa fa-" +link.icon +" fa-2x project-details-icon"} aria-hidden="true" />{link.name}
+                    </a> ))}
+                </div>
             </div>
         </div>
     )

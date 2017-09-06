@@ -14,6 +14,23 @@ html, #root {
     color: #333;
 }
 
+.text-unselectable {
+    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
+    
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+clickable:focus {
+    outline:none;
+}
+
 a {
     text-decoration: none;
     -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
@@ -63,21 +80,4 @@ a {
     50% { color: #FFC107; }
     75% { color: #FF5722; }
     100% { color: #2196F3; }
-}
-
-.text-unselectable {
-    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
-    
-    -webkit-user-select: none;  
-    -moz-user-select: none;    
-    -ms-user-select: none;      
-    user-select: none;
-}
-
-.clickable {
-    cursor: pointer;
-}
-
-clickable:focus {
-    outline:none;
 }

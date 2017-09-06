@@ -17,6 +17,31 @@
     border: 2px solid rgba(76, 175, 80, 0.6);
 }
 
+.about-text {
+    font-size: 11px;
+    line-height: 2em;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.about-text-hello {
+    font-size: 32px;
+    line-height: 1.5em;
+}
+
+.about-name {
+    color: #4CAF50;
+}
+
+.about-description {
+    font-size: 20px;
+}
+
+.about-cv {
+    font-weight: 700;
+    font-size: 12px;
+}
+
 /* desktop-medium */
 @media all and (min-width: 841px) {    
     .profile-picture-about {
@@ -80,29 +105,4 @@
     50% { border: 4px solid rgba(255, 193, 7, 0.4); } 
     75% { border: 4px solid rgba(255, 87, 34, 0.4); } 
     100% { border: 4px solid rgba(33, 150, 243, 0.4); } 
-}
-
-.about-text {
-    font-size: 11px;
-    line-height: 2em;
-    text-transform: uppercase;
-    color: #333;
-}
-
-.about-text-hello {
-    font-size: 32px;
-    line-height: 1.5em;
-}
-
-.about-name {
-    color: #4CAF50;
-}
-
-.about-description {
-    font-size: 20px;
-}
-
-.about-cv {
-    font-weight: 700;
-    font-size: 12px;
 }

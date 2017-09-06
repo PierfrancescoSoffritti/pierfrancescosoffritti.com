@@ -1,22 +1,44 @@
 .project-details-dialog-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-    height: 90%;
+    display: grid;
+    grid-template-columns: auto;
+
     width: 100%;    
 
-    background-color: rgba(0, 0, 0, 0.10);
+    background-color: rgba(0, 0, 0, 0.08);
+}
 
-    /* -webkit-animation: navbar-item-background-change 10000ms infinite;
-    -moz-animation: navbar-item-background-change 10000ms infinite;
-    -o-animation: navbar-item-background-change 10000ms infinite;
-    -ms-animation: navbar-item-background-change 10000ms infinite;
-    animation: navbar-item-background-change 10000ms infinite; */
+.project-not-found {
+    justify-self: center;
+}
+
+.project-details-navigate-back-button {
+    display: flex;
+    justify-content: start;
+
+    justify-self: start;
+    
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+
+    border-radius: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all 200ms ease-in-out;
+}
+
+.project-details-navigate-back-button:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    transition: all 200ms ease-in;
+}
+
+.project-details-icon {
+    margin-right: 8px;
 }
 
 .project-details-card {
-
     background-color: white;
     
     border-radius: 4px;
@@ -26,89 +48,143 @@
 
     box-shadow: 0 3px 6px rgba(0,0,0,0.32), 0 3px 4px rgba(0,0,0,0.34);
 
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    transition: all 300ms ease-in;
+}
+
+.project-details-image {
+    display: block;
+    object-fit: cover;
+}
+
+.project-details-title {
+    font-size: 32px;
+    line-height: 1.5em;
+
+    margin-bottom: 16px;
+}
+
+.project-details-text {
+    font-size: 11px;
+    line-height: 2em;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.project-details-main-links {
+    font-weight: 700;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.project-details-secondary-links {
+    font-weight: 700;
+    margin-top: 16px;
+}
+
+.project-details-link {
+    margin-right: 24px;
 }
 
 /* desktop-x-small */
 @media all and (min-width: 0) and (max-width: 480px) { 
-    .project-details-card.margin {
-        margin-top: 0px;
-        margin-bottom: 0px;
+    .project-details-dialog-container.margin {
+        padding-top: 0px;
+        padding-bottom: 16px;
+    }
+
+    .project-details-image.size {
+        width: 100%;
+        height: 256px;
+        max-width: 100%;
+        max-height: 256px;
+        min-width: 100%;
+        min-height: 256px;
+    }
+
+    .project-details-navigate-back-button.padding {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .project-details-text.padding {
+        padding: 16px;
     }
 }
 
 /* desktop-small */
 @media all and (min-width: 481px) and (max-width: 840px) {
-    .project-details-card.margin {
-        margin-top: 16px;
-        margin-bottom: 16px;
-    }   
+    .project-details-dialog-container.margin {
+        padding-top: 0px;
+        padding-bottom: 16px;
+    }  
+    
+    .project-details-image.size {
+        width: 100%;
+        height: 256px;
+        max-width: 100%;
+        max-height: 256px;
+        min-width: 100%;
+        min-height: 256px;
+    }
+
+    .project-details-navigate-back-button.padding {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .project-details-text.padding {
+        padding: 16px;
+    }
 }
 
 /* desktop-medium */
 @media all and (min-width: 841px) and (max-width: 1280px) {
-    .project-details-card.margin {
-        margin-top: 64px;
-        margin-bottom: 64px;
+    .project-details-dialog-container.margin {
+        padding-top: 0px;
+        padding-bottom: 32px;
+    }
+    
+    .project-details-image.size {
+        width: 100%;
+        height: 392px;
+        max-width: 100%;
+        max-height: 392px;
+        min-width: 100%;
+        min-height: 392px;
+    }
+
+    .project-details-navigate-back-button.padding {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .project-details-text.padding {
+        padding: 32px;
     }
 }
 
 /* desktop-large */
 @media all and (min-width: 1281px) {  
-    .project-details-card.margin {
-        margin-top: 112px;
-        margin-bottom: 112px;
+    .project-details-dialog-container.margin {
+        padding-top: 42px;
+        padding-bottom: 80px;
     }
-}
 
-.project-details-image {
-    width: 100%;
-    height: 384px;
-    max-width: 100%;
-    max-height: 384px;
-    min-width: 100%;
-    min-height: 384px;
+    .project-details-image.size {
+        width: 100%;
+        height: 392px;
+        max-width: 100%;
+        max-height: 392px;
+        min-width: 100%;
+        min-height: 392px;
+    }
 
-    display: block;
-    object-fit: cover;
-}
+    .project-details-navigate-back-button.padding {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
 
-@-webkit-keyframes navbar-item-background-change {
-    0% { background-color: rgba(33, 150, 243, 0.2); }
-    25% { background-color: rgba(76, 175, 80, 0.2); }
-    50% { background-color: rgba(255, 193, 7, 0.2); }
-    75% { background-color: rgba(255, 87, 34, 0.2); }
-    100% { background-color: rgba(33, 150, 243, 0.2); }
-}
-
-@-moz-keyframes navbar-item-background-change {
-    0% { background-color: rgba(33, 150, 243, 0.2); }
-    25% { background-color: rgba(76, 175, 80, 0.2); }
-    50% { background-color: rgba(255, 193, 7, 0.2); }
-    75% { background-color: rgba(255, 87, 34, 0.2); }
-    100% { background-color: rgba(33, 150, 243, 0.2); }
-}
-
-@-ms-keyframes navbar-item-background-change {
-    0% { background-color: rgba(33, 150, 243, 0.2); }
-    25% { background-color: rgba(76, 175, 80, 0.2); }
-    50% { background-color: rgba(255, 193, 7, 0.2); }
-    75% { background-color: rgba(255, 87, 34, 0.2); }
-    100% { background-color: rgba(33, 150, 243, 0.2); }
-}
-
-@-o-keyframes navbar-item-background-change {
-    0% { background-color: rgba(33, 150, 243, 0.2); }
-    25% { background-color: rgba(76, 175, 80, 0.2); }
-    50% { background-color: rgba(255, 193, 7, 0.2); }
-    75% { background-color: rgba(255, 87, 34, 0.2); }
-    100% { background-color: rgba(33, 150, 243, 0.2); }
-}
-
-@keyframes navbar-item-background-change {
-    0% { background-color: rgba(33, 150, 243, 0.2); }
-    25% { background-color: rgba(76, 175, 80, 0.2); }
-    50% { background-color: rgba(255, 193, 7, 0.2); }
-    75% { background-color: rgba(255, 87, 34, 0.2); }
-    100% { background-color: rgba(33, 150, 243, 0.2); }
+    .project-details-text.padding {
+        padding: 32px;
+    }
 }
