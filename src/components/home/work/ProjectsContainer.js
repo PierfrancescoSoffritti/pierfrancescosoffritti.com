@@ -1,12 +1,12 @@
 import React from 'react';
 
-import { CSSTransitionGroup } from 'react-transition-group' // ES6
+import { CSSTransitionGroup } from 'react-transition-group'
 
 import Project from "./Project"
 
 import "./projectsContainer.css"
 
-const ProjectsContainer = ( { projects, activeLabels } ) => { 
+const ProjectsContainer = ( { projects, activeLabels, projectClick } ) => { 
     
     projects = projects.sort( (a, b) => a.highlight < b.highlight );
 
@@ -33,7 +33,7 @@ const ProjectsContainer = ( { projects, activeLabels } ) => {
             transitionName="react-animation"
             transitionEnterTimeout={500}
             transitionLeaveTimeout={300}>
-                { projects.filter( filterActiveProjects ).map( project => <Project key={project.name} project={project} /> ) }
+                { projects.filter( filterActiveProjects ).map( project => <Project key={project.name} project={project} onClick={projectClick} /> ) }
         </CSSTransitionGroup>        
     );
 }

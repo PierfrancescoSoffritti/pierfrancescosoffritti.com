@@ -2,25 +2,25 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 import Home from './home/Home'
-import ProjectDetails from './projectDetails/ProjectDetails'
-import PageNotFound from './pageNotFound/PageNotFound'
+// import ProjectDetails from './projectDetails/ProjectDetails'
+// import PageNotFound from './pageNotFound/PageNotFound'
 
 const routes = [
     {
         name: "Home",
         path: "/",
-        exact: true,
+        // exact: true,
         component: Home
     }, 
-    {
-        name: "Project Details",
-        path: "/:projectId",
-        component: ProjectDetails
-    },
-    {
-        name: "404 No match",
-        component: PageNotFound
-    }
+    // {
+    //     name: "Project Details",
+    //     path: "/:projectId",
+    //     component: ProjectDetails
+    // },
+    // {
+    //     name: "404 No match",
+    //     component: PageNotFound
+    // }
 ];
 
 const Routes = () => {    

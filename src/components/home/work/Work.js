@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router'
 
 import LabelsContainer from "./LabelsContainer"
 import ProjectsContainer from "./ProjectsContainer"
@@ -23,6 +24,10 @@ class Work extends Component {
         this.setState( { activeLabels: [] } );
     }
 
+    onProjectClick = projectId => {
+        this.props.history.push(projectId)
+    }
+
     _addRemoveLabel = (label, activeLabels) => {
         const index = activeLabels.indexOf(label);
         if( index > -1 )
@@ -44,14 +49,13 @@ class Work extends Component {
         const { activeLabels } = this.state;
 
         const labels = this._getAllLabelsFromProjects(projects);
-
         return (
             <div className="home-section work-container">
                 <div className="labels-work" >
                     <LabelsContainer labels={labels} activeLabels={activeLabels} onLabelClick={this.onLabelClick} clearSelectedLabels={this.clearSelectedLabels}/>
                 </div>
                 <div className="project-container-work">
-                    <ProjectsContainer projects={projects} activeLabels={activeLabels} />
+                    <ProjectsContainer projects={projects} activeLabels={activeLabels} projectClick={this.onProjectClick} />
                 </div>
             </div>
         );
@@ -62,4 +66,4 @@ const mapStateToProps = store => ({
     projects: store.projects
 })
 
-export default connect(mapStateToProps)(Work);
+export default withRouter(connect(mapStateToProps)(Work));

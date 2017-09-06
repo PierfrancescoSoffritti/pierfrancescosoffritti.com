@@ -5816,6 +5816,10 @@ react-error-overlay@^2.0.0:
     settle-promise "1.0.0"
     source-map "0.5.6"
 
+react-flip-move@^2.9.15:
+  version "2.9.15"
+  resolved "https://registry.yarnpkg.com/react-flip-move/-/react-flip-move-2.9.15.tgz#c33c817d394917c6537aba282732350bba384961"
+
 react-redux@^5.0.6:
   version "5.0.6"
   resolved "https://registry.yarnpkg.com/react-redux/-/react-redux-5.0.6.tgz#23ed3a4f986359d68b5212eaaa681e60d6574946"

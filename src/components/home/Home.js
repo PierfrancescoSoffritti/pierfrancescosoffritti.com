@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 import scrollToElement from 'scroll-to-element';
 
 import { fetchProjects } from "../../redux/actions/projects";
+
+import ProjectDetails from "./projectDetails/ProjectDetails";
 
 import Navbar from "./Navbar";
 import Header from "./header/Header";
@@ -114,14 +117,35 @@ class Home extends Component {
                 <div ref={ element => this.navbar = element }>
                     <Navbar items={SECTIONS} onItemClick={this.scrollToSection} currentSection={currentSection} currentScroll={currentScroll} />
                 </div>
+
                 <Header />
-                { SECTIONS
+
+                {/* { SECTIONS
                     .filter( section => section.component )
                     .map( section =>
                         <div key={section.name} ref={section.name}>
                             <section.component name={section.name} />
                         </div> 
-                    ) }
+                    )
+                } */}
+
+                <div ref="about">
+                    <About />
+                </div> 
+                
+                <div ref="work">
+                    <Router> 
+                        <Switch>               
+                            <Route path={"/"} exact component={Work} />
+                            <Route path={"/:projectId"} component={ProjectDetails} />
+                        </Switch>
+                    </Router>                    
+                </div> 
+
+                <div ref="contact">
+                    <Contact />
+                </div> 
+
             </div>
         );
     }

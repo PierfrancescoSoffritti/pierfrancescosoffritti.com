@@ -1,0 +1,63 @@
+.project-details-dialog-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    -webkit-animation: navbar-item-background-change 10000ms infinite;
+    -moz-animation: navbar-item-background-change 10000ms infinite;
+    -o-animation: navbar-item-background-change 10000ms infinite;
+    -ms-animation: navbar-item-background-change 10000ms infinite;
+    animation: navbar-item-background-change 10000ms infinite;
+}
+
+.project-details-card {
+
+    background-color: white;
+    
+    border-radius: 4px;
+    border-color: transparent;
+
+    box-shadow: 0 3px 6px rgba(0,0,0,0.32), 0 3px 4px rgba(0,0,0,0.34);
+
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+@-webkit-keyframes navbar-item-background-change {
+    0% { background-color: rgba(33, 150, 243, 0.2); }
+    25% { background-color: rgba(76, 175, 80, 0.2); }
+    50% { background-color: rgba(255, 193, 7, 0.2); }
+    75% { background-color: rgba(255, 87, 34, 0.2); }
+    100% { background-color: rgba(33, 150, 243, 0.2); }
+}
+
+@-moz-keyframes navbar-item-background-change {
+    0% { background-color: rgba(33, 150, 243, 0.2); }
+    25% { background-color: rgba(76, 175, 80, 0.2); }
+    50% { background-color: rgba(255, 193, 7, 0.2); }
+    75% { background-color: rgba(255, 87, 34, 0.2); }
+    100% { background-color: rgba(33, 150, 243, 0.2); }
+}
+
+@-ms-keyframes navbar-item-background-change {
+    0% { background-color: rgba(33, 150, 243, 0.2); }
+    25% { background-color: rgba(76, 175, 80, 0.2); }
+    50% { background-color: rgba(255, 193, 7, 0.2); }
+    75% { background-color: rgba(255, 87, 34, 0.2); }
+    100% { background-color: rgba(33, 150, 243, 0.2); }
+}
+
+@-o-keyframes navbar-item-background-change {
+    0% { background-color: rgba(33, 150, 243, 0.2); }
+    25% { background-color: rgba(76, 175, 80, 0.2); }
+    50% { background-color: rgba(255, 193, 7, 0.2); }
+    75% { background-color: rgba(255, 87, 34, 0.2); }
+    100% { background-color: rgba(33, 150, 243, 0.2); }
+}
+
+@keyframes navbar-item-background-change {
+    0% { background-color: rgba(33, 150, 243, 0.2); }
+    25% { background-color: rgba(76, 175, 80, 0.2); }
+    50% { background-color: rgba(255, 193, 7, 0.2); }
+    75% { background-color: rgba(255, 87, 34, 0.2); }
+    100% { background-color: rgba(33, 150, 243, 0.2); }
+}
