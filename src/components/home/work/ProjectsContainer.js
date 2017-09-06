@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { CSSTransitionGroup } from 'react-transition-group'
+import { TransitionGroup, CSSTransition } from 'react-transition-group'
 
 import Project from "./Project"
 
@@ -28,13 +28,19 @@ const ProjectsContainer = ( { projects, activeLabels, projectClick } ) => {
     }
 
     return (        
-        <CSSTransitionGroup
-            className="projects-container"
-            transitionName="react-animation"
-            transitionEnterTimeout={500}
-            transitionLeaveTimeout={300}>
-                { projects.filter( filterActiveProjects ).map( project => <Project key={project.name} project={project} onClick={projectClick} /> ) }
-        </CSSTransitionGroup>        
+        <TransitionGroup className="projects-container">                          
+                { projects.filter( filterActiveProjects ).map( project => 
+
+                    <CSSTransition
+                        key={project.name}
+                        classNames='project-fade'
+                        timeout={{ enter: 300, exit: 300 }} >
+
+                            <Project key={project.name} project={project} onClick={projectClick} />
+
+                    </CSSTransition>
+                ) }
+        </TransitionGroup>
     );
 }
 

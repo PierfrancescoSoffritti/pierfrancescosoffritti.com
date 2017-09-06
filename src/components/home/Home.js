@@ -1,22 +1,19 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { withRouter } from 'react-router'
 
 import scrollToElement from 'scroll-to-element';
 
 import { fetchProjects } from "../../redux/actions/projects";
 
-import ProjectDetails from "./projectDetails/ProjectDetails";
-
 import Navbar from "./Navbar";
 import Header from "./header/Header";
 import About from "./about/About";
-import Work from "./work/Work";
+import WorkContainer from "./work/WorkContainer";
 // import Blog from "./blog/Blog";
 import Contact from "./contact/Contact";
 
 import "./home.css"
-
 
 const SECTIONS = [
     {
@@ -25,7 +22,7 @@ const SECTIONS = [
     },
     {
         name: "work",
-        component: Work
+        component: WorkContainer
     },
     {
         name: "blog",
@@ -111,40 +108,23 @@ class Home extends Component {
 
     render = () => {
         const { currentSection, currentScroll } = this.state;
-        
+
         return (
-            <div className="root-home" >
+            <div className="root-home animate" >
                 <div ref={ element => this.navbar = element }>
                     <Navbar items={SECTIONS} onItemClick={this.scrollToSection} currentSection={currentSection} currentScroll={currentScroll} />
                 </div>
 
                 <Header />
 
-                {/* { SECTIONS
+                { SECTIONS
                     .filter( section => section.component )
                     .map( section =>
                         <div key={section.name} ref={section.name}>
-                            <section.component name={section.name} />
+                            { section.name === "work" ? <section.component onShowProjectDetails={() => this.scrollToSection("work")} /> : <section.component /> }
                         </div> 
                     )
-                } */}
-
-                <div ref="about">
-                    <About />
-                </div> 
-                
-                <div ref="work">
-                    <Router> 
-                        <Switch>               
-                            <Route path={"/"} exact component={Work} />
-                            <Route path={"/:projectId"} component={ProjectDetails} />
-                        </Switch>
-                    </Router>                    
-                </div> 
-
-                <div ref="contact">
-                    <Contact />
-                </div> 
+                }
 
             </div>
         );
@@ -159,4 +139,4 @@ const mapDispatchToProps = dispatch => ({
     fetchProjects: () => dispatch(fetchProjects)
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(Home);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Home));

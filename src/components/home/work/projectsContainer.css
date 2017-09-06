@@ -57,20 +57,20 @@
 	}
 }
 
-.react-animation-enter {
+.project-fade-enter {
 	opacity: 0.01;
 }
 
-.react-animation-enter.react-animation-enter-active {
+.project-fade-enter.project-fade-enter-active {
 	opacity: 1;
-	transition: all 300ms ease-in-out;
+	transition: opacity 300ms ease-in;
 }
 
-.react-animation-leave {
+.project-fade-exit {
 	opacity: 1;
 }
 
-.react-animation-leave.react-animation-leave-active {
+.project-fade-exit.project-fade-exit-active {
 	opacity: 0.01;
-	transition: all 300ms ease-in-out;
+	transition: opacity 300ms ease-in;
 }

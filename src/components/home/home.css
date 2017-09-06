@@ -8,3 +8,33 @@
     margin: 0;
     padding: 0;
 }
+
+.animate {
+    transition: all 200ms ease-in;
+}
+
+.work {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.route-fade-enter {
+    opacity: 0;
+}
+
+.route-fade-enter.route-fade-enter-active {
+	opacity: 1;
+	transition: opacity 600ms ease-in-out;
+}
+
+.route-fade-exit {
+    opacity: 1;
+    position: fixed;
+    display: none
+}
+
+.route-fade-exit.route-fade-exit-active {
+	opacity: 0;
+	transition: opacity 0ms ease-in-out;
+}
