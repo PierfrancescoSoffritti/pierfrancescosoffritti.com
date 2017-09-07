@@ -60,12 +60,12 @@ const ProjectDetailsCard = ({ project, onClick }) => {
                 <div className="project-details-title">{project.name}</div>
                 <div className="project-details-description"><MultilineText text={project.description} /></div>
                 <div className="project-details-main-links">{project.links.map( link => ( 
-                    <a className="project-details-link" key={link.url} href={link.url} target="blank">
+                    <a className="project-details-link" key={link.url} href={link.url} target="_blank">
                         <i className={"fa fa-" +link.icon +" project-details-icon"} aria-hidden="true" />{link.name}
                     </a> ))}
                 </div>
                 <div className="project-details-secondary-links">{project.secondaryLinks.map( link => ( 
-                    <a className="project-details-link" key={link.url} href={link.url} target="blank">
+                    <a className="project-details-link" key={link.url} href={link.url} target="_blank">
                         <i className={"fa fa-" +link.icon +" project-details-icon"} aria-hidden="true" />{link.name}
                     </a> ))}
                 </div>
