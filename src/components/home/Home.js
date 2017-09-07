@@ -110,7 +110,7 @@ class Home extends Component {
         const { currentSection, currentScroll } = this.state;
 
         return (
-            <div className="root-home animate" >
+            <div className="root-home" >
                 <div ref={ element => this.navbar = element }>
                     <Navbar items={SECTIONS} onItemClick={this.scrollToSection} currentSection={currentSection} currentScroll={currentScroll} />
                 </div>

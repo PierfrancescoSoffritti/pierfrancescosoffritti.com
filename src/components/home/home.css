@@ -9,10 +9,6 @@
     padding: 0;
 }
 
-.animate {
-    transition: all 200ms ease-in;
-}
-
 .work {
     display: flex;
     align-items: center;
