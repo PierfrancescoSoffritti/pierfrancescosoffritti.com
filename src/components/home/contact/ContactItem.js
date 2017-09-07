@@ -2,11 +2,20 @@ import React from 'react';
 
 import "./contactItem.css"
 
+import ReactGA from 'react-ga';
+
 const ContactItem = ({ icon, text, url }) => {
     const className = "fa fa-" +icon;
 
+    const onLinkClick = () => {
+        ReactGA.event({
+            category: 'User',
+            action: 'Click on contact item: ' +url
+        });
+    }
+
     return (
-        <a className="contact-item" href={url} target="blank">
+        <a onClick={onLinkClick} className="contact-item" href={url} target="_blank">
             <span className="contact-item-icon contact-item-icon-margin">
                 <i className={className} aria-hidden="true"></i>
             </span>

@@ -13,7 +13,7 @@ export default {
         {
             id: "OneCalculator",
             name: "One Calculator",
-            description: "One Calculator is the only calculator app you need on your Android device :)<br/><br/>The app is capable of solving common calculations, matrix calculations, conversions between units of measurement and number bases and of drawing graphs of functions.<br/><br/>One Calculator has been quite successful on the PlayStore and now has more than 100.000 downloads and a rating of 4.6/5",
+            description: "One Calculator is the only calculator app you need on your Android device :)<br/><br/>The app is capable of solving common and matrix calculations, unit and base conversions and of drawing mathematical functions.<br/><br/>One Calculator has been quite successful on the PlayStore and now has more than 100.000 downloads and a rating of 4.6/5",
             links: [ {url: "https://play.google.com/store/apps/details?id=it.onecalculator", name: "Get One Calculator on the PlayStore", icon: "android"} ],
             secondaryLinks: [ {url: "http://phandroid.com/2014/10/13/onecalc-material-design-calculator/", name: "PHAndroid review", icon: "external-link"} ],
             labels: [ "android" ],
@@ -33,7 +33,7 @@ export default {
         {
             id: "RemoteVR",
             name: "Remote VR",
-            description: "RemoteVR is a simple attempt to obtain platform/hardware independent multiplayer Virtual Reality in a way that should be affordable to almost anybody.<br/><br/>The gist of the idea is to run the VR application on a server and then connect many clients to it, allowing them to interact with the VR application in streaming.<br/><br/>Using this approach is easy to have more than one person in the same virtual environment. Also, those people can use different devices and OS to access the same VR experience.",
+            description: "RemoteVR is a simple attempt to obtain platform/hardware independent multiplayer Virtual Reality in a way that should be affordable to almost everybody.<br/><br/>The gist of the idea is to run the VR application on a server and then connect many clients to it, allowing them to interact with the VR application in streaming.<br/><br/>With this approach is easy to have more than one person in the same virtual environment. Also, these people can use different headsets and OS to access the same VR experience.",
             links: [ {url: "https://github.com/PierfrancescoSoffritti/RemoteVR_UnityServer", name: "Go to the Unity Server", icon: "github"}, {url: "https://github.com/PierfrancescoSoffritti/RemoteVR_AndroidClient", name:"Go to the Android Client", icon: "github"} ],
             secondaryLinks: [ ],
             labels: [ "VR", "android", "unity3D" ],
@@ -45,7 +45,7 @@ export default {
             name: "Nowherelands",
             description: "A WebGL experiment I've built for the 2017 edition of the Digital Design Days.",
             links: [ {url: "https://pierfrancescosoffritti.github.io/Nowherelands/", name: "Open the experiment", icon: "external-link"}, {url: "https://github.com/PierfrancescoSoffritti/Doodling/tree/master/13.%20Nowherelands", name: "Go to the code", icon: "github"} ],
-            secondaryLinks: [ {url: "https://medium.com/@soffritti.pierfrancesco/sound-generation-with-javascript-57b2fda65608", name: "Sound generation with Javascript", icon: "medium"}, {url: "https://medium.com/@soffritti.pierfrancesco/dynamic-reflections-in-three-js-2d46f3378fc4", name:"Dynamic reflections in Three.js", icon: "medium"} ],
+            secondaryLinks: [ {url: "https://medium.com/@soffritti.pierfrancesco/sound-generation-with-javascript-57b2fda65608", name: "Sound generation with Javascript", icon: "medium"}, {url: "https://medium.com/@soffritti.pierfrancesco/dynamic-reflections-in-three-js-2d46f3378fc4", name:"Dynamic reflections in Three.js", icon: "medium"}, {url: "http://devx.ddd.it/en/", name: "See all the experiments", icon: "external-link"} ],
             labels: [ "web", "experiment" ],
             img: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2Fnowherelands.png?alt=media&token=14a8210b-2468-4a8a-bed1-4d7d6e33cfba",
             highlight: false
@@ -73,7 +73,7 @@ export default {
         {
             id: "SoUNds",
             name: "SoUNds",
-            description: "Generate and visualize sound in JavaScript :)",
+            description: "Sound generation and visualization with Javascript.",
             links: [ {url: "https://rawgit.com/PierfrancescoSoffritti/Doodling/master/4.%20SoUNds/index.html", name: "Open the experiment", icon: "external-link"}, {url: "https://github.com/PierfrancescoSoffritti/Doodling/tree/master/4.%20SoUNds", name: "Go to the code", icon: "github"} ],
             secondaryLinks: [ {url: "https://medium.com/@soffritti.pierfrancesco/sound-generation-with-javascript-57b2fda65608", name: "Sound generation with Javascript", icon: "medium"} ],
             labels: [ "web", "experiment" ],
@@ -93,7 +93,7 @@ export default {
         {
             id: "NeonCrystal",
             name: "NeonCrystal",
-            description: "Hacking around with Three.js",
+            description: "Hacking around with Three.js.",
             links: [ {url: "https://rawgit.com/PierfrancescoSoffritti/Doodling/master/6.%20NeonCrystal/index.html", name: "Open the experiment", icon: "external-link"}, {url: "https://github.com/PierfrancescoSoffritti/Doodling/tree/master/6.%20NeonCrystal", name: "Go to the code", icon: "github"} ],
             secondaryLinks: [ {url: "https://medium.com/@soffritti.pierfrancesco/dynamic-reflections-in-three-js-2d46f3378fc4", name:"Dynamic reflections in Three.js", icon: "medium"} ],
             labels: [ "web", "experiment" ],
@@ -103,7 +103,7 @@ export default {
         {
             id: "FloriDada",
             name: "FloriDada",
-            description: "Fun project done in an evening, in order to do some practise with JavaScript and hack around with the HTML5 canvas and Web Audio API.<br/><br/>It's not very well built, it may not work with Safari and maybe other browsers D: use it with Chrome :)",
+            description: "Fun project done in an evening, to do some practise with Javascript and hack around with the HTML5 canvas and Web Audio API.<br/><br/>It's not very well built, it may not work with Safari and maybe other browsers D: use it with Chrome :)",
             links: [ {url: "https://rawgit.com/PierfrancescoSoffritti/Doodling/master/3.%20WTPlayer/index.html", name: "Open the experiment", icon: "external-link"} ],
             secondaryLinks: [ ],
             labels: [ "web", "experiment" ],
@@ -123,9 +123,9 @@ export default {
         {
             id: "TerrainGenerator",
             name: "Terrain Generator",
-            description: "A very basic and hacky javascript terrain generator based on Perlin Noise and Three.js.<br/><br/>Heightmaps can be generated inside the web app or taken from an external source, through web socket.",
-            links: [ {url: "https://rawgit.com/PierfrancescoSoffritti/TerrainGenerator/master/index.html", name: "Open the experiment", icon: "external-link"} ],
-            secondaryLinks: [ {url: "https://github.com/PierfrancescoSoffritti/TerrainGenerator", name: "GitHub", icon: "github"} ],
+            description: "A very basic and hacky javascript terrain generator based on Perlin Noise and Three.js.<br/><br/>Heightmaps can be generated inside the web app or taken from an external source through web socket.",
+            links: [ {url: "https://rawgit.com/PierfrancescoSoffritti/TerrainGenerator/master/index.html", name: "Open the experiment", icon: "external-link"}, {url: "https://github.com/PierfrancescoSoffritti/TerrainGenerator", name: "Go to the code", icon: "github"} ],
+            secondaryLinks: [ ],
             labels: [ "web", "experiment" ],
             img: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2Fterraingenerator.png?alt=media&token=cf4195b0-3dd6-4b01-97bf-c683fdb4c19d",
             highlight: false

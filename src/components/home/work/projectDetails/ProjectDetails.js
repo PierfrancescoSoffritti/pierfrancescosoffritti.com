@@ -4,10 +4,18 @@ import { connect } from 'react-redux';
 
 import "./projectDetails.css"
 
+import ReactGA from 'react-ga';
+
 class ProjectDetails extends Component {
 
     componentDidMount() {
         document.addEventListener("keydown", this.handleKeyDown);
+        
+        const logPageView = () => {
+            ReactGA.set({ page: window.location.pathname + window.location.search });
+            ReactGA.pageview(window.location.pathname + window.location.search);
+        }
+        logPageView();
     }
 
     componentWillUnmount() {
@@ -21,6 +29,12 @@ class ProjectDetails extends Component {
 
     close = () => {
         this.props.history.push("");
+
+        const logPageView = () => {
+            ReactGA.set({ page: window.location.pathname + window.location.search });
+            ReactGA.pageview(window.location.pathname + window.location.search);
+        }
+        logPageView();
     }
 
     render () {
