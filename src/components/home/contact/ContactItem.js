@@ -15,7 +15,7 @@ const ContactItem = ({ icon, text, url }) => {
     }
 
     return (
-        <a onClick={onLinkClick} className="contact-item" href={url} target="_blank">
+        <a onClick={onLinkClick} className="contact-item" href={url} target="_blank" rel="noopener noreferrer">
             <span className="contact-item-icon contact-item-icon-margin">
                 <i className={className} aria-hidden="true"></i>
             </span>
