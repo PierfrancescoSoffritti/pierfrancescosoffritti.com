@@ -8,31 +8,10 @@ import { fetchProjects } from "../../redux/actions/projects";
 
 import Navbar from "./Navbar";
 import Header from "./header/Header";
-import About from "./about/About";
-import WorkContainer from "./work/WorkContainer";
-// import Blog from "./blog/Blog";
-import Contact from "./contact/Contact";
+
+import homeSections from "./homeSections"
 
 import "./home.css"
-
-const SECTIONS = [
-    {
-        name: "about",
-        component: About
-    },
-    {
-        name: "work",
-        component: WorkContainer
-    },
-    {
-        name: "blog",
-        component: null
-    },
-    {
-        name: "contact",
-        component: Contact
-    }
-]   
 
 class Home extends Component {
     constructor(props) {
@@ -59,11 +38,11 @@ class Home extends Component {
     }
 
     scrollToSection = sectionName => {
-        const element = this.refs[sectionName]
+        const element = this._getPageElementFromKey(sectionName);
 
         // temporary hack, will implement a section in the page, dont have time to do it right now
         if(sectionName === "blog") {
-            var win = window.open("https://medium.com/@soffritti.pierfrancesco/latest", '_blank');
+            const win = window.open("https://medium.com/@soffritti.pierfrancesco/latest", '_blank');
             win.focus();
         }            
         // ----
@@ -85,7 +64,7 @@ class Home extends Component {
 
         let inSection = false;
         for(let key in refs) {
-            const boundingRect = refs[key].getBoundingClientRect();
+            const boundingRect = this._getPageElementFromKey(key).getBoundingClientRect();
 
             if( boundingRect.top - this._getNavBarHeight() <= 0 ) {
                 this._onEnterSection(key);
@@ -105,18 +84,19 @@ class Home extends Component {
     _isScrollBottom = () => document.body.scrollHeight === document.body.scrollTop + window.innerHeight;
     _onEnterSection = sectionName => this.setState( { currentSection: sectionName } )
     _getNavBarHeight = () => this.navbar.getBoundingClientRect().height
+    _getPageElementFromKey = key => this.refs[key];
 
     render = () => {
         const { currentSection, currentScroll } = this.state;        
         return (
             <div className="root-home" >
                 <div ref={ element => this.navbar = element }>
-                    <Navbar items={SECTIONS} onItemClick={this.scrollToSection} currentSection={currentSection} currentScroll={currentScroll} />
+                    <Navbar items={homeSections} onItemClick={this.scrollToSection} currentSection={currentSection} currentScroll={currentScroll} />
                 </div>
 
                 <Header />
 
-                { SECTIONS
+                { homeSections
                     .filter( section => section.component )
                     .map( section =>
                         <div key={section.name} ref={section.name}>
