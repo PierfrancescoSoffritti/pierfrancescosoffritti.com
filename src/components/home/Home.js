@@ -78,7 +78,7 @@ class Home extends Component {
     }
 
     _updateCurrentScroll = () => this.setState( { currentScroll: this._getCurrentScroll() } ) 
-    _getCurrentScroll = () => this.navbar.getBoundingClientRect().top *-1
+    _getCurrentScroll = () => (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
 
     _updateCurrentSection = () => {
         const { refs } = this;
@@ -107,8 +107,7 @@ class Home extends Component {
     _getNavBarHeight = () => this.navbar.getBoundingClientRect().height
 
     render = () => {
-        const { currentSection, currentScroll } = this.state;
-
+        const { currentSection, currentScroll } = this.state;        
         return (
             <div className="root-home" >
                 <div ref={ element => this.navbar = element }>
