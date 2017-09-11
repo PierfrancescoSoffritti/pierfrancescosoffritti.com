@@ -5,7 +5,7 @@ export default container => {
     window.onmousemove = mouseMove;
 
     const canvas = createCanvas(document, container);
-    const sceneManager = new SceneManager(canvas, container);
+    const sceneManager = new SceneManager(canvas);
 
     let canvasHalfWidth;
     let canvasHalfHeight;

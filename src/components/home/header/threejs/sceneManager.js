@@ -1,29 +1,35 @@
 import * as THREE from 'three'
 import SceneSubject from "./SceneSubject"
 
-export default ( canvas, container ) => {
-    let width = canvas.width;
-    let height = canvas.height;
+export default canvas => {
 
     const clock = new THREE.Clock();
+    const origin = new THREE.Vector3(0,0,0);
+
+    const screenDimensions = {
+        width: canvas.width,
+        height: canvas.height
+    }
+
     const mousePosition = {
         x: 0,
         y: 0
     }
-    const origin = new THREE.Vector3(0,0,0);
-  
-    // scene setup
-    const scene = new THREE.Scene();
-    // scene.background = new THREE.Color("#eee");
 
-    const renderer = buildRender(width, height);
-    const camera = buildCamera(width, height);
+    const scene = buildScene();
+    const renderer = buildRender(screenDimensions);
+    const camera = buildCamera(screenDimensions);
     const ligth = buildLights(scene);
     
     const sceneSubjects = [];
     sceneSubjects.push(new SceneSubject(scene));
 
-    function buildRender(width, height) {
+    function buildScene() {
+        const scene = new THREE.Scene();
+        return scene;
+    }
+
+    function buildRender({ width, height }) {
         const renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: true, alpha: true }); 
         const DPR = window.devicePixelRatio ? window.devicePixelRatio : 1;
         renderer.setPixelRatio(DPR);
@@ -35,7 +41,7 @@ export default ( canvas, container ) => {
         return renderer;
     }
 
-    function buildCamera(width, height) {
+    function buildCamera({ width, height }) {
         const aspectRatio = width / height;
         const fieldOfView = 60;
         const nearPlane = 4;
@@ -83,8 +89,10 @@ export default ( canvas, container ) => {
     }
 
     function onWindowResize() {
-        width = canvas.width;
-        height = canvas.height;
+        const { width, height } = canvas;
+        
+        screenDimensions.width = width;
+        screenDimensions.height = height;
 
         camera.aspect = width / height;
         camera.updateProjectionMatrix();
