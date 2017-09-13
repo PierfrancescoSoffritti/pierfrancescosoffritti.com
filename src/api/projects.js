@@ -44,7 +44,7 @@ export default {
             id: "Nowherelands",
             name: "Nowherelands",
             description: "A WebGL experiment I've built for the 2017 edition of the Digital Design Days.",
-            links: [ {url: "https://pierfrancescosoffritti.github.io/Nowherelands/", name: "Open the experiment", icon: "external-link"}, {url: "https://github.com/PierfrancescoSoffritti/Doodling/tree/master/13.%20Nowherelands", name: "Go to the code", icon: "github"} ],
+            links: [ {url: "https://pierfrancescosoffritti.github.io/Nowherelands/", name: "Open the experiment", icon: "external-link"}, {url: "https://www.youtube.com/watch?v=kuLsG6gpzAM", name: "Watch the video", icon: "youtube-play"}, {url: "https://github.com/PierfrancescoSoffritti/Doodling/tree/master/13.%20Nowherelands", name: "Go to the code", icon: "github"} ],
             secondaryLinks: [ {url: "https://medium.com/@soffritti.pierfrancesco/sound-generation-with-javascript-57b2fda65608", name: "Sound generation with Javascript", icon: "medium"}, {url: "https://medium.com/@soffritti.pierfrancesco/dynamic-reflections-in-three-js-2d46f3378fc4", name:"Dynamic reflections in Three.js", icon: "medium"}, {url: "http://devx.ddd.it/en/", name: "See all the experiments", icon: "external-link"} ],
             labels: [ "web", "experiment" ],
             img: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2Fnowherelands.png?alt=media&token=14a8210b-2468-4a8a-bed1-4d7d6e33cfba",
