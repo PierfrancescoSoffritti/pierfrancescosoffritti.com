@@ -143,6 +143,39 @@ export default {
             highlight: false
         },
         {
+            id: "SlidingDrawer",
+            name: "SlidingDrawer",
+            subtitle: "Android custom View implementing the bottom sheet pattern",
+            description: "I've built this library while I was working on Shuffly, no other open source library was good for my use case.<br/><br/>The substantial difference from all other implementations of the bottom sheet pattern is that in this case it's easy to position the slidable view relative to the non slidable views in the layout. In other implementations the only way to control the position of the slidable view, when collapsed, is by using a an offset. Here instead the slidable view is placed exactly below the non slidable view, just like in a vertical LinearLayout. The slidable view is conceptually part of the views hierarchy and not above it.",
+            links: [ {url: "https://github.com/PierfrancescoSoffritti/SlidingDrawer", name: "Go to the code", icon: "github"} ],
+            secondaryLinks: [ ],
+            labels: [ "android", "library" ],
+            img: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2FSlidingDrawer.gif?alt=media&token=229574ee-872b-4411-9550-c656cf5b1de8",
+            highlight: false
+        },
+        {
+            id: "AndroidYouTubePlayer",
+            name: "YouTubePlayer",
+            subtitle: "An alternative YouTube player for Android",
+            description: "I've built this library while I was working on Shuffly, as a replacement for the official YouTube player, that is extremely buggy and therefore impossible to use in production.<br/><br/>This YouTube player is based on a WebView and the web-based YouTube player, therefore in order to build it I had to break the wall between Java and Javascript and let the two world interoperate with each other. It's a simple View that can be easily integrated in every Activity/Fragment. Being based on the IFrame Player API, the YouTube app is not required in order to use the player.<br/><br/>I think that so far this is still the best YouTube player for Android available on the web.",
+            links: [ {url: "https://github.com/PierfrancescoSoffritti/AndroidYouTubePlayer", name: "Go to the code", icon: "github"} ],
+            secondaryLinks: [ ],
+            labels: [ "android", "library" ],
+            img: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2FYouTubePlayer.png?alt=media&token=2c3809e0-79b1-432e-a551-1242216c3627",
+            highlight: false
+        },
+        {
+            id: "GoogleOAuth",
+            name: "GoogleOAuth",
+            subtitle: "WebView-based OAuth authentication library for Android",
+            description: "I've built this library while I was working on Shuffly, in order to overcome a limitation of the Google authentication apis.<br/><br/>All of the authentication libraries for Android provided by Google suffer of the same problem: they don't allow access to secondary accounts (also called linked accounts) and force the user to always log into his main account. This is not a problem in most cases, but for some apps can be a huge limitation. For example: YouTube allows an account to have a main channel and multiple secondary channels. Some users may use regularly the secondary channels, so if you're building an app that lets them authenticate in their YouTube channel, you must provide the option to log into both the main channel and the secondary channels. Otherwise they won't use your app.<br/><br/>Apparently the only way to have this basic functionality is to use the web-based OAuth process. This library implements web-based OAuth as user friendly as possible, in order to solve the problem illustared above.",
+            links: [ {url: "https://github.com/PierfrancescoSoffritti/GoogleWebOAuth", name: "Go to the code", icon: "github"} ],
+            secondaryLinks: [ ],
+            labels: [ "android", "library" ],
+            img: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2FGoogleOAuth.jpg?alt=media&token=e41319c2-0739-496b-a0e1-c70f7b3ad335",
+            highlight: false
+        },
+        {
             id: "ComputerGraphics",
             name: "Computer Graphics",
             description: "Some CG works I do for fun.",
