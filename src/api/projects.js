@@ -143,6 +143,17 @@ export default {
             highlight: false
         },
         {
+            id: "EyeSwapper",
+            name: "EyeSwapper",
+            subtitle: "Fun with the Google Vision API",
+            description: "Simple app made for fun, it uses the Google Vision API to find the eyes of the people in a picture and then attaches each pair of eyes to another face ... lol.",
+            links: [ {url: "https://github.com/PierfrancescoSoffritti/EyeSwapper", name: "Go to the code", icon: "github"} ],
+            secondaryLinks: [ ],
+            labels: [ "android" ],
+            img: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2FeyeSwapper.png?alt=media&token=ad8fe830-f1d3-4f24-8f67-fbb14c25fae5",
+            highlight: false
+        },
+        {
             id: "SlidingDrawer",
             name: "SlidingDrawer",
             subtitle: "Android custom View implementing the bottom sheet pattern",
