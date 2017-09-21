@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { withRouter } from 'react-router'
 import { connect } from 'react-redux';
 
-import "./projectDetails.css"
+import "./projectDetails.css";
 
 import ReactGA from 'react-ga';
 
@@ -56,9 +56,13 @@ const ProjectDetailsCard = ({ project, onClick }) => {
     return (
         <div className="project-details-card" onClick={onClick} >
             <img className="project-details-image size" alt={project.name} src={project.img} />
+            
             <div className="project-details-text padding">
                 <div className="project-details-title">{project.name}</div>
+                <div className="project-details-subtitle">{project.subtitle}</div>
+
                 <div className="project-details-description"><MultilineText text={project.description} /></div>
+                
                 <div className="project-details-main-links">{project.links.map( link => ( 
                     <a className="project-details-link" key={link.url} href={link.url} target="_blank" rel="noopener noreferrer">
                         <i className={"fa fa-" +link.icon +" project-details-icon"} aria-hidden="true" />{link.name}
@@ -69,7 +73,9 @@ const ProjectDetailsCard = ({ project, onClick }) => {
                         <i className={"fa fa-" +link.icon +" project-details-icon"} aria-hidden="true" />{link.name}
                     </a> ))}
                 </div>
+
             </div>
+
         </div>
     )
 }

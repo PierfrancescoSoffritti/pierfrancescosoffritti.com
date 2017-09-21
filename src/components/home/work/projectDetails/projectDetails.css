@@ -57,27 +57,43 @@
     object-fit: cover;
 }
 
-.project-details-title {
-    font-size: 32px;
-    line-height: 1.5em;
-
-    margin-bottom: 16px;
-}
-
 .project-details-text {
-    font-size: 11px;
     line-height: 2em;
-    text-transform: uppercase;
     color: #333;
 }
 
+.project-details-title {
+    color: #222;
+    text-transform: uppercase;
+    font-size: 32px;
+    line-height: 1.5em;
+}
+
+.project-details-subtitle {
+    color: #222;
+    font-size: 20px;
+    line-height: 1.2em;
+    margin-bottom: 24px;
+}
+
+.project-details-description {
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
 .project-details-main-links {
+    text-transform: uppercase;
+    font-size: 11px; 
+
     font-weight: 700;
     margin-top: 16px;
     margin-bottom: 16px;
 }
 
 .project-details-secondary-links {
+    text-transform: uppercase;
+    font-size: 11px; 
+
     font-weight: 700;
     margin-top: 16px;
 }
