@@ -84,7 +84,7 @@
 .project-details-main-links {
     text-transform: uppercase;
     font-size: 11px; 
-
+    
     font-weight: 700;
     margin-top: 16px;
     margin-bottom: 16px;
@@ -100,6 +100,7 @@
 
 .project-details-link {
     margin-right: 24px;
+    display:inline-block;
 }
 
 /* desktop-x-small */
@@ -121,6 +122,17 @@
     .project-details-navigate-back-button.padding {
         padding-top: 16px;
         padding-bottom: 16px;
+    }
+
+    .project-details-title {
+        font-size: 24px;
+        line-height: 1.5em;
+    }
+    
+    .project-details-subtitle {
+        font-size: 18px;
+        line-height: 1.2em;
+        margin-bottom: 24px;
     }
 
     .project-details-text.padding {
@@ -147,6 +159,17 @@
     .project-details-navigate-back-button.padding {
         padding-top: 16px;
         padding-bottom: 16px;
+    }
+
+    .project-details-title {
+        font-size: 24px;
+        line-height: 1.5em;
+    }
+    
+    .project-details-subtitle {
+        font-size: 18px;
+        line-height: 1.2em;
+        margin-bottom: 24px;
     }
 
     .project-details-text.padding {
