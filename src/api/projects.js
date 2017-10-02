@@ -4,10 +4,11 @@ export default {
             id: "Shuffly",
             name: "Shuffly",
             subtitle: "The best place to discover new content on YouTube",
-            description: "Thanks to its pseudo-random algorithms, Shuffly is the best place to discover new content on YouTube or just to chill and spend some time.<br/><br/>Shuffly is not a replacement for the YouTube app, they serve different purposes.<br/><br/>This app transforms YouTube in something similar to an old television, where the viewer doesn't have much control on what he sees. Similarly with Shuffly the user can express a preference for the type of content, but can't select any specific video, the app does that for him. Therefore the focus is entirely on content discovery.",
+            description: "Thanks to its pseudo-random algorithms, Shuffly is the best place to discover new content on YouTube or just to chill and spend some time.<br/><br/>Shuffly is not a replacement for the YouTube app, they serve different purposes.<br/><br/>This app transforms YouTube in something similar to an old television, where the viewer doesn't have much control on what he sees. Similarly, with Shuffly the user can express a preference for the type of content, but can't select any specific video, the app does that for him. Therefore the focus is entirely on content discovery.",
             links: [ {url: "https://play.google.com/store/apps/details?id=com.pierfrancescosoffritti.shuffly", name: "See on the Play Store", icon: "android"} ],
             secondaryLinks: [ {url: "http://pierfrancescosoffritti.github.io/Shuffly-Website/", name:"Learn more on the app's website", icon: "external-link"}, {url: "https://www.youtube.com/watch?v=lGDP27JCbIg&feature=share", name: "GadgetHacks review", icon: "youtube-play"} ],
             labels: [ "android" ],
+            imgSmall: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2Fshuffly_small.png?alt=media&token=9aba5eb2-2fc4-4f5c-bc12-cead60d47e26",
             img: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2Fshuffly.png?alt=media&token=b59b4ce9-069c-41d3-8495-d5d7cdec3074",
             highlight: true
         },
@@ -19,6 +20,7 @@ export default {
             links: [ {url: "https://play.google.com/store/apps/details?id=it.onecalculator", name: "See on the Play Store", icon: "android"} ],
             secondaryLinks: [ {url: "http://phandroid.com/2014/10/13/onecalc-material-design-calculator/", name: "PHAndroid review", icon: "external-link"} ],
             labels: [ "android" ],
+            imgSmall: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2Fonecalculator_small.png?alt=media&token=a405d030-f610-44d0-af88-99f7255f094b",
             img: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2Fonecalculator.png?alt=media&token=017a5c17-e85b-4ede-be0f-2500d5493648",
             highlight: true
         },
@@ -30,6 +32,7 @@ export default {
             links: [ {url: "https://micromegaproject.com/", name: "Open the website", icon: "external-link"} ],
             secondaryLinks: [ ],
             labels: [ "web", "experiment" ],
+            imgSmall: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2Fmicromega.jpg?alt=media&token=68a36722-1e96-46a2-bbdf-8ea2e88426a1",
             img: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2Fmicromega.jpg?alt=media&token=68a36722-1e96-46a2-bbdf-8ea2e88426a1",
             highlight: true
         },
@@ -41,6 +44,7 @@ export default {
             links: [ {url: "https://github.com/PierfrancescoSoffritti/RemoteVR_UnityServer", name: "Go to the Unity Server", icon: "github"}, {url: "https://github.com/PierfrancescoSoffritti/RemoteVR_AndroidClient", name:"Go to the Android Client", icon: "github"} ],
             secondaryLinks: [ ],
             labels: [ "VR", "android", "unity3D" ],
+            imgSmall: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2FremoteVR.gif?alt=media&token=bd857b90-80ac-41b6-9452-07b234141ebf",
             img: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2FremoteVR.gif?alt=media&token=bd857b90-80ac-41b6-9452-07b234141ebf",
             highlight: false
         },
@@ -52,6 +56,7 @@ export default {
             links: [ {url: "https://pierfrancescosoffritti.github.io/Nowherelands/", name: "Open the experiment", icon: "external-link"}, {url: "https://www.youtube.com/watch?v=kuLsG6gpzAM", name: "Watch the video", icon: "youtube-play"}, {url: "https://github.com/PierfrancescoSoffritti/Doodling/tree/master/13.%20Nowherelands", name: "Go to the code", icon: "github"} ],
             secondaryLinks: [ {url: "https://medium.com/@soffritti.pierfrancesco/sound-generation-with-javascript-57b2fda65608", name: "Sound generation with Javascript", icon: "medium"}, {url: "https://medium.com/@soffritti.pierfrancesco/dynamic-reflections-in-three-js-2d46f3378fc4", name:"Dynamic reflections in Three.js", icon: "medium"}, {url: "http://devx.ddd.it/en/", name: "See all ddd experiments", icon: "external-link"} ],
             labels: [ "web", "experiment" ],
+            imgSmall: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2Fnowherelands_small.jpg?alt=media&token=48fd3dc1-5f98-4079-ae79-d1c371880379",
             img: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2Fnowherelands.png?alt=media&token=14a8210b-2468-4a8a-bed1-4d7d6e33cfba",
             highlight: false
         },
@@ -63,6 +68,7 @@ export default {
             links: [ {url: "https://rawgit.com/PierfrancescoSoffritti/Doodling/master/10.%20BrokenMantra/index.html", name: "Open the experiment", icon: "external-link"}, {url: "https://github.com/PierfrancescoSoffritti/Doodling/tree/master/10.%20BrokenMantra", name: "Go to the code", icon: "github"} ],
             secondaryLinks: [ ],
             labels: [ "web", "experiment" ],
+            imgSmall: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2Fbrokenmantra.gif?alt=media&token=2e020b60-ddd2-489c-b5db-ea5d7de4c5c9",
             img: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2Fbrokenmantra.gif?alt=media&token=2e020b60-ddd2-489c-b5db-ea5d7de4c5c9",
             highlight: false
         },
@@ -74,6 +80,7 @@ export default {
             links: [ {url: "https://rawgit.com/PierfrancescoSoffritti/Doodling/master/12.%20Collatz%20Conjecture/index.html", name: "Open the experiment", icon: "external-link"}, {url: "https://github.com/PierfrancescoSoffritti/Doodling/tree/master/12.%20Collatz%20Conjecture", name: "Go to the code", icon: "github"} ],
             secondaryLinks: [ {url: "https://photos.app.goo.gl/udAm4xoUr6p87wms1", name: "Check out some images", icon: "photo"} ],
             labels: [ "web", "experiment" ],
+            imgSmall: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2Fcollatz_small.jpg?alt=media&token=1b957860-476d-4ee7-9070-524b484fd338",
             img: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2Fcollatz.jpg?alt=media&token=8528ecd9-9c1f-4d91-a6f1-322d0925297f",
             highlight: false
         },
@@ -85,6 +92,7 @@ export default {
             links: [ {url: "https://rawgit.com/PierfrancescoSoffritti/Doodling/master/4.%20SoUNds/index.html", name: "Open the experiment", icon: "external-link"}, {url: "https://github.com/PierfrancescoSoffritti/Doodling/tree/master/4.%20SoUNds", name: "Go to the code", icon: "github"} ],
             secondaryLinks: [ {url: "https://medium.com/@soffritti.pierfrancesco/sound-generation-with-javascript-57b2fda65608", name: "Sound generation with Javascript", icon: "medium"} ],
             labels: [ "web", "experiment" ],
+            imgSmall: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2Fsounds_small.jpg?alt=media&token=d612b833-f8ff-4aca-b63b-1750d04dde3a",
             img: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2Fsounds.jpg?alt=media&token=f95cf4e0-0ebe-4abe-b2c3-3a6825818ffb",
             highlight: false
         },
@@ -96,6 +104,7 @@ export default {
             links: [ {url: "https://rawgit.com/PierfrancescoSoffritti/Doodling/master/9.%20EyeBall/index.html", name: "Open the experiment", icon: "external-link"}, {url: "https://github.com/PierfrancescoSoffritti/Doodling/tree/master/9.%20EyeBall", name: "Go to the code", icon: "github"} ],
             secondaryLinks: [ {url: "https://medium.com/@soffritti.pierfrancesco/glossy-spheres-in-three-js-bfd2785d4857", name:"Glossy spheres in Three.js", icon: "medium"} ],
             labels: [ "web", "experiment" ],
+            imgSmall: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2Feyeballs_small.jpg?alt=media&token=abcfbd6f-1d02-47f4-bb66-e262c81d0c29",
             img: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2Feyeballs.png?alt=media&token=90a107ce-98e7-4ded-a649-057ce7db0d0c",
             highlight: false
         },
@@ -107,6 +116,7 @@ export default {
             links: [ {url: "https://rawgit.com/PierfrancescoSoffritti/Doodling/master/6.%20NeonCrystal/index.html", name: "Open the experiment", icon: "external-link"}, {url: "https://github.com/PierfrancescoSoffritti/Doodling/tree/master/6.%20NeonCrystal", name: "Go to the code", icon: "github"} ],
             secondaryLinks: [ {url: "https://medium.com/@soffritti.pierfrancesco/dynamic-reflections-in-three-js-2d46f3378fc4", name:"Dynamic reflections in Three.js", icon: "medium"} ],
             labels: [ "web", "experiment" ],
+            imgSmall: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2Fneoncrystal_small.jpg?alt=media&token=8c47849e-e1e1-4ffa-bdd8-b591b8fb3c47",
             img: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2Fneoncrystal.png?alt=media&token=930c1840-7cfc-4983-8e55-e9398ad8c685",
             highlight: false
         },
@@ -118,6 +128,7 @@ export default {
             links: [ {url: "https://rawgit.com/PierfrancescoSoffritti/Doodling/master/3.%20WTPlayer/index.html", name: "Open the experiment", icon: "external-link"} ],
             secondaryLinks: [ ],
             labels: [ "web", "experiment" ],
+            imgSmall: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2FfloriDada_small.jpg?alt=media&token=ffbb5ac7-a9e6-496a-952c-946562d941d6",
             img: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2FfloriDada.png?alt=media&token=622c7cb3-3b4a-40d0-ad63-f33433fb61b3",
             highlight: false
         },
@@ -129,6 +140,7 @@ export default {
             links: [ {url: "https://github.com/PierfrancescoSoffritti/HeightMapGenerator", name: "Go to the code", icon: "github"} ],
             secondaryLinks: [ {url: "https://www.youtube.com/watch?v=CLzB6qL86qQ", name: "Simplex Noise video", icon: "youtube-play"}, {url: "https://www.youtube.com/watch?v=IBLfilm35xU", name:"Perlin Noise video", icon: "youtube-play"} ],
             labels: [ "experiment" ],
+            imgSmall: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2Fheightmapgenerator_small.jpg?alt=media&token=68e80839-368e-4ae2-a67d-00dcb61afa96",
             img: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2Fheightmapgenerator.png?alt=media&token=a6735d97-9015-47f1-87b2-387703108e9f",
             highlight: false
         },
@@ -139,6 +151,7 @@ export default {
             links: [ {url: "https://rawgit.com/PierfrancescoSoffritti/TerrainGenerator/master/index.html", name: "Open the experiment", icon: "external-link"}, {url: "https://github.com/PierfrancescoSoffritti/TerrainGenerator", name: "Go to the code", icon: "github"} ],
             secondaryLinks: [ ],
             labels: [ "web", "experiment" ],
+            imgSmall: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2Fterraingenerator_small.jpg?alt=media&token=35c8965c-7b02-4486-b7a1-488c0ff615af",
             img: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2Fterraingenerator.png?alt=media&token=cf4195b0-3dd6-4b01-97bf-c683fdb4c19d",
             highlight: false
         },
@@ -150,6 +163,7 @@ export default {
             links: [ {url: "https://github.com/PierfrancescoSoffritti/EyeSwapper", name: "Go to the code", icon: "github"} ],
             secondaryLinks: [ ],
             labels: [ "android" ],
+            imgSmall: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2FeyeSwapper_small.jpg?alt=media&token=10d2cab1-69af-4b8e-9880-11038462e90e",
             img: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2FeyeSwapper.png?alt=media&token=ad8fe830-f1d3-4f24-8f67-fbb14c25fae5",
             highlight: false
         },
@@ -161,6 +175,7 @@ export default {
             links: [ {url: "https://github.com/PierfrancescoSoffritti/SlidingDrawer", name: "Go to the code", icon: "github"} ],
             secondaryLinks: [ ],
             labels: [ "android", "library" ],
+            imgSmall: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2FSlidingDrawer.gif?alt=media&token=229574ee-872b-4411-9550-c656cf5b1de8",
             img: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2FSlidingDrawer.gif?alt=media&token=229574ee-872b-4411-9550-c656cf5b1de8",
             highlight: false
         },
@@ -172,6 +187,7 @@ export default {
             links: [ {url: "https://github.com/PierfrancescoSoffritti/AndroidYouTubePlayer", name: "Go to the code", icon: "github"} ],
             secondaryLinks: [ ],
             labels: [ "android", "library" ],
+            imgSmall: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2FYouTubePlayer_small.jpg?alt=media&token=51057efa-ac03-4885-9cd5-bbb37d9b2b9b",
             img: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2FYouTubePlayer.png?alt=media&token=2c3809e0-79b1-432e-a551-1242216c3627",
             highlight: false
         },
@@ -183,6 +199,7 @@ export default {
             links: [ {url: "https://github.com/PierfrancescoSoffritti/GoogleWebOAuth", name: "Go to the code", icon: "github"} ],
             secondaryLinks: [ ],
             labels: [ "android", "library" ],
+            imgSmall: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2FGoogleOAuth_small.jpg?alt=media&token=b1e61a03-ef85-4aed-be53-73dc2175af2c",
             img: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2FGoogleOAuth.jpg?alt=media&token=e41319c2-0739-496b-a0e1-c70f7b3ad335",
             highlight: false
         },
@@ -193,6 +210,7 @@ export default {
             links: [ {url: "https://photos.google.com/share/AF1QipO4ZH0lQol9cG5XBL9_kViMg845HoVV2WJUVv4W42skktTJdtgsllbOHu5T5BpBCA?key=dTNZNTRhXzY3ZDJPUzRObERYc3NFWjJZSkRzSWJn", name: "Open album", icon: "photo"} ],
             secondaryLinks: [ ],
             labels: [ "CG" ],
+            imgSmall: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2Fcomputergraphics_small.jpg?alt=media&token=4b0fbc22-bfe6-46cd-855d-36ff25b30b68",
             img: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2Fcomputergraphics.jpg?alt=media&token=310024a2-5493-4bf4-a85b-cd94668656ff",
             highlight: false
         } ] ) )
