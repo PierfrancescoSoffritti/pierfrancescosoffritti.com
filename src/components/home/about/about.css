@@ -24,7 +24,7 @@
     color: #333;
 }
 
-.about-text-hello {
+.about-text-main {
     font-size: 32px;
     line-height: 1.5em;
 }
@@ -33,7 +33,7 @@
     color: #4CAF50;
 }
 
-.about-description {
+.about-text-subtitle {
     font-size: 20px;
 }
 
