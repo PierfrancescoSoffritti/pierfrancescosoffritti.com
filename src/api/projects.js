@@ -200,7 +200,7 @@ export default {
             secondaryLinks: [ ],
             labels: [ "android", "library" ],
             imgSmall: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2FGoogleOAuth_small.jpg?alt=media&token=b1e61a03-ef85-4aed-be53-73dc2175af2c",
-            img: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2FGoogleOAuth.jpg?alt=media&token=e41319c2-0739-496b-a0e1-c70f7b3ad335",
+            img: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2FGoogleOAuth.jpg?alt=media&token=aaa7b1cc-91f0-44bc-9e5e-29d4c73bcda9",
             highlight: false
         },
         {
