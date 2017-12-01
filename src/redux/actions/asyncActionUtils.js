@@ -12,10 +12,10 @@ const getAsyncAction = ({actionTypePrefix, asyncFunc}) => {
         }
     }
 
-    const successAction = projects => {
+    const successAction = payload => {
         return {
             type: actionTypeSuccess,
-            payload: projects
+            payload: payload
         }
     }
 
@@ -26,11 +26,13 @@ const getAsyncAction = ({actionTypePrefix, asyncFunc}) => {
         }
     }
 
-    const asyncAction = dispatch => {
-        dispatch( startAction() );
-        return asyncFunc()
-            .then( projects => dispatch( successAction(projects) ) )
-            .catch( error => dispatch( failureAction(error) ) )
+    const asyncAction = args => {
+        return dispatch => {
+            dispatch( startAction() );
+            asyncFunc(args)
+                .then( data => dispatch( successAction(data) ) )
+                .catch( error => dispatch( failureAction(error) ) )
+        }
     }
 
     return asyncAction;

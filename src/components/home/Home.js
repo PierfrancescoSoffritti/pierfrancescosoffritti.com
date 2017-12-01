@@ -115,7 +115,7 @@ const mapStateToProps = store => ({
 })
 
 const mapDispatchToProps = dispatch => ({
-    fetchProjects: () => dispatch(fetchProjects)
+    fetchProjects: (args) => dispatch(fetchProjects(args))
 })
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Home));
