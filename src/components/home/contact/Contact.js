@@ -51,7 +51,7 @@ const mapStateToProps = store => ({
 })
 
 const mapDispatchToProps = dispatch => ({
-    fetchSocials: () => dispatch(fetchSocials)
+    fetchSocials: (args) => dispatch(fetchSocials(args))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Contact);

@@ -52,7 +52,7 @@ export default {
             id: "Nowherelands",
             name: "Nowherelands",
             subtitle: "Get lost in a digital forest that grows directly into your browser",
-            description: "This is a WebGL experiment I have hacked together for the 2017 edition of the Digital Design Days, among many others incredible developers.<br/><br/>Everything in this experiment is generated at runtime, with code. Both graphics and sounds. The web is pretty amazing :)",
+            description: "This is a WebGL experiment I have hacked together for the 2017 edition of the Digital Design Days, among many others incredible developers.<br/><br/>Everything in this experiment is generated at runtime, programmatically. Both graphics and sounds. The web is pretty amazing :)",
             links: [ {url: "https://pierfrancescosoffritti.github.io/Nowherelands/", name: "Open the experiment", icon: "external-link"}, {url: "https://www.youtube.com/watch?v=kuLsG6gpzAM", name: "Watch the video", icon: "youtube-play"}, {url: "https://github.com/PierfrancescoSoffritti/Doodling/tree/master/13.%20Nowherelands", name: "Go to the code", icon: "github"} ],
             secondaryLinks: [ {url: "https://medium.com/@soffritti.pierfrancesco/sound-generation-with-javascript-57b2fda65608", name: "Sound generation with Javascript", icon: "medium"}, {url: "https://medium.com/@soffritti.pierfrancesco/dynamic-reflections-in-three-js-2d46f3378fc4", name:"Dynamic reflections in Three.js", icon: "medium"}, {url: "http://devx.ddd.it/en/", name: "See all ddd experiments", icon: "external-link"} ],
             labels: [ "web", "experiment" ],
