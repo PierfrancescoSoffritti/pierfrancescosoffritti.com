@@ -5,7 +5,7 @@ import "./contactItem.css"
 import ReactGA from 'react-ga';
 
 const ContactItem = ({ icon, text, url }) => {
-    const className = "fa fa-" +icon;
+    const className = icon;
 
     const onLinkClick = () => {
         ReactGA.event({
