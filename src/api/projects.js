@@ -209,7 +209,7 @@ export default {
             description: "Some CG works I do for fun.",
             links: [ {url: "https://photos.google.com/share/AF1QipO4ZH0lQol9cG5XBL9_kViMg845HoVV2WJUVv4W42skktTJdtgsllbOHu5T5BpBCA?key=dTNZNTRhXzY3ZDJPUzRObERYc3NFWjJZSkRzSWJn", name: "Open album", icon: "fas fa-images"} ],
             secondaryLinks: [ ],
-            labels: [ "CG" ],
+            labels: [ "blender" ],
             imgSmall: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2Fcomputergraphics_small.jpg?alt=media&token=4b0fbc22-bfe6-46cd-855d-36ff25b30b68",
             img: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2Fcomputergraphics.jpg?alt=media&token=310024a2-5493-4bf4-a85b-cd94668656ff",
             highlight: false
