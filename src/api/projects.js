@@ -54,10 +54,22 @@ export default {
             subtitle: "A digital forest that grows directly into your browser",
             description: "This is a WebGL experiment I have hacked together for the 2017 edition of the Digital Design Days.<br/><br/>Everything in this experiment is generated at runtime, programmatically. Both graphics and sounds.",
             links: [ {url: "https://pierfrancescosoffritti.github.io/DEVX-Experiments-2017/", name: "Open the experiment", icon: "fas fa-external-link-alt"}, {url: "https://www.youtube.com/watch?v=kuLsG6gpzAM", name: "Watch the video", icon: "fab fa-youtube"}, {url: "https://github.com/PierfrancescoSoffritti/Doodling/tree/master/13.%20Nowherelands", name: "Go to the code", icon: "fab fa-github"} ],
-            secondaryLinks: [ {url: "https://medium.com/@soffritti.pierfrancesco/sound-generation-with-javascript-57b2fda65608", name: "Sound generation with Javascript", icon: "fab fa-medium"}, {url: "https://medium.com/@soffritti.pierfrancesco/dynamic-reflections-in-three-js-2d46f3378fc4", name:"Dynamic reflections in Three.js", icon: "fab fa-medium"}, {url: "http://devx.ddd.it/en/", name: "See all ddd experiments", icon: "fas fa-external-link-alt"} ],
+            secondaryLinks: [ {url: "https://medium.com/@soffritti.pierfrancesco/sound-generation-with-javascript-57b2fda65608", name: "Sound generation with Javascript", icon: "fab fa-medium"}, {url: "https://medium.com/@soffritti.pierfrancesco/dynamic-reflections-in-three-js-2d46f3378fc4", name:"Dynamic reflections in Three.js", icon: "fab fa-medium"}, {url: "http://devx.ddd.it/en/", name: "Open DEVX website", icon: "fas fa-external-link-alt"} ],
             labels: [ "web", "experiment" ],
             imgSmall: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2Fnowherelands_small.jpg?alt=media&token=48fd3dc1-5f98-4079-ae79-d1c371880379",
             img: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2Fnowherelands.png?alt=media&token=14a8210b-2468-4a8a-bed1-4d7d6e33cfba",
+            highlight: false
+        },
+        {
+            id: "Monolith",
+            name: "Monolith",
+            subtitle: "WebGL experiment for DEVX 2018",
+            description: "This is a WebGL experiment I have hacked together for the 2018 edition of the Digital Design Days.",
+            links: [ {url: "https://pierfrancescosoffritti.github.io/DEVX-Experiments-2018/", name: "Open the experiment", icon: "fas fa-external-link-alt"}, {url: "https://www.youtube.com/watch?v=iST1-DvLhmg&t=0s&list=PLHqL12VZyHuMKFrKsthIEcoWLHInj9WSd&index=7", name: "Watch the video", icon: "fab fa-youtube"}, {url: "https://github.com/PierfrancescoSoffritti/Doodling/tree/master/18.%20Monolith", name: "Go to the code", icon: "fab fa-github"} ],
+            secondaryLinks: [ {url: "http://devx.ddd.it/en/", name: "Open DEVX website", icon: "fas fa-external-link-alt"} ],
+            labels: [ "web", "experiment" ],
+            imgSmall: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2Fmonolith_small.jpg?alt=media&token=9c7a0a31-ea3b-4248-ab98-829f83795646",
+            img: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2Fmonolith.png?alt=media&token=290e3357-701c-460e-a993-43e2fa814c91",
             highlight: false
         },
         {
