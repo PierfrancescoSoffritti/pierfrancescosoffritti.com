@@ -216,9 +216,9 @@ export default {
             highlight: false
         },
         {
-            id: "ComputerGraphics",
-            name: "Computer Graphics",
-            description: "Some CG works I do for fun.",
+            id: "Renders",
+            name: "Renders",
+            description: "Some modeling/rendering work I do for fun with Blender.",
             links: [ {url: "https://photos.google.com/share/AF1QipO4ZH0lQol9cG5XBL9_kViMg845HoVV2WJUVv4W42skktTJdtgsllbOHu5T5BpBCA?key=dTNZNTRhXzY3ZDJPUzRObERYc3NFWjJZSkRzSWJn", name: "Open album", icon: "fas fa-images"} ],
             secondaryLinks: [ ],
             labels: [ "blender" ],
