@@ -65,12 +65,14 @@ const ProjectDetailsCard = ({ project, onClick }) => {
                 
                 <div className="project-details-main-links">{project.links.map( link => ( 
                     <a className="project-details-link" key={link.url} href={link.url} target="_blank" rel="noopener noreferrer">
-                        <i className={link.icon +" project-details-icon"} aria-hidden="true" />{link.name}
+                        <i className={link.icon +" project-details-icon"} aria-hidden="true" />
+                        <span>{link.name}</span>
                     </a> ))}
                 </div>
                 <div className="project-details-secondary-links">{project.secondaryLinks.map( link => ( 
                     <a className="project-details-link" key={link.url} href={link.url} target="_blank" rel="noopener noreferrer">
-                        <i className={link.icon +" project-details-icon"} aria-hidden="true" />{link.name}
+                        <i className={link.icon +" project-details-icon"} aria-hidden="true" />
+                        <span>{link.name}</span>
                     </a> ))}
                 </div>
 

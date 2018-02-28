@@ -82,6 +82,9 @@
 }
 
 .project-details-main-links {
+    display: flex;
+    flex-direction: row;
+
     text-transform: uppercase;
     font-size: 11px; 
     
@@ -91,6 +94,9 @@
 }
 
 .project-details-secondary-links {
+    display: flex;
+    flex-direction: row;
+
     text-transform: uppercase;
     font-size: 11px; 
 
@@ -99,8 +105,11 @@
 }
 
 .project-details-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
     margin-right: 24px;
-    display:inline-block;
 }
 
 /* desktop-x-small */
