@@ -1,22 +1,25 @@
-import SceneManager from "./SceneManager"
+import SceneManager from './SceneManager';
 
 export default container => {
-    window.onresize = resizeCanvas;
-    window.onmousemove = mouseMove;
-
     const canvas = createCanvas(document, container);
     const sceneManager = new SceneManager(canvas);
 
     let canvasHalfWidth;
     let canvasHalfHeight;
 
-    resizeCanvas();
+    bindEventListeners();
     render();
 
     function createCanvas(document, container) {
         const canvas = document.createElement('canvas');     
         container.appendChild(canvas);
         return canvas;
+    }
+
+    function bindEventListeners() {
+        window.onresize = resizeCanvas;
+        window.onmousemove = mouseMove;
+        resizeCanvas();	
     }
 
     function resizeCanvas() {        

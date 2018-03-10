@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 
-import threeJsEntryPoint from "./threejs/threeJsEntryPoint"
+import threeEntryPoint from "./threejs/threeEntryPoint"
 import "./header.css"
 
 export default class Header extends Component {
     
     componentDidMount() {
-        threeJsEntryPoint(this.root);
+        threeEntryPoint(this.threeRootElement);
     }
 
     render () {
         return (
-            <div className="header-header" ref={element => this.root = element}></div>
+            <div className="header-header" ref={element => this.threeRootElement = element} />
         );
     }
 }

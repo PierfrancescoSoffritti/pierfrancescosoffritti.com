@@ -1,5 +1,6 @@
-import * as THREE from 'three'
-import SceneSubject from "./SceneSubject"
+import * as THREE from 'three';
+import SceneSubject from './SceneSubject';
+import GeneralLights from './GeneralLights';
 
 export default canvas => {
 
@@ -19,13 +20,12 @@ export default canvas => {
     const scene = buildScene();
     const renderer = buildRender(screenDimensions);
     const camera = buildCamera(screenDimensions);
-    const ligth = buildLights(scene);
-    
-    const sceneSubjects = [];
-    sceneSubjects.push(new SceneSubject(scene));
+    const sceneSubjects = createSceneSubjects(scene);
 
     function buildScene() {
         const scene = new THREE.Scene();
+        scene.background = new THREE.Color("#FFF");
+
         return scene;
     }
 
@@ -53,25 +53,22 @@ export default canvas => {
         return camera;
     }
 
-    function buildLights(scene) {
-        const lightIn = new THREE.PointLight("#4CAF50", 30);
-        const lightOut = new THREE.PointLight("#2196F3", 10);
-        lightOut.position.set(40,20,40);
+    function createSceneSubjects(scene) {
+        const sceneSubjects = [
+            new GeneralLights(scene),
+            new SceneSubject(scene)
+        ];
 
-        scene.add(lightIn);
-        scene.add(lightOut);
-
-        return lightOut;
+        return sceneSubjects;
     }
 
     function update() {
-        const time = clock.getElapsedTime();
-
-        updateCameraPositionRelativeToMouse();
-        moveLight(time);
+        const elapsedTime = clock.getElapsedTime();
 
         for(let i=0; i<sceneSubjects.length; i++)
-            sceneSubjects[i].update(time);
+            sceneSubjects[i].update(elapsedTime);
+
+        updateCameraPositionRelativeToMouse();
 
         renderer.render(scene, camera);
     }
@@ -80,12 +77,6 @@ export default canvas => {
         camera.position.x += (  (mousePosition.x * 0.01) - camera.position.x ) * 0.01;
         camera.position.y += ( -(mousePosition.y * 0.01) - camera.position.y ) * 0.01;
         camera.lookAt(origin);
-    }
-
-    function moveLight(time) {
-        const rad = 80;
-        const x = rad * Math.sin(time*0.2)
-        ligth.position.x = x;
     }
 
     function onWindowResize() {

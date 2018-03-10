@@ -1,28 +1,26 @@
 import * as THREE from 'three'
-// import alphaTexture from '../../../../assets/textures/stripes_gradient.png';
 import alphaTexture from '../../../../assets/textures/stripes_gradient.jpg';
 
 export default scene => {    
     const group = new THREE.Group();
 
-    const ballGeometry = deformGeometry(new THREE.IcosahedronGeometry(10, 2));
+    const subjectGeometry = deformGeometry(new THREE.IcosahedronGeometry(10, 2));
     
-    const material = new THREE.MeshStandardMaterial({ color: "#000", transparent: true, side: THREE.DoubleSide, alphaTest: 0.5 });
-    const alphaMap = new THREE.TextureLoader().load(alphaTexture);
-    material.alphaMap = alphaMap;
-    material.alphaMap.magFilter = THREE.NearestFilter;
-    material.alphaMap.wrapT = THREE.RepeatWrapping;
-    material.alphaMap.repeat.y = 1;
+    const subjectMaterial = new THREE.MeshStandardMaterial({ color: "#000", transparent: true, side: THREE.DoubleSide, alphaTest: 0.5 });
+    subjectMaterial.alphaMap = new THREE.TextureLoader().load(alphaTexture);
+    subjectMaterial.alphaMap.magFilter = THREE.NearestFilter;
+    subjectMaterial.alphaMap.wrapT = THREE.RepeatWrapping;
+    subjectMaterial.alphaMap.repeat.y = 1;
 
-    const ballMesh = new THREE.Mesh(ballGeometry, material);
+    const subjectMesh = new THREE.Mesh(subjectGeometry, subjectMaterial);
         
-    const wireframe = new THREE.LineSegments(
-        new THREE.EdgesGeometry(ballGeometry),
+    const subjectWireframe = new THREE.LineSegments(
+        new THREE.EdgesGeometry(subjectGeometry),
         new THREE.LineBasicMaterial()
     );
 
-    group.add(ballMesh);
-    group.add(wireframe);
+    group.add(subjectMesh);
+    group.add(subjectWireframe);
     scene.add(group);
 
     group.rotation.z = Math.PI/4;
@@ -44,12 +42,12 @@ export default scene => {
 
         group.rotation.y = angle;
 
-        material.alphaMap.offset.y = 0.55 + time * textureOffsetSpeed;
+        subjectMaterial.alphaMap.offset.y = 0.55 + time * textureOffsetSpeed;
 
-        wireframe.material.color.setHSL( Math.sin(angle*2), 0.5, 0.5 );
+        subjectWireframe.material.color.setHSL( Math.sin(angle*2), 0.5, 0.5 );
         
         const scale = (Math.sin(angle*8)+6.4)/5;
-        wireframe.scale.set(scale, scale, scale)
+        subjectWireframe.scale.set(scale, scale, scale)
     }
 
     return {
