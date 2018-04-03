@@ -204,12 +204,12 @@ export default {
             highlight: false
         },
         {
-            id: "AndroidYouTubePlayer",
+            id: "Android-YouTube-Player",
             name: "YouTubePlayer",
             subtitle: "YouTube Player library for Android, stable and customizable",
             description: "The Android-YouTube-Player library provides a simple View that can be easily integrated in every Activity/Fragment.<br/><br/>The interaction with YouTube is based on the IFrame Player API, running inside of a WebView, therefore the YouTube app is not required to be installed on the user's device.<br/><br/>The web UI of the IFrame Player player is hidden, instead a native UI built on top of Android is used to interact with the player, providing a native experience to the users.",
-            links: [ {url: "https://github.com/PierfrancescoSoffritti/AndroidYouTubePlayer", name: "Open project", icon: "fab fa-github"} ],
-            secondaryLinks: [ {url: "https://medium.com/@soffritti.pierfrancesco/how-to-play-youtube-videos-in-your-android-app-c40427215230", name:"Android-YouTube-Player", icon: "fab fa-medium"} ],
+            links: [ {url: "https://github.com/PierfrancescoSoffritti/AndroidYouTubePlayer", name: "Open project", icon: "fab fa-github"}, {url: "https://play.google.com/store/apps/details?id=com.pierfrancescosoffritti.androidyoutubeplayersample", name: "Download sample app", icon: "fab fa-google-play"} ],
+            secondaryLinks: [ {url: "https://medium.com/@soffritti.pierfrancesco/how-to-play-youtube-videos-in-your-android-app-c40427215230", name:"Android-YouTube-Player, introduction", icon: "fab fa-medium"}, {url: "https://medium.com/@soffritti.pierfrancesco/customize-android-youtube-players-ui-9f32da9e8505", name:"Android-YouTube-Player, customization", icon: "fab fa-medium"} ],
             labels: [ "android", "library" ],
             imgSmall: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2FAndroid-YouTube-Player_small.jpg?alt=media&token=00f135a4-c02a-41db-8722-b33d49419151",
             img: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2FAndroid-YouTube-Player.jpg?alt=media&token=c14ea9d6-0e35-42c5-a82d-2337d064fbd5",
