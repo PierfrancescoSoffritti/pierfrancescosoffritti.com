@@ -211,8 +211,8 @@ export default {
             links: [ {url: "https://github.com/PierfrancescoSoffritti/AndroidYouTubePlayer", name: "Open project", icon: "fab fa-github"}, {url: "https://play.google.com/store/apps/details?id=com.pierfrancescosoffritti.androidyoutubeplayersample", name: "Download sample app", icon: "fab fa-google-play"} ],
             secondaryLinks: [ {url: "https://medium.com/@soffritti.pierfrancesco/how-to-play-youtube-videos-in-your-android-app-c40427215230", name:"Android-YouTube-Player, introduction", icon: "fab fa-medium"}, {url: "https://medium.com/@soffritti.pierfrancesco/customize-android-youtube-players-ui-9f32da9e8505", name:"Android-YouTube-Player, customization", icon: "fab fa-medium"} ],
             labels: [ "android", "library" ],
-            imgSmall: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2FAndroid-YouTube-Player_small.jpg?alt=media&token=901ade9a-8318-40b3-82ff-4dd2c6fc2fe3",
-            img: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2FAndroid-YouTube-Player.jpg?alt=media&token=43211d16-f88d-411b-a342-fbcd189cd039",
+            imgSmall: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2FAndroid-YouTube-Player_small.jpg?alt=media&token=4b7d8258-80b7-4260-bec5-38a56513d525",
+            img: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2FAndroid-YouTube-Player.jpg?alt=media&token=92c5cefa-9ee3-4b62-9e72-de875e9d5c6c",
             highlight: false
         },
         {
