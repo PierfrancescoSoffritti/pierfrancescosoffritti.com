@@ -81,7 +81,7 @@ class Home extends Component {
             this._onEnterSection("");
     }
 
-    _isScrollBottom = () => document.body.scrollHeight === document.body.scrollTop + window.innerHeight;
+    _isScrollBottom = () => window.innerHeight + window.scrollY >= document.body.offsetHeight;
     _onEnterSection = sectionName => this.setState( { currentSection: sectionName } )
     _getNavBarHeight = () => this.navbar.getBoundingClientRect().height
     _getPageElementFromKey = key => this.refs[key];
