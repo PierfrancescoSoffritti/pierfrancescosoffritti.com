@@ -25,6 +25,25 @@ export default {
             highlight: true
         },
         {
+            id: "android-youtube-player",
+            name: "android-youtube-player",
+            subtitle: "YouTube Player library for Android, stable and customizable",
+            description: "The android-youtube-player library provides a simple View that can be easily integrated in every Activity/Fragment.<br/><br/>The interaction with YouTube is based on the IFrame Player API, running inside of a WebView, therefore the YouTube app is not required to be installed on the user's device.<br/><br/>The web UI of the IFrame Player player is hidden, instead a native UI built on top of Android is used to interact with the player, providing a native experience to the users.<br/><br/>The UI of the player is 100% customizable. The default UI can be changed, to show and hide new views, or can be completely replaced by a custom UI.<br/><br/>This library also provides a Chromecast YouTube player, that you can use to cast YouTube videos from your app to a Chromecast device.",
+            links: [ 
+                { url: "https://github.com/PierfrancescoSoffritti/android-youtube-player", name: "Open project", icon: "fab fa-github"},
+                { url: "https://play.google.com/store/apps/details?id=com.pierfrancescosoffritti.aytplayersample", name: "Download sample app", icon: "fab fa-google-play"}
+            ],
+            secondaryLinks: [ 
+                { url: "https://medium.com/@soffritti.pierfrancesco/how-to-play-youtube-videos-in-your-android-app-c40427215230", name:"android-youtube-player, introduction", icon: "fab fa-medium"},
+                { url: "https://medium.com/@soffritti.pierfrancesco/customize-android-youtube-players-ui-9f32da9e8505", name:"android-youtube-player, customization", icon: "fab fa-medium"},
+                { url: "https://medium.com/@soffritti.pierfrancesco/how-to-send-youtube-videos-from-your-android-app-to-a-chromecast-device-541d59ea1260", name:"android-youtube-player, chromecast", icon: "fab fa-medium"}
+            ],
+            labels: [ "android", "library" ],
+            imgSmall: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2FAndroid-YouTube-Player_small.jpg?alt=media&token=4b7d8258-80b7-4260-bec5-38a56513d525",
+            img: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2FAndroid-YouTube-Player.jpg?alt=media&token=92c5cefa-9ee3-4b62-9e72-de875e9d5c6c",
+            highlight: true
+        },
+        {
             id: "MicroMegaProject",
             name: "MicroMega",
             subtitle: "An interactive music experience powered by the web",
@@ -192,6 +211,23 @@ export default {
             highlight: false
         },
         {
+            id: "handy",
+            name: "Handy",
+            subtitle: "Hand detection software written in C++ using OpenCV.",
+            description: "Handy is a hand detection software written in C++ using OpenCV. The software is capable of recognizing hands in an video and of counting the number of lifted fingers.",
+            links: [ 
+                { url: "https://github.com/PierfrancescoSoffritti/Handy", name: "Open project", icon: "fab fa-github"},
+                { url: "https://www.youtube.com/watch?v=z8rWGQyIQAE", name: "Watch demo", icon: "fab fa-youtube"},
+            ],
+            secondaryLinks: [ 
+                { url: "https://medium.com/@soffritti.pierfrancesco/handy-hands-detection-with-opencv-ac6e9fb3cec1", name: "Handy - hand detection", icon: "fab fa-medium"}
+            ],
+            labels: [ "CV", "AR" ],
+            imgSmall: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2Fhandy.gif?alt=media&token=5be94e86-f2bc-4875-a947-7a9363ae8381",
+            img: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2Fhandy.gif?alt=media&token=5be94e86-f2bc-4875-a947-7a9363ae8381",
+            highlight: false
+        },
+        {
             id: "SlidingDrawer",
             name: "SlidingDrawer",
             subtitle: "Android custom View implementing the bottom sheet pattern",
@@ -201,25 +237,6 @@ export default {
             labels: [ "android", "library" ],
             imgSmall: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2FSlidingDrawer.gif?alt=media&token=229574ee-872b-4411-9550-c656cf5b1de8",
             img: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2FSlidingDrawer.gif?alt=media&token=229574ee-872b-4411-9550-c656cf5b1de8",
-            highlight: false
-        },
-        {
-            id: "android-youtube-player",
-            name: "youtube-player",
-            subtitle: "YouTube Player library for Android, stable and customizable",
-            description: "The android-youtube-player library provides a simple View that can be easily integrated in every Activity/Fragment.<br/><br/>The interaction with YouTube is based on the IFrame Player API, running inside of a WebView, therefore the YouTube app is not required to be installed on the user's device.<br/><br/>The web UI of the IFrame Player player is hidden, instead a native UI built on top of Android is used to interact with the player, providing a native experience to the users.",
-            links: [ 
-                { url: "https://github.com/PierfrancescoSoffritti/android-youtube-player", name: "Open project", icon: "fab fa-github"},
-                { url: "https://play.google.com/store/apps/details?id=com.pierfrancescosoffritti.aytplayersample", name: "Download sample app", icon: "fab fa-google-play"}
-            ],
-            secondaryLinks: [ 
-                { url: "https://medium.com/@soffritti.pierfrancesco/how-to-play-youtube-videos-in-your-android-app-c40427215230", name:"android-youtube-player, introduction", icon: "fab fa-medium"},
-                { url: "https://medium.com/@soffritti.pierfrancesco/customize-android-youtube-players-ui-9f32da9e8505", name:"android-youtube-player, customization", icon: "fab fa-medium"},
-                { url: "https://medium.com/@soffritti.pierfrancesco/how-to-send-youtube-videos-from-your-android-app-to-a-chromecast-device-541d59ea1260", name:"android-youtube-player, chromecast", icon: "fab fa-medium"}
-            ],
-            labels: [ "android", "library" ],
-            imgSmall: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2FAndroid-YouTube-Player_small.jpg?alt=media&token=4b7d8258-80b7-4260-bec5-38a56513d525",
-            img: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2FAndroid-YouTube-Player.jpg?alt=media&token=92c5cefa-9ee3-4b62-9e72-de875e9d5c6c",
             highlight: false
         },
         {
