@@ -204,15 +204,39 @@ export default {
             highlight: false
         },
         {
-            id: "Android-YouTube-Player",
-            name: "YouTubePlayer",
+            id: "android-youtube-player",
+            name: "youtube-player",
             subtitle: "YouTube Player library for Android, stable and customizable",
-            description: "The Android-YouTube-Player library provides a simple View that can be easily integrated in every Activity/Fragment.<br/><br/>The interaction with YouTube is based on the IFrame Player API, running inside of a WebView, therefore the YouTube app is not required to be installed on the user's device.<br/><br/>The web UI of the IFrame Player player is hidden, instead a native UI built on top of Android is used to interact with the player, providing a native experience to the users.",
-            links: [ {url: "https://github.com/PierfrancescoSoffritti/AndroidYouTubePlayer", name: "Open project", icon: "fab fa-github"}, {url: "https://play.google.com/store/apps/details?id=com.pierfrancescosoffritti.androidyoutubeplayersample", name: "Download sample app", icon: "fab fa-google-play"} ],
-            secondaryLinks: [ {url: "https://medium.com/@soffritti.pierfrancesco/how-to-play-youtube-videos-in-your-android-app-c40427215230", name:"Android-YouTube-Player, introduction", icon: "fab fa-medium"}, {url: "https://medium.com/@soffritti.pierfrancesco/customize-android-youtube-players-ui-9f32da9e8505", name:"Android-YouTube-Player, customization", icon: "fab fa-medium"} ],
+            description: "The android-youtube-player library provides a simple View that can be easily integrated in every Activity/Fragment.<br/><br/>The interaction with YouTube is based on the IFrame Player API, running inside of a WebView, therefore the YouTube app is not required to be installed on the user's device.<br/><br/>The web UI of the IFrame Player player is hidden, instead a native UI built on top of Android is used to interact with the player, providing a native experience to the users.",
+            links: [ 
+                { url: "https://github.com/PierfrancescoSoffritti/android-youtube-player", name: "Open project", icon: "fab fa-github"},
+                { url: "https://play.google.com/store/apps/details?id=com.pierfrancescosoffritti.aytplayersample", name: "Download sample app", icon: "fab fa-google-play"}
+            ],
+            secondaryLinks: [ 
+                { url: "https://medium.com/@soffritti.pierfrancesco/how-to-play-youtube-videos-in-your-android-app-c40427215230", name:"android-youtube-player, introduction", icon: "fab fa-medium"},
+                { url: "https://medium.com/@soffritti.pierfrancesco/customize-android-youtube-players-ui-9f32da9e8505", name:"android-youtube-player, customization", icon: "fab fa-medium"},
+                { url: "https://medium.com/@soffritti.pierfrancesco/how-to-send-youtube-videos-from-your-android-app-to-a-chromecast-device-541d59ea1260", name:"android-youtube-player, chromecast", icon: "fab fa-medium"}
+            ],
             labels: [ "android", "library" ],
             imgSmall: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2FAndroid-YouTube-Player_small.jpg?alt=media&token=4b7d8258-80b7-4260-bec5-38a56513d525",
             img: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2FAndroid-YouTube-Player.jpg?alt=media&token=92c5cefa-9ee3-4b62-9e72-de875e9d5c6c",
+            highlight: false
+        },
+        {
+            id: "chromecast-youtube-player",
+            name: "chromecast-player",
+            subtitle: "Extension for the android-youtube-player library, enables Google Cast functionalities",
+            description: "YouTube doesn't offer any official API to cast YouTube videos from an app to a Google Cast enabled device. To fill this gap I have built an extension library for the android-youtube-player, called chromecast-sender.<br/><br/>The scope of this library is to provide the basic framework and utilities needed to play YouTube videos on a Google Cast enabled device.",
+            links: [ 
+                { url: "https://github.com/PierfrancescoSoffritti/android-youtube-player", name: "Open project", icon: "fab fa-github"},
+                { url: "https://play.google.com/store/apps/details?id=com.pierfrancescosoffritti.cytplayersample", name: "Download sample app", icon: "fab fa-google-play"}
+            ],
+            secondaryLinks: [
+                { url: "https://medium.com/@soffritti.pierfrancesco/how-to-send-youtube-videos-from-your-android-app-to-a-chromecast-device-541d59ea1260", name:"chromecast-youtube-player", icon: "fab fa-medium"}
+            ],
+            labels: [ "android", "library" ],
+            imgSmall: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2Fchromecast-youtube-player_small.jpg?alt=media&token=3f7b8b8c-ba62-4fb9-b2e8-5f3a396353d9",
+            img: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2Fchromecast-youtube-player.jpg?alt=media&token=d96a2a83-dcfb-4a73-abf7-3b391ae7752c",
             highlight: false
         },
         {
