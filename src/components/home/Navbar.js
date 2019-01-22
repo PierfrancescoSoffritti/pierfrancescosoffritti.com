@@ -24,14 +24,7 @@ const Navbar = ({items, currentSection, currentScroll, onItemClick}) => {
                                 onClick={ev => { onItemClick(item.name); onLinkClick(item.name); } }
                                 className={"navbar-item navbar-item-dimensions clickable " + ( item.name === currentSection ? "navbar-item-selected" : "" )}>{item.name}</span>
                         }
-                    )}
-                    
-                    {/* <span className="navbar-item navbar-item-dimensions">about</span>
-                    <span className="navbar-item navbar-item-dimensions">work</span>
-                    <span className="navbar-logo">logo</span>
-                    <span className="navbar-item navbar-item-dimensions">blog</span>
-                    <span className="navbar-item navbar-item-dimensions">contact</span> */}
-                    
+                    )}                    
                 </div>
                 <div className="navbar-dimensions"/>
             </div>
