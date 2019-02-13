@@ -19,16 +19,16 @@ export default {
             url: "https://medium.com/@soffritti.pierfrancesco"
         }, 
         {
+            name: "twitter",
+            text: "",
+            icon: "fab fa-twitter",
+            url: "https://twitter.com/psoffritti"
+        }, 
+        {
             name: "linkedin",
             text: "",
             icon: "fab fa-linkedin-in",
             url: "https://www.linkedin.com/in/pierfrancescosoffritti/en"
-        },    
-        {
-            name: "stack-overflow",
-            text: "",
-            icon: "fab fa-stack-overflow",
-            url: "https://stackoverflow.com/users/4306449/pierfrancesco-soffritti?tab=profile"
         }, 
         {
             name: "instagram",
@@ -41,12 +41,6 @@ export default {
             text: "",
             icon: "fab fa-facebook-f",
             url: "https://www.facebook.com/pierfrancesco.soffritti"
-        },
-        {
-            name: "google-plus",
-            text: "",
-            icon: "fab fa-google-plus-g",
-            url: "https://plus.google.com/u/0/+PierfrancescoSoffritti2/"
-        },      
+        }      
     ] ) )
 }

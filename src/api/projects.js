@@ -228,15 +228,15 @@ export default {
             highlight: false
         },
         {
-            id: "SlidingDrawer",
-            name: "SlidingDrawer",
-            subtitle: "Android custom View implementing the bottom sheet pattern",
-            description: "I've built this library while I was working on Shuffly, no other open source library was good for my use case.<br/><br/>The substantial difference from all other implementations of the bottom sheet pattern is that in this case it's easy to position the slidable view relative to the non slidable views in the layout. In other implementations the only way to control the position of the slidable view, when collapsed, is by using a an offset. Here instead the slidable view is placed exactly below the non slidable view, just like in a vertical LinearLayout. The slidable view is conceptually part of the views hierarchy and not above it.",
-            links: [ {url: "https://github.com/PierfrancescoSoffritti/SlidingDrawer", name: "Open project", icon: "fab fa-github"} ],
+            id: "sliding-panel",
+            name: "sliding-panel",
+            subtitle: "Android sliding panel that is part of the view hierarchy, not above it.",
+            description: "All other implementations of the bottom sheet pattern and sliding panel pattern implement a panel that sits above all the other Views of the app. When the panel is collapsed (but visible) the only way to set its position is by using a peek factor (its distance from the bottom of the screen).<br/><br/>With this library the sliding panel is placed exactly where it is supposed to be in the view hierarchy, just like it would be in a vertical (or horizontal) LinearLayout. It doesn't sit above other Views.",
+            links: [ {url: "https://github.com/PierfrancescoSoffritti/sliding-panel", name: "Open project", icon: "fab fa-github"} ],
             secondaryLinks: [ ],
             labels: [ "android", "library" ],
-            imgSmall: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2FSlidingDrawer.gif?alt=media&token=229574ee-872b-4411-9550-c656cf5b1de8",
-            img: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2FSlidingDrawer.gif?alt=media&token=229574ee-872b-4411-9550-c656cf5b1de8",
+            imgSmall: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2Fsliding-panel_small.jpg?alt=media&token=0d4faef6-b325-4b75-9a77-bdb126edcca1",
+            img: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2Fsliding-panel.jpg?alt=media&token=178aea10-15aa-4e6f-a55a-5b91c93aef49",
             highlight: false
         },
         {
@@ -254,6 +254,18 @@ export default {
             labels: [ "android", "library" ],
             imgSmall: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2Fchromecast-youtube-player_small.jpg?alt=media&token=3f7b8b8c-ba62-4fb9-b2e8-5f3a396353d9",
             img: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2Fchromecast-youtube-player.jpg?alt=media&token=d96a2a83-dcfb-4a73-abf7-3b391ae7752c",
+            highlight: false
+        },
+        {
+            id: "library-sample-app-template",
+            name: "library-sample-app-template",
+            subtitle: "An Android library to bootstrap sample apps for other Android opensource projects.",
+            description: "An Android library to bootstrap sample apps for other Android projects. This library is useful to reduce the boilerplate code needed when writing a sample app for a project.",
+            links: [ {url: "https://github.com/PierfrancescoSoffritti/library-sample-app-template", name: "Open project", icon: "fab fa-github"} ],
+            secondaryLinks: [ ],
+            labels: [ "android", "library" ],
+            imgSmall: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2Flibrary-sample-app-template_small.jpg?alt=media&token=27a16d4c-1a9a-4281-b5d5-bb80973be47a",
+            img: "https://firebasestorage.googleapis.com/v0/b/personal-website-5dadd.appspot.com/o/projects%2Flibrary-sample-app-template.jpg?alt=media&token=caafa4a2-d26a-4143-b9fc-5af2cad9c800",
             highlight: false
         },
         {
