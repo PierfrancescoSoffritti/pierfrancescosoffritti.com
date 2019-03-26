@@ -30,8 +30,7 @@ class Contact extends Component {
         return (
             <div className="home-section contact-container">
                 <div>
-                    Send me an email if you want to talk about tech
-                    <br/>or if you want to dicuss <a href="https://en.wikipedia.org/wiki/Phrases_from_The_Hitchhiker%27s_Guide_to_the_Galaxy#Answer_to_the_Ultimate_Question_of_Life.2C_the_Universe.2C_and_Everything_.2842.29" target="_blank" rel="noopener noreferrer">the Ultimate Question of Life, the Universe and Everything</a>
+                    If you want to say something you can send me an email, or reach out on social media :)
                 </div>
 
                 <div className="contact-social-group">

@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "all": "^0.0.0",
     "immutable": "^3.8.1",
     "install": "^0.10.1",
     "npm": "^5.3.0",
