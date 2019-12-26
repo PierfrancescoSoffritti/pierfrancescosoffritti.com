@@ -20,7 +20,7 @@ const About = () => {
         <div className="home-section container-about">        
             <img className="profile-picture-about" alt="profilepic" src={profilePic} />
             <div className="about-text">
-                <span className="about-text-main">Hi! I'm <span className="about-name">Pier</span></span>
+                <span className="about-text-main">I'm <span className="about-name">Pier</span></span>
                 <br/><span className="about-text-subtitle">I'm a software engineer @Google</span>
                 <br/><br/>I like to build things with code
                 <br/>Some of my interests are: Android, UI/UX design, Web development, games development, VR and computer graphics.
