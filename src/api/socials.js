@@ -16,7 +16,7 @@ export default {
             name: "medium",
             text: "",
             icon: "fab fa-medium-m",
-            url: "https://medium.com/@soffritti.pierfrancesco"
+            url: "https://medium.com/@pierfrancesco-soffritti"
         }, 
         {
             name: "twitter",
@@ -34,7 +34,7 @@ export default {
             name: "instagram",
             text: "",
             icon: "fab fa-instagram",
-            url: "https://instagram.com/pierfrancesco.soffritti/"
+            url: "https://instagram.com/pier.sof/"
         },
         {
             name: "facebook",
