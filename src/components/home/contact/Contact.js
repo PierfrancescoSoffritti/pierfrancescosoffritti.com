@@ -30,7 +30,7 @@ class Contact extends Component {
         return (
             <div className="home-section contact-container">
                 <div>
-                    If you want to say something you can send me an email, or reach out on social media :)
+                    If you want to talk to me you can send me an email, reach out on social media, or <a href="https://calendly.com/soffritti-pierfrancesco/30min">book a slot on my calendar</a> :)
                 </div>
 
                 <div className="contact-social-group">
